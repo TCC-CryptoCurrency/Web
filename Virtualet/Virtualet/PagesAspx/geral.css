@@ -1,0 +1,161 @@
+﻿body {
+    margin: 0;
+    background-image: url(Images/imagemfundoT.jpg);
+    background-size: cover;
+}
+
+div.header{
+    width: 100%;
+    height: 35vh;
+    display:flex;
+    align-items: center;
+    justify-content:center;
+}
+
+div.logo{
+    width:10%;
+    height:auto;
+    display:flex;
+    align-items:center;
+    justify-content:center;
+
+}
+
+div.logo img{
+    width:100%;
+    height:auto;
+}
+
+div.logo h1 {
+    font-family: Ebrima;
+    color: #e7ecef;
+    font-size:4vw;
+}
+
+div.content_outlineR {
+    width: 100%;
+    height: 15vw;
+    background-color: #fb8b24;
+    clip-path: polygon(0 45%, 100% 0, 100% 100%, 0% 100% );
+    z-index: -2;
+}
+
+div.content_outlineR2 {
+    width: 100%;
+    height: 15vw;
+    background-color: #e36414;
+    margin-top: -13vw;
+    clip-path: polygon(0 25%, 100% 0, 100% 100%, 0% 100% );
+    z-index: -1;
+}
+
+div.content_outline {
+    width: 100%;
+    height: 14vw;
+    background-color: #ef781c;
+    margin-top: -16vw;
+    clip-path: polygon(0 0, 100% 30%, 100% 100%, 0% 100% );
+    z-index: 1;
+}
+
+div.content_outline2 {
+    width: 100%;
+    height: 8vw;
+    background-color: #e7ecef;
+    margin-top: -12vw;
+    border-bottom: solid 1px #e7ecef;
+    clip-path: polygon(0 0, 100% 30%, 100% 100%, 0% 100% );
+    z-index: 2;
+}
+
+
+
+div.content {
+    width: 100%;
+    min-height: 70vh;
+    background-color: #e7ecef;
+    margin-top: -1vw;
+    clip-path: polygon(0 0, 100% 0, 100% 100%, 0 100%);
+    z-index: 5;
+    padding-bottom:10vh;
+}
+
+    div.content h1 {
+        font-family: Ebrima;
+        font-size: 2vw;
+        color: #EF781C;
+
+    }
+
+div.cardholder{
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    padding-left:10vw;
+    padding-right:10vw;
+}
+
+div.cardholder div {
+        width: 25%;
+        height:25vw;
+        border-radius: 1vw;
+        border: solid 1px #9c9fa1;
+        padding: 0vw;
+        background-color:#e7ecef;
+        margin: 0.2vw;
+        align-items:center;
+        padding:0.5vw;
+        transition: background-color ease-in 0.2s;
+        text-align:center;
+        word-wrap:break-word;
+}
+
+    div.cardholder div:hover {
+        background-color: #d2d5d9
+    }
+
+div.cardholder div img{
+    width:100%;
+    height:auto;
+}
+
+div.cardholder div h1{
+    font-family:Ebrima;
+    font-size:1.5vw;
+    color:#ef781c;
+    line-break:auto;
+}
+
+div.cardholder div p {
+        font-family: Ebrima;
+        color: #2d3142;
+        font-size:1vw;
+}
+
+hr{
+    border-color: #ef781c;
+    border-width:1px;
+    width:75%;
+    margin-top:1.5vw;
+}
+
+.login{
+    border-radius: 20vw;
+    width:15%;
+    height:3vw;
+    text-align:center;
+    font-family:Ebrima;
+    font-size:1.5vw;
+    color:#e7ecef;
+    background-color: #e36414;
+    border:none;
+    margin:1vw;
+}
+
+div.criptotable{
+    width:80vw;
+}
+
+div.DataLine{
+
+}
