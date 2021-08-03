@@ -5,6 +5,8 @@
 <html xmlns="http://www.w3.org/1999/xhtml">
 
 <head runat="server">
+<script src="ScriptCoinVar.js">
+</script>
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
     <title>Virtua'let</title>
     <link rel="stylesheet" type="text/css" href="geral.css"/>
@@ -60,62 +62,44 @@
                 <h1>Preço atual das principais criptomoedas</h1>
             </div>
             <div class="cardholder">
-                <div class="criptotable">
                     <asp:DataList ID="DtCripto" 
+                        onitemdatabound="DtCripto_ItemDataBound"
                         RepeatDirection="Vertical"
                         RepeatLayout="Table"
                         RepeatColumns="1"
                         RepeatRows="10"
-                        runat="server">
+                        runat="server"
+                        class="criptotable">
                         <HeaderStyle BackColor="#e7ecef">
                         </HeaderStyle>
-
+                        
                         <AlternatingItemStyle BackColor="#d2d5d9">
                         </AlternatingItemStyle>
 
                         <HeaderTemplate>
-                            <div class="DataLine">
-                                <div>
                                     <h2>
                                         Nome
                                     </h2>
-                                </div>
-                                <div>
+
                                     <h2>
                                         Valor
                                     </h2>
-                                </div>
-                                <div>
+
                                     <h2>
                                         Ultimas 24h
                                     </h2>
-                                </div>
-                            </div>
                         </HeaderTemplate>
-
                         <ItemTemplate>
-                            <div class="DataLine">
-                                <div>
                                     <h3>
                                         <%# DataBinder.Eval(Container.DataItem, "NomeMoeda") %>
                                     </h3>
-                                </div>
-                                <div>
-                                    <p>
-                                        $ <%# DataBinder.Eval(Container.DataItem, "ValorMoeda", "{0:c}") %>
+                                    <p class="valor">
+                                        <%# DataBinder.Eval(Container.DataItem, "ValorMoeda", "{0:c}") %>
                                     </p>
-                                </div>
-                                <div>
-                                    <p>
-                                        <%# DataBinder.Eval(Container.DataItem, "VariacaoMoeda") %> %
-                                    </p>
-                                </div>
-                            </div>
+                                        <asp:Label ID="varia" ForeColor="#08A045" runat="server" Text='<%# DataBinder.Eval(Container.DataItem, "VariacaoMoeda") + "%" %> '>
+                                        </asp:Label>
                         </ItemTemplate>
-
-
                     </asp:DataList>
-                </div>
             </div>
         </div>
     </form>
