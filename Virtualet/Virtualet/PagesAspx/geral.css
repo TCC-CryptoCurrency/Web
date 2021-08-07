@@ -2,6 +2,7 @@
     margin: 0;
     background-image: url(Images/imagemfundoT.jpg);
     background-size: cover;
+    background-attachment:fixed;
 }
 
 div.header{
@@ -119,6 +120,14 @@ div.cardholder div img{
     height:auto;
 }
 
+div.cardholder div.tutorCard{
+    height: 35vw;
+}
+
+div.cardholder div img.tutor {
+    width:70%;
+}
+
 div.cardholder div h1{
     font-family:Ebrima;
     font-size:1.5vw;
@@ -215,4 +224,17 @@ hr{
 
 .neg{
     color: #c23E34;
+}
+
+div.bottom{
+    background-color:#ef781c;
+    width:100%;
+    height:15vw;
+}
+
+.bottom p{
+    font-family:Ebrima;
+    color:#e7ecef;
+    font-weight:bold;
+    font-size:1.2vw;
 }

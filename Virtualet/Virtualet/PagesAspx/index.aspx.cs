@@ -56,7 +56,7 @@ namespace Virtualet.PagesAspx
                 Label label = e.Item.FindControl("varia") as Label;
                 if (label.Text.Contains("-"))
                 {
-                    label.ForeColor = System.Drawing.Color.FromArgb(194, 62, 52);
+                    label.CssClass = "neg";
                 }
                 else
                 {

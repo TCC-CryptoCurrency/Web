@@ -96,10 +96,43 @@
                                     <p class="valor">
                                         <%# DataBinder.Eval(Container.DataItem, "ValorMoeda", "{0:c}") %>
                                     </p>
-                                        <asp:Label ID="varia" ForeColor="#08A045" runat="server" Text='<%# DataBinder.Eval(Container.DataItem, "VariacaoMoeda") + "%" %> '>
+                                        <asp:Label ID="varia" CssClass="pos" runat="server" Text='<%# DataBinder.Eval(Container.DataItem, "VariacaoMoeda") + "%" %> '>
                                         </asp:Label>
                         </ItemTemplate>
                     </asp:DataList>
+            </div>
+            <hr/>
+            <div class="cardholder">
+                <h1>
+                    Não estou entendendo nada, como começar?
+                </h1>
+            </div>
+            <div class="cardholder">
+                <div class="tutorCard">
+                    <img src="Images/logolaranja.png" class="tutor"/>
+                    <h1>Tutorial básico</h1>
+                    <p>Entenda o básico sobre o mercado de criptoo</p>
+                </div>
+                <div class="tutorCard">
+                    <img src="Images/logolaranja.png" class="tutor"/>
+                    <h1>Tutorial básico</h1>
+                    <p>Entenda o básico sobre o mercado de criptooEntenda o básico sobre o mercado de criptooEntenda o básico sobre o mercado de criptooEntenda o básico sobre o mercado de criptooEntenda o básico sobre o mercado de criptoo</p>
+                </div>
+                <div class="tutorCard">
+                    <img src="Images/logolaranja.png" class="tutor"/>
+                    <h1>Tutorial básico</h1>
+                    <p>Entenda o básico sobre o mercado de criptoo</p>
+                </div>
+                <div class="tutorCard">
+                    <img src="Images/logolaranja.png" class="tutor"/>
+                    <h1>Tutorial básico</h1>
+                    <p>Entenda o básico sobre o mercado de criptoo</p>
+                </div>
+            </div>
+        </div>
+        <div class="bottom">
+            <div class="cardholder">
+                <p>Virtua'let</p>
             </div>
         </div>
     </form>
