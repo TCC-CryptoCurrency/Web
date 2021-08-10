@@ -28,27 +28,27 @@
             <h1>Crie uma conta para aproveitar de todos os nossos recursos</h1>
             </div>
             <div class="cardholder">
-                <div>
+                <div class="card">
                     <img src="Images/logolaranja.png"/>
                     <h1>Acessível de qualquer lugar</h1>
                     <p>Vincule sua conta com o seu celular e acesse-a de qualquer lugar</p>
                 </div>
-                <div>
+                <div class="card">
                     <img src="Images/logolaranja.png"/>
                     <h1>Fácil para qualquer um</h1>
                     <p>Consulte tutoriais e um glossário na palma de sua mão</p>
                 </div>
-                <div>
+                <div class="card">
                     <img src="Images/logolaranja.png"/>
                     <h1>Acesso à sua carteira</h1>
                     <p>Faça transações rapidamente de forma simples</p>
                 </div>
-                <div>
+                <div class="card">
                     <img src="Images/logolaranja.png"/>
                     <h1>Valores atuais das moedas</h1>
                     <p>Veja o histórico de cada moeda e seu valor atualizado</p>
                 </div>
-                <div>
+                <div class="card">
                     <img src="Images/logolaranja.png"/>
                     <h1>Seguro para o seu dinheiro</h1>
                     <p>verificação de duas etapas com o seu dispositivo móvel</p>
@@ -108,22 +108,22 @@
                 </h1>
             </div>
             <div class="cardholder">
-                <div class="tutorCard">
+                <div class="tutorCard card">
                     <img src="Images/logolaranja.png" class="tutor"/>
                     <h1>Tutorial básico</h1>
                     <p>Entenda o básico sobre o mercado de criptoo</p>
                 </div>
-                <div class="tutorCard">
+                <div class="tutorCard card">
                     <img src="Images/logolaranja.png" class="tutor"/>
                     <h1>Tutorial básico</h1>
                     <p>Entenda o básico sobre o mercado de criptooEntenda o básico sobre o mercado de criptooEntenda o básico sobre o mercado de criptooEntenda o básico sobre o mercado de criptooEntenda o básico sobre o mercado de criptoo</p>
                 </div>
-                <div class="tutorCard">
+                <div class="tutorCard card">
                     <img src="Images/logolaranja.png" class="tutor"/>
                     <h1>Tutorial básico</h1>
                     <p>Entenda o básico sobre o mercado de criptoo</p>
                 </div>
-                <div class="tutorCard">
+                <div class="tutorCard card">
                     <img src="Images/logolaranja.png" class="tutor"/>
                     <h1>Tutorial básico</h1>
                     <p>Entenda o básico sobre o mercado de criptoo</p>
@@ -132,7 +132,19 @@
         </div>
         <div class="bottom">
             <div class="cardholder">
-                <p>Virtua'let</p>
+                <div class="bottomC">
+                    <div>
+                        <p>Virtua'let</p>
+                    </div>
+                    <div class="space">
+                        <div>
+                            <p>&#169 Todos os direitos reservados >:)</p>
+                        </div>
+                        <div>
+                            <p>By Ratio Alpha e eu não sei mais o que por no rodapé</p>
+                        </div>
+                    </div>
+                </div>
             </div>
         </div>
     </form>

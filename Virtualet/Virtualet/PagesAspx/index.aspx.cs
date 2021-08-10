@@ -67,7 +67,7 @@ namespace Virtualet.PagesAspx
 
         protected void btnFazerLogin_Click(object sender, EventArgs e)
         {
-
+                Response.Redirect("login.aspx");
         }
     }
 }

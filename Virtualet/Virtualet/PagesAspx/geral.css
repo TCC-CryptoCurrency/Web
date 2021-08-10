@@ -96,22 +96,26 @@ div.cardholder{
     padding-right:10vw;
 }
 
-div.cardholder div {
+div.cardholder div.card {
         width: 25%;
         height:25vw;
         border-radius: 1vw;
         border: solid 1px #9c9fa1;
-        padding: 0vw;
         background-color:#e7ecef;
         margin: 0.2vw;
         align-items:center;
         padding:0.5vw;
         transition: background-color ease-in 0.2s;
-        text-align:center;
-        word-wrap:break-word;
 }
 
-    div.cardholder div:hover {
+    div.cardholder div{
+        padding: 0vw;
+        padding: 0.5vw;
+        text-align: center;
+        word-wrap: break-word;
+    }
+
+    div.cardholder div.card:hover {
         background-color: #d2d5d9
     }
 
@@ -232,9 +236,36 @@ div.bottom{
     height:15vw;
 }
 
-.bottom p{
+.bottom .cardholder div p{
     font-family:Ebrima;
     color:#e7ecef;
     font-weight:bold;
     font-size:1.2vw;
+}
+
+.bottom .cardholder{
+    justify-content:left;
+}
+
+.bottom div.bottomC{
+    background:none;    
+    border:none;
+    border-radius:0;
+    width:100%;
+    text-align:left;
+    padding:0;
+}
+
+.bottom div.bottomC div{
+    text-align:left;
+    margin:0;
+    padding:0;
+}
+
+.space{
+    display:flex;
+}
+
+.space div{
+    width:50%;
 }

@@ -128,8 +128,11 @@
     <Content Include="PagesAspx\Images\imagemfundoT.jpg" />
     <Content Include="PagesAspx\Images\logolaranja.png" />
     <Content Include="PagesAspx\Images\logobranco.png" />
+    <Content Include="PagesAspx\Images\pattern.png" />
     <Content Include="PagesAspx\index.aspx" />
     <Content Include="PagesAspx\geral.css" />
+    <Content Include="PagesAspx\login.aspx" />
+    <Content Include="PagesAspx\login.css" />
     <Content Include="Scripts\bootstrap.js" />
     <Content Include="Scripts\bootstrap.min.js" />
     <Content Include="Scripts\jquery-3.4.1.js" />
@@ -197,6 +200,13 @@
     </Compile>
     <Compile Include="PagesAspx\index.aspx.designer.cs">
       <DependentUpon>index.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="PagesAspx\login.aspx.cs">
+      <DependentUpon>login.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="PagesAspx\login.aspx.designer.cs">
+      <DependentUpon>login.aspx</DependentUpon>
     </Compile>
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Site.Master.cs">

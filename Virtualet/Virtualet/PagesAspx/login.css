@@ -1,0 +1,45 @@
+﻿body {
+    margin:0;
+    background-image: url(Images/pattern.png);
+    background-color:#ef781c;
+}
+
+div.content{
+    width:100vw;
+    height:100vh;
+    padding:0;
+    display:flex;
+    flex-flow:row;
+}
+
+div.tip{
+    width: 25%;
+    height:100%;
+    background-color: #d2d5d9;
+}
+
+div.btnfecha{
+    width:3vw;
+    height:3vw;
+    background-color: #2d3142;
+    margin:1vw;
+    position:relative;
+    left:75%;
+}
+
+div.screen{
+    width:100%;
+    height:100%;
+    display:flex;
+    justify-content:center;
+    align-content:center;
+}
+
+div.loginwin{
+    width: 30vw;
+    height:80%;
+    border-radius:1vw;
+    background-color:#e7ecef;
+    margin:auto;
+    transition: ease 2s;
+}
