@@ -233,21 +233,14 @@ hr{
 div.bottom{
     background-color:#ef781c;
     width:100%;
-    height:15vw;
+    height:25vw;
 }
 
-.bottom .cardholder div p{
-    font-family:Ebrima;
-    color:#e7ecef;
-    font-weight:bold;
-    font-size:1.2vw;
-}
-
-.bottom .cardholder{
+/* .bottom .cardholder{
     justify-content:left;
-}
+}*/
 
-.bottom div.bottomC{
+.bottom div.bottomtitle{
     background:none;    
     border:none;
     border-radius:0;
@@ -256,16 +249,48 @@ div.bottom{
     padding:0;
 }
 
-.bottom div.bottomC div{
+.bottom div.bottomtitle div{
     text-align:left;
     margin:0;
     padding:0;
 }
+
+div.bottomtitle div p {
+    font-size: 1.9vw;
+    font-family: Ebrima;
+    color: #e7ecef;
+    font-weight: bold;
+}
+
 
 .space{
     display:flex;
 }
 
 .space div{
-    width:50%;
+    width:100%;
 }
+
+div.space div div.contact {
+    display: flex;
+    flex-direction: row;
+    margin-top:1.5vw;
+}
+
+div.space div p {
+    font-size: 0.9vw;
+    font-family: Ebrima;
+    color: #e7ecef;
+    font-weight: bold;
+}
+
+div.space div a{
+    text-decoration-style: none;
+}
+div.space div a img.icon{
+    display:block;
+    width:2vw;
+    height:1.8vw;
+    margin-left:1vw;
+}
+

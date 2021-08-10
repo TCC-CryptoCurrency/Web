@@ -132,16 +132,34 @@
         </div>
         <div class="bottom">
             <div class="cardholder">
-                <div class="bottomC">
+                <div class="bottomtitle">
                     <div>
                         <p>Virtua'let</p>
                     </div>
                     <div class="space">
                         <div>
-                            <p>&#169 Todos os direitos reservados >:)</p>
+                            <p style="font-size: 1.1vw"> Sobre nós </p>
+                            <a href="" target="_blank" style="text-decoration: none;"> <p> Quem somos </p></a>
+                            <a href="" target="_blank" style="text-decoration:none;"> <p> Termos de uso e politica de privacidade</p></a>
                         </div>
                         <div>
-                            <p>By Ratio Alpha e eu não sei mais o que por no rodapé</p>
+                            <p style="font-size: 1.1vw"> Contato </p>
+                            <p> Ouvidoria: +55 (11)93013-0003 </p>
+                            <p> Email: contato@virtualet.com.br </p>
+                            <div class="contact">
+                                <a href="https://www.instagram.com/diix_quartetodemente/" target="_blank">
+                                    <img src="Images/iconig.png" class="icon" />
+                                </a>
+                                <a href="https://twitter.com/_DelgadoBaldo" target="_blank">
+                                    <img src="Images/icontt.png" class="icon" />
+                                </a>
+                                <a href="https://www.facebook.com/lricardo.sp" target="_blank">
+                                    <img src="Images/iconfb.png" class="icon" />
+                                </a>
+                            </div>
+                        </div>
+                        <div>
+                            <p style="font-size: 1.1vw"> Localização </p>
                         </div>
                     </div>
                 </div>
