@@ -140,7 +140,8 @@
                         <div>
                             <p style="font-size: 1.1vw"> Sobre nós </p>
                             <a href="" target="_blank" style="text-decoration: none;"> <p> Quem somos </p></a>
-                            <a href="" target="_blank" style="text-decoration:none;"> <p> Termos de uso e politica de privacidade</p></a>
+                            <a href="" target="_blank" style="text-decoration:none;"> <p> Termos de uso e politica de privacidade </p></a>
+                            <p style="margin-top: 15vw"> &#169 Todos os direitos reservados </p>
                         </div>
                         <div>
                             <p style="font-size: 1.1vw"> Contato </p>
@@ -158,8 +159,15 @@
                                 </a>
                             </div>
                         </div>
-                        <div>
+                        <div class="local">
                             <p style="font-size: 1.1vw"> Localização </p>
+                            <p> Central de atendimento </p>
+                            <p> Av. Tiradentes, 615 - São Paulo, SP</p>
+                            <div>
+                            <iframe class="gmap" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3658.0730458911403!2d-46.634605985022745!3d-23.52987503469857!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x94ce585f8b81eb75%3A0xb742158dee17d684!2sFATEC%20S%C3%A3o%20Paulo!5e0!3m2!1spt-BR!2sbr!4v1628689454695!5m2!1spt-BR!2sbr" 
+                                style="border:0;" allowfullscreen="" loading="lazy">
+                            </iframe>
+                            </div>
                         </div>
                     </div>
                 </div>
