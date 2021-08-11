@@ -29,27 +29,27 @@
             </div>
             <div class="cardholder">
                 <div class="card">
-                    <img src="Images/logolaranja.png"/>
+                    <img src="Images/icone1.png"/>
                     <h1>Acessível de qualquer lugar</h1>
                     <p>Vincule sua conta com o seu celular e acesse-a de qualquer lugar</p>
                 </div>
                 <div class="card">
-                    <img src="Images/logolaranja.png"/>
+                    <img src="Images/icone2.png"/>
                     <h1>Fácil para qualquer um</h1>
                     <p>Consulte tutoriais e um glossário na palma de sua mão</p>
                 </div>
                 <div class="card">
-                    <img src="Images/logolaranja.png"/>
+                    <img src="Images/icone3.png"/>
                     <h1>Acesso à sua carteira</h1>
                     <p>Faça transações rapidamente de forma simples</p>
                 </div>
                 <div class="card">
-                    <img src="Images/logolaranja.png"/>
+                    <img src="Images/icone4.png"/>
                     <h1>Valores atuais das moedas</h1>
                     <p>Veja o histórico de cada moeda e seu valor atualizado</p>
                 </div>
                 <div class="card">
-                    <img src="Images/logolaranja.png"/>
+                    <img src="Images/icone5.png"/>
                     <h1>Seguro para o seu dinheiro</h1>
                     <p>verificação de duas etapas com o seu dispositivo móvel</p>
                 </div>
@@ -131,7 +131,7 @@
             </div>
         </div>
         <div class="bottom">
-            <div class="cardholder">
+           <div class="cardholder">
                 <div class="bottomtitle">
                     <div>
                         <p>Virtua'let</p>
@@ -172,7 +172,7 @@
                     </div>
                 </div>
             </div>
-        </div>
+       </div>
     </form>
 </body>
 </html>

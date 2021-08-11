@@ -125,6 +125,11 @@
     <Content Include="Content\bootstrap-theme.min.css.map" />
     <Content Include="Content\bootstrap-theme.css.map" />
     <None Include="Scripts\jquery-3.4.1.intellisense.js" />
+    <Content Include="PagesAspx\Images\icone1.png" />
+    <Content Include="PagesAspx\Images\icone2.png" />
+    <Content Include="PagesAspx\Images\icone3.png" />
+    <Content Include="PagesAspx\Images\icone4.png" />
+    <Content Include="PagesAspx\Images\icone5.png" />
     <Content Include="PagesAspx\Images\imagemfundoT.jpg" />
     <Content Include="PagesAspx\Images\logolaranja.png" />
     <Content Include="PagesAspx\Images\logobranco.png" />
