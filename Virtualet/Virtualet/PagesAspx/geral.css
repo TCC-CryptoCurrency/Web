@@ -13,6 +13,12 @@ div.header{
     justify-content:center;
 }
 
+    div.header a {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
 div.logo{
     width:10%;
     height:auto;
@@ -289,6 +295,11 @@ div.space div p {
 div.space div a{
     height:100%;
     text-decoration-style: none;
+}
+
+div.space div a p:hover{
+    text-decoration: underline;
+    font-weight:bold;
 }
 
 div.space div a img.icon{

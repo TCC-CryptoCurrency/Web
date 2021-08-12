@@ -138,6 +138,10 @@
     <Content Include="PagesAspx\geral.css" />
     <Content Include="PagesAspx\login.aspx" />
     <Content Include="PagesAspx\login.css" />
+    <Content Include="PagesAspx\sobrenos.aspx" />
+    <Content Include="PagesAspx\sobrenos.css" />
+    <Content Include="PagesAspx\termos.aspx" />
+    <Content Include="PagesAspx\termos.css" />
     <Content Include="Scripts\bootstrap.js" />
     <Content Include="Scripts\bootstrap.min.js" />
     <Content Include="Scripts\jquery-3.4.1.js" />
@@ -212,6 +216,20 @@
     </Compile>
     <Compile Include="PagesAspx\login.aspx.designer.cs">
       <DependentUpon>login.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="PagesAspx\sobrenos.aspx.cs">
+      <DependentUpon>sobrenos.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="PagesAspx\sobrenos.aspx.designer.cs">
+      <DependentUpon>sobrenos.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="PagesAspx\termos.aspx.cs">
+      <DependentUpon>termos.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="PagesAspx\termos.aspx.designer.cs">
+      <DependentUpon>termos.aspx</DependentUpon>
     </Compile>
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Site.Master.cs">

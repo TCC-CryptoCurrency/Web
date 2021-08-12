@@ -15,7 +15,7 @@
     <form id="form1" runat="server">
         <div class="header">
             <div class="logo">
-            <asp:Image ID="Image1" runat="server" ImageUrl="Images/logobranco.png" />
+                <asp:Image ID="Image1" runat="server" ImageUrl="Images/logobranco.png" />
             <h1>Virtua'let</h1>
             </div>
         </div>
@@ -25,7 +25,7 @@
         <div class="content_outline2"></div>
         <div class="content">
             <div class="cardholder">
-            <h1>Crie uma conta para aproveitar de todos os nossos recursos</h1>
+                <h1>Crie uma conta para aproveitar de todos os nossos recursos</h1>
             </div>
             <div class="cardholder">
                 <div class="card">
@@ -139,8 +139,8 @@
                     <div class="space">
                         <div>
                             <p style="font-size: 1.1vw"> Sobre nós </p>
-                            <a href="" target="_blank" style="text-decoration: none;"> <p> Quem somos </p></a>
-                            <a href="" target="_blank" style="text-decoration:none;"> <p> Termos de uso e politica de privacidade </p></a>
+                            <a href="sobrenos.aspx" style="text-decoration: none;" > <p> Quem somos </p></a>
+                            <a href="termos.aspx" style="text-decoration:none;"> <p> Termos de uso e politica de privacidade </p></a>
                             <p style="margin-top: 15vw"> &#169 Todos os direitos reservados </p>
                         </div>
                         <div>

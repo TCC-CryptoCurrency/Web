@@ -1,0 +1,196 @@
+﻿body {
+    margin: 0;
+    background-image: url(Images/imagemfundoT.jpg);
+    background-size: cover;
+    background-attachment: fixed;
+}
+
+div.header {
+    width: 100%;
+    height: 35vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+div.logo {
+    width: 10%;
+    height: auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+    div.logo img {
+        width: 100%;
+        height: auto;
+    }
+
+    div.logo h1 {
+        font-family: Ebrima;
+        color: #e7ecef;
+        font-size: 4vw;
+    }
+
+div.content_outlineR {
+    width: 100%;
+    height: 15vw;
+    background-color: #fb8b24;
+    clip-path: polygon(0 45%, 100% 0, 100% 100%, 0% 100% );
+    z-index: -2;
+}
+
+div.content_outlineR2 {
+    width: 100%;
+    height: 15vw;
+    background-color: #e36414;
+    margin-top: -13vw;
+    clip-path: polygon(0 25%, 100% 0, 100% 100%, 0% 100% );
+    z-index: -1;
+}
+
+div.content_outline {
+    width: 100%;
+    height: 14vw;
+    background-color: #ef781c;
+    margin-top: -16vw;
+    clip-path: polygon(0 0, 100% 30%, 100% 100%, 0% 100% );
+    z-index: 1;
+}
+
+div.content_outline2 {
+    width: 100%;
+    height: 8vw;
+    background-color: #e7ecef;
+    margin-top: -12vw;
+    border-bottom: solid 1px #e7ecef;
+    clip-path: polygon(0 0, 100% 30%, 100% 100%, 0% 100% );
+    z-index: 2;
+}
+
+div.content {
+    width: 100%;
+    min-height: 70vh;
+    background-color: #e7ecef;
+    margin-top: -1vw;
+    clip-path: polygon(0 0, 100% 0, 100% 100%, 0 100%);
+    z-index: 5;
+    padding-bottom: 10vh;
+}
+
+    div.content h1 {
+        font-family: Ebrima;
+        font-size: 2vw;
+        color: #EF781C;
+    }
+
+div.cardholder {
+    display: flex;
+    align-items: center;
+    padding-left: 10vw;
+    padding-right: 10vw;
+}
+
+    div.cardholder div {
+        padding: 0vw;
+        padding: 0.5vw;
+        text-align: left;
+        word-wrap: break-word;
+    }
+
+        div.cardholder div h1 {
+            font-family: Ebrima;
+            font-size: 1.5vw;
+            color: #ef781c;
+            line-break: auto;
+        }
+
+        div.cardholder div p {
+            font-family: Ebrima;
+            color: #2d3142;
+            font-size: 1vw;
+        }
+
+
+
+
+div.bottom {
+    background-color: #ef781c;
+    width: 100%;
+    height: 35vw;
+}
+
+.bottom div.bottomtitle {
+    background: none;
+    border: none;
+    border-radius: 0;
+    width: 100%;
+    text-align: left;
+    padding: 0;
+}
+
+    .bottom div.bottomtitle div {
+        text-align: left;
+        margin: 0;
+        padding: 0;
+    }
+
+div.bottomtitle div p {
+    font-size: 1.9vw;
+    font-family: Ebrima;
+    color: #e7ecef;
+    font-weight: bold;
+}
+
+
+.space {
+    height: 100%;
+    display: flex;
+}
+
+    .space div {
+        width: 100%;
+    }
+
+div.space div div.contact {
+    height: 5vh;
+    display: flex;
+    flex-direction: row;
+    margin-top: 1.5vw;
+}
+
+div.space div p {
+    font-size: 0.9vw;
+    font-family: Ebrima;
+    color: #e7ecef;
+    font-weight: bold;
+}
+
+div.space div a {
+    height: 100%;
+    text-decoration-style: none;
+}
+
+    div.space div a p:hover {
+        text-decoration: underline;
+        font-weight: bold;
+    }
+
+    div.space div a img.icon {
+        display: block;
+        width: 2vw;
+        height: 1.8vw;
+        margin-left: 1vw;
+    }
+
+div.local div {
+    border: solid 0.3vw #e36414;
+    width: 50%;
+    height: 50%;
+    padding: 0;
+}
+
+iframe.gmap {
+    width: 100%;
+    height: 100%;
+}
