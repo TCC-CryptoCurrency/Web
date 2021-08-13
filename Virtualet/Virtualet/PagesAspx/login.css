@@ -18,14 +18,69 @@ div.tip{
     background-color: #d2d5d9;
 }
 
-div.btnfecha{
-    width:3vw;
-    height:3vw;
-    background-color: #2d3142;
-    margin:1vw;
-    position:relative;
-    left:75%;
+div.btnfecha {
+    width: 2vw;
+    height: 2vw;
+    margin: 1vw;
+    position: relative;
+    left: 80%;
+    cursor: pointer;
 }
+
+div.btnfecha div {
+    width: 100%;
+    height: 100%;
+    margin: 0;
+    background-color: #2d3142;
+    clip-path: polygon(0 10%, 10% 0, 50% 40%, 90% 0, 100% 10%, 60% 50%, 100% 90%, 90% 100%, 50% 60%, 10% 100%, 0 90%, 40% 51%);
+}
+
+div.texto{
+    width:100%;
+    height:90%;
+    display:flex;
+    align-content:center;
+    justify-content:center;
+    flex-direction:column;
+    word-wrap:break-word;
+    text-align:center;
+}
+
+
+    div.texto img {
+        width: 90%;
+        height: auto;
+        margin: 0 auto;
+    }
+
+    div.texto h1 {
+        font-family:Ebrima;
+        color:#2d3142;
+        font-size:1.5vw;
+        margin:0.5vw 1vw;
+
+    }
+
+    div.texto p {
+        font-family:Ebrima;
+        color:#2d3142;
+        font-size:1vw;
+        margin:0.5vw 2vw;
+    }
+
+    input.btnBaixar{
+        border:0;
+        font-family:Ebrima;
+        font-size: 1vw;
+        width:50%;
+        height:3vw;
+        margin:1vw auto;
+        background-color:#ef781c;
+        font-weight:bold;
+        color:#e7ecef;
+        border-radius:20vw;
+        cursor:pointer;
+    }
 
 div.screen{
     width:100%;
@@ -38,8 +93,69 @@ div.screen{
 div.loginwin{
     width: 30vw;
     height:80%;
+    display:flex;
+    flex-direction:column;
+    justify-content:space-around;
     border-radius:1vw;
     background-color:#e7ecef;
     margin:auto;
-    transition: ease 2s;
+    transition: ease 0.5s;
+    padding:1vw;
+}
+
+div.loginwin h1{
+    text-align:center;
+    font-family:Ebrima;
+    color:#ef781c;
+    font-size:2vw;
+}
+
+div.loginwin h2{
+    font-family:Ebrima;
+    font-size:1.2vw;
+    color:#ef781c;
+}
+
+div.loginwin input.txt{
+    border:0;
+    width:70%;
+    background-color:#d2d5d9;
+    font-size:1vw;
+    padding:0.5vw;
+    border-radius:100vw;
+}
+
+input.botaologin {
+    display:block;
+    margin: 0% auto;
+    width: 40%;
+    height: 3vw;
+    font-size: 1.5vw;
+    font-family: Ebrima;
+    color: #e7ecef;
+    background-color: #ef781c;
+    border: 0;
+    border-radius: 100vw;
+    cursor:pointer;
+}
+
+div.loginwin a{
+    font-family:Ebrima;
+    color:#ef781c;
+    font-weight:bold;
+    font-size:1vw;
+}
+
+div.loginwin p{
+    font-family:Ebrima;
+    color:#2d3142;
+    font-size:1vw;
+}
+
+div.loginwin .erro{
+    color:#c23e34;
+    font-family:Ebrima;
+    font-size:1vw;
+    font-weight:bold;
+    text-align:center;
 }

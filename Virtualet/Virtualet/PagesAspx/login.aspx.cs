@@ -13,5 +13,20 @@ namespace Virtualet.PagesAspx
         {
 
         }
+
+        protected void btnLogin_Click(object sender, EventArgs e)
+        {
+            string usuario = txtUsuario.Text.ToString();
+            string senha = txtSenha.Text.ToString();
+
+            if(usuario == "admin" && senha == "123")
+            {
+                lblMsg.Text = "deu bom";
+            }
+            else
+            {
+                lblMsg.Text = "deu ruim otario";
+            }
+        }
     }
 }

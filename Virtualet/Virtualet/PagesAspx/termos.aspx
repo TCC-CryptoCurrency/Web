@@ -11,10 +11,12 @@
 <body>
     <form id="form1" runat="server">
         <div class="header">
+            <a href="index.aspx">
             <div class="logo">
                 <asp:Image ID="Image1" runat="server" ImageUrl="Images/logobranco.png" />
                 <h1>Virtua'let</h1>
             </div>
+            </a>
         </div>
         <div class="content_outlineR"></div>
         <div class="content_outlineR2"></div>
