@@ -82,11 +82,13 @@
                                     </h2>
 
                                     <h2>
-                                        Valor
+                                        Valor Atual
                                     </h2>
-
                                     <h2>
                                         Ultimas 24h
+                                    </h2>
+                                    <h2>
+                                        Variação (24h)
                                     </h2>
                         </HeaderTemplate>
                         <ItemTemplate>
@@ -94,7 +96,10 @@
                                         <%# DataBinder.Eval(Container.DataItem, "NomeMoeda") %>
                                     </h3>
                                     <p class="valor">
-                                        <%# DataBinder.Eval(Container.DataItem, "ValorMoeda", "{0:c}") %>
+                                        <%# DataBinder.Eval(Container.DataItem, "ValorMoeda", "{0:f2}") %>
+                                    </p>
+                                    <p class="valor">
+                                        <%# DataBinder.Eval(Container.DataItem, "Valor24h", "{0:f2}") %>
                                     </p>
                                         <asp:Label ID="varia" CssClass="pos" runat="server" Text='<%# DataBinder.Eval(Container.DataItem, "VariacaoMoeda") + "%" %> '>
                                         </asp:Label>

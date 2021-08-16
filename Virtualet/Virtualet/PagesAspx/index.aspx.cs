@@ -22,6 +22,7 @@ namespace Virtualet.PagesAspx
             dt.Columns.Add(new DataColumn("idMoeda", typeof(Int32)));
             dt.Columns.Add(new DataColumn("NomeMoeda", typeof(String)));
             dt.Columns.Add(new DataColumn("ValorMoeda", typeof(double)));
+            dt.Columns.Add(new DataColumn("Valor24h", typeof(double)));
             dt.Columns.Add(new DataColumn("VariacaoMoeda", typeof(double)));
 
             for (int i = 0; i < 10; i++)
@@ -30,8 +31,9 @@ namespace Virtualet.PagesAspx
 
                 dr[0] = i;
                 dr[1] = "MoedaTeste";
-                dr[2] = 2.16 * i + 2.25;
-                dr[3] = 1.14 * i * rnd.Next(-2,3);
+                dr[2] = rnd.Next(0, 10000) + Math.Round(rnd.NextDouble(), 2);
+                dr[3] = rnd.Next(0, 10000) + Math.Round(rnd.NextDouble(), 2);
+                dr[4] = Math.Round(((Double.Parse(dr[2].ToString()) - Double.Parse(dr[3].ToString())) / Double.Parse(dr[3].ToString())) * 100 , 2);
 
                 dt.Rows.Add(dr);
             }
