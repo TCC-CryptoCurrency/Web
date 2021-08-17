@@ -12,6 +12,17 @@
             var elemento = document.getElementById("fecha");
             elemento.style.display = "none"
         }
+
+        function ToggleSenha() {
+            var elemento = document.getElementById("txtSenha");
+
+            if (elemento.type === "text") {
+                elemento.type = "password";
+            }
+            else {
+                elemento.type = "text";
+            }
+        }
     </script>
 </head>
 <body>
@@ -47,7 +58,12 @@
                     <h2>
                         Senha
                     </h2>
-                    <asp:TextBox ID="txtSenha" runat="server" CssClass="txt" type="password"></asp:TextBox>
+                    <div class="alignbtn">
+                        <asp:TextBox ID="txtSenha" runat="server" CssClass="txt" type="password"></asp:TextBox>
+                        <div class="btnToggleSenha" onclick="ToggleSenha()">
+                            <img src="Images/olho.png"/>
+                        </div>
+                    </div>
                     <br/>
                     <br/>
                     <br/>
@@ -62,7 +78,7 @@
                     </p>
 
                     <p>
-                        Não possui uma conta? <a href="index.aspx">Cadastre-se.</a>
+                        Não possui uma conta? <a href="cadastro.aspx">Cadastre-se.</a>
                     </p>
 
 

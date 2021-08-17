@@ -1,0 +1,21 @@
+﻿
+div.cadScreen{
+    width:100%;
+    min-height:100vh;
+    padding-top:4vw;
+    padding-bottom:4vw;
+}
+
+div.btnToggleSenhacad {
+    width: 1.8vw;
+    height: 1.8vw;
+    position: relative;
+    margin-top: -2vw;
+    left: 19.5vw;
+    cursor: pointer;
+}
+
+div.btnToggleSenhacad img {
+    width: 100%;
+    height: auto;
+}
