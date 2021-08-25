@@ -113,26 +113,34 @@
                 </h1>
             </div>
             <div class="cardholder">
-                <div class="tutorCard card">
-                    <img src="Images/logolaranja.png" class="tutor"/>
-                    <h1>Tutorial básico</h1>
-                    <p>Entenda o básico sobre o mercado de criptoo</p>
-                </div>
-                <div class="tutorCard card">
-                    <img src="Images/logolaranja.png" class="tutor"/>
-                    <h1>Tutorial básico</h1>
-                    <p>Entenda o básico sobre o mercado de criptooEntenda o básico sobre o mercado de criptooEntenda o básico sobre o mercado de criptooEntenda o básico sobre o mercado de criptooEntenda o básico sobre o mercado de criptoo</p>
-                </div>
-                <div class="tutorCard card">
-                    <img src="Images/logolaranja.png" class="tutor"/>
-                    <h1>Tutorial básico</h1>
-                    <p>Entenda o básico sobre o mercado de criptoo</p>
-                </div>
-                <div class="tutorCard card">
-                    <img src="Images/logolaranja.png" class="tutor"/>
-                    <h1>Tutorial básico</h1>
-                    <p>Entenda o básico sobre o mercado de criptoo</p>
-                </div>
+                <a href="tutorbasic.aspx">
+                    <div class="tutorCard card">
+                        <img src="Images/logolaranja.png" class="tutor"/>
+                        <h1>Tutorial Básico </h1>
+                        <p>Entenda o básico sobre o mercado de criptoo</p>
+                    </div>
+                </a>
+                <a href="tutorinter.aspx">
+                    <div class="tutorCard card">
+                        <img src="Images/logolaranja.png" class="tutor"/>
+                        <h1>Tutorial Intermediário </h1>
+                        <p>Entenda o básico sobre o mercado de criptooEntenda o básico sobre o mercado de criptooEntenda o básico sobre o mercado de criptooEntenda o básico sobre o mercado de criptooEntenda o básico sobre o mercado de criptoo</p>
+                    </div>
+                </a>
+                <a href="tutoradv.aspx">
+                    <div class="tutorCard card">
+                        <img src="Images/logolaranja.png" class="tutor"/>
+                        <h1>Tutorial Avançado </h1>
+                        <p>Entenda o básico sobre o mercado de criptoo</p>
+                    </div>
+                </a>
+                <a href="gloss.aspx">
+                    <div class="tutorCard card">
+                        <img src="Images/logolaranja.png" class="tutor"/>
+                        <h1> Glória </h1>
+                        <p>Entenda o básico sobre o mercado de criptoo</p>
+                    </div>
+                </a>
             </div>
         </div>
         <div class="bottom">

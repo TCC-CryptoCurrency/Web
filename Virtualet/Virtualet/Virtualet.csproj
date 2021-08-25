@@ -125,6 +125,7 @@
     <Content Include="Content\bootstrap-theme.min.css.map" />
     <Content Include="Content\bootstrap-theme.css.map" />
     <None Include="Scripts\jquery-3.4.1.intellisense.js" />
+    <Content Include="PagesAspx\gloss.aspx" />
     <Content Include="PagesAspx\Images\icone1.png" />
     <Content Include="PagesAspx\Images\icone2.png" />
     <Content Include="PagesAspx\Images\icone3.png" />
@@ -145,6 +146,10 @@
     <Content Include="PagesAspx\termos.aspx" />
     <Content Include="PagesAspx\termos.css" />
     <Content Include="PagesAspx\cadastro.aspx" />
+    <Content Include="PagesAspx\tutor.css" />
+    <Content Include="PagesAspx\tutoradv.aspx" />
+    <Content Include="PagesAspx\tutorbasic.aspx" />
+    <Content Include="PagesAspx\tutorinter.aspx" />
     <Content Include="Scripts\bootstrap.js" />
     <Content Include="Scripts\bootstrap.min.js" />
     <Content Include="Scripts\jquery-3.4.1.js" />
@@ -206,6 +211,13 @@
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
     </Compile>
+    <Compile Include="PagesAspx\gloss.aspx.cs">
+      <DependentUpon>gloss.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="PagesAspx\gloss.aspx.designer.cs">
+      <DependentUpon>gloss.aspx</DependentUpon>
+    </Compile>
     <Compile Include="PagesAspx\index.aspx.cs">
       <DependentUpon>index.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
@@ -240,6 +252,27 @@
     </Compile>
     <Compile Include="PagesAspx\cadastro.aspx.designer.cs">
       <DependentUpon>cadastro.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="PagesAspx\tutoradv.aspx.cs">
+      <DependentUpon>tutoradv.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="PagesAspx\tutoradv.aspx.designer.cs">
+      <DependentUpon>tutoradv.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="PagesAspx\tutorbasic.aspx.cs">
+      <DependentUpon>tutorbasic.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="PagesAspx\tutorbasic.aspx.designer.cs">
+      <DependentUpon>tutorbasic.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="PagesAspx\tutorinter.aspx.cs">
+      <DependentUpon>tutorinter.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="PagesAspx\tutorinter.aspx.designer.cs">
+      <DependentUpon>tutorinter.aspx</DependentUpon>
     </Compile>
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Site.Master.cs">
