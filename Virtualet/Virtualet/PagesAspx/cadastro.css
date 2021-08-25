@@ -19,3 +19,10 @@ div.btnToggleSenhacad img {
     width: 100%;
     height: auto;
 }
+
+.chceckbox {
+    cursor: pointer;
+    height: 1vw;
+    width: 1vw;
+    opacity:1;
+}

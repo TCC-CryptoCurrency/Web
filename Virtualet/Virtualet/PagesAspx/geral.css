@@ -176,6 +176,14 @@ hr{
     border:none;
     margin:1vw;
     cursor:pointer;
+    transition: 0.5s;
+}
+
+.login:hover{
+    width:16%;
+    height:3.2vw;
+    margin:0.9vw;
+    background-color:#ef781c;
 }
 
 .criptotable {

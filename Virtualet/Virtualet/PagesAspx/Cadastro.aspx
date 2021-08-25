@@ -82,7 +82,7 @@
                     <asp:Label ID="lblErro" runat="server" Text="" CssClass="erro"></asp:Label>
                     <br/><br/>
                     <p>
-                        <asp:CheckBox ID="ckbTermos" runat="server" /> Li e concordo com os <a href="termos.aspx"> Termos e Condições de uso </a>
+                        <asp:CheckBox ID="ckbTermos" runat="server" class="chceckbox"/><span class="checkmark"></span> Li e concordo com os <a href="termos.aspx"> Termos e Condições de uso </a>
                     </p>
                     <asp:Button ID="btnCadastra" runat="server" Text="Cadastrar" CssClass="botaologin" OnClick="btnCadastra_Click" />
                     <br/><br/>
