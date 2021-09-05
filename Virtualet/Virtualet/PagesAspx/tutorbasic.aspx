@@ -1,4 +1,4 @@
-﻿<%@ Page Language="C#" AutoEventWireup="true" CodeBehind="tutorbasic.aspx.cs" Inherits="Virtualet.PagesAspx.tutorbasic" %>
+﻿<%@ Page Language="C#" AutoEventWireup="true" CodeBehind="tutorbasic.aspx.cs" Inherits="Virtualet.PagesAspx.tutorbasic1" %>
 
 <!DOCTYPE html>
 

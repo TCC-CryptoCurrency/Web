@@ -149,6 +149,7 @@
     <Content Include="PagesAspx\tutor.css" />
     <Content Include="PagesAspx\tutoradv.aspx" />
     <Content Include="PagesAspx\tutorbasic.aspx" />
+    <Content Include="PagesAspx\tutors.aspx" />
     <Content Include="PagesAspx\tutorinter.aspx" />
     <Content Include="Scripts\bootstrap.js" />
     <Content Include="Scripts\bootstrap.min.js" />
@@ -266,6 +267,13 @@
     </Compile>
     <Compile Include="PagesAspx\tutorbasic.aspx.designer.cs">
       <DependentUpon>tutorbasic.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="PagesAspx\tutors.aspx.cs">
+      <DependentUpon>tutors.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="PagesAspx\tutors.aspx.designer.cs">
+      <DependentUpon>tutors.aspx</DependentUpon>
     </Compile>
     <Compile Include="PagesAspx\tutorinter.aspx.cs">
       <DependentUpon>tutorinter.aspx</DependentUpon>

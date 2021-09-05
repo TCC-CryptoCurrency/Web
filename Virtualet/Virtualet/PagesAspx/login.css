@@ -2,7 +2,6 @@
     margin:0;
     background-image: url(Images/pattern.png);
     background-color:#ef781c;
-    background-attachment:fixed;
 }
 
 div.content{
@@ -26,13 +25,6 @@ div.btnfecha {
     position: relative;
     left: 80%;
     cursor: pointer;
-    transition:0.3s;
-}
-
-div.btnfecha:hover{
-    width: 2.2vw;
-    height: 2.2vw;
-    margin:0.9vw;
 }
 
 div.btnfecha div {
@@ -88,14 +80,6 @@ div.texto{
         color:#e7ecef;
         border-radius:20vw;
         cursor:pointer;
-        transition:0.2s;
-    }
-
-    input.btnBaixar:hover{
-        width:52%;
-        height:3.2vw;
-        margin: 0.9vw auto;
-        background-color:#fb8b24;
     }
 
 div.screen{
@@ -143,7 +127,7 @@ div.loginwin input.txt{
 
 input.botaologin {
     display:block;
-    margin: 0.3vw auto;
+    margin: 0% auto;
     width: 40%;
     height: 3vw;
     font-size: 1.5vw;
@@ -153,16 +137,7 @@ input.botaologin {
     border: 0;
     border-radius: 100vw;
     cursor:pointer;
-    transition:0.2s;
 }
-
-input.botaologin:hover{
-    width:42%;
-    height:3.2vw;
-    margin:0.2vw auto;
-    background-color:#fb8b24;
-}
-
 
 div.loginwin a{
     font-family:Ebrima;

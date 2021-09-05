@@ -7,7 +7,7 @@
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
     <link rel="stylesheet" type="text/css" href="login.css"/>
     <link rel="stylesheet" type="text/css" href="cadastro.css"/>
-    <title></title>
+    <title>Cadastro - Virtua'let</title>
     <script>
         function ToggleSenha() {
             var elemento = document.getElementById("txtSenha");
@@ -82,7 +82,7 @@
                     <asp:Label ID="lblErro" runat="server" Text="" CssClass="erro"></asp:Label>
                     <br/><br/>
                     <p>
-                        <asp:CheckBox ID="ckbTermos" runat="server" class="chceckbox"/><span class="checkmark"></span> Li e concordo com os <a href="termos.aspx"> Termos e Condições de uso </a>
+                        <asp:CheckBox ID="ckbTermos" runat="server" /> Li e concordo com os <a href="termos.aspx"> Termos e Condições de uso </a>
                     </p>
                     <asp:Button ID="btnCadastra" runat="server" Text="Cadastrar" CssClass="botaologin" OnClick="btnCadastra_Click" />
                     <br/><br/>

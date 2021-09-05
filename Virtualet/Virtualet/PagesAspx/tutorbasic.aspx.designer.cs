@@ -11,7 +11,7 @@ namespace Virtualet.PagesAspx
 {
 
 
-    public partial class tutorbasic
+    public partial class tutorbasic1
     {
 
         /// <summary>

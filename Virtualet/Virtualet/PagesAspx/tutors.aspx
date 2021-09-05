@@ -1,12 +1,12 @@
-﻿<%@ Page Language="C#" AutoEventWireup="true" CodeBehind="sobrenos.aspx.cs" Inherits="Virtualet.PagesAspx.sobrenos" %>
+﻿<%@ Page Language="C#" AutoEventWireup="true" CodeBehind="tutors.aspx.cs" Inherits="Virtualet.PagesAspx.tutorbasic" %>
 
 <!DOCTYPE html>
 
 <html xmlns="http://www.w3.org/1999/xhtml">
 <head runat="server">
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
-    <title> Quem somos - Virtua'let </title>
-    <link rel="stylesheet" type="text/css" href="sobrenos.css"/>
+    <link rel="stylesheet" type="text/css" href="tutor.css"/>
+    <title> Tutorial Básico - Virtua'let</title>
 </head>
 <body>
     <form id="form1" runat="server">
@@ -24,39 +24,14 @@
         <div class="content_outline2"></div>
 
         <div class="content">
-            <div class="cardholder">
-                <h1> Virtua'let: Quem somos nós? </h1>
+            <div>
+                <h1 style="text-align:center;"> Tutorial Básico </h1>
             </div>
+            <div class="teste">
+                 <iframe class="tutors" src="index.aspx" style="border:0" allowfullscreen="" loading="lazy">
 
-            <div class="content">
-                <div class="topic">
-                    <h1 style="font-size: 1.5vw"> Pedro? </h1>
-                    <p> Aqui tu enche linguiça dando bem vindo </p>
-                </div>
-                <div class="topic" style="background-color:#d2d5d9">
-                    <h1 style="font-size: 1.5vw"> O que somos? </h1>
-                    <p> Dica: uma empresa sobre criptomoeda </p>
-                </div>
-                <div class="topic">
-                    <h1 style="font-size: 1.5vw"> Como surgiu? </h1>
-                    <p> Dica: de quem foi essa ideia estupenda </p>
-                </div>
-                <div class="topic" style="background-color:#d2d5d9">
-                    <h1 style="font-size: 1.5vw"> Pq ceis tao fazendo isso </h1>
-                    <p> Dica: certeza que é pra ganhar dinheiro e pra sofrer fazendo </p>
-                </div>
-                <div class="topic">
-                    <h1 style="font-size: 1.5vw"> Objetivos? </h1>
-                    <p> Não morrer até o fim do ano talvez </p>
-                </div>
-                <div class="topic" style="background-color:#d2d5d9">
-                    <h1 style="font-size: 1.5vw"> Valores/Lemas? </h1>
-                    <p> "Ta tudo no prazo" </p>
-                </div>
-                <div class="topic">
-                    <h1 style="font-size: 1.5vw"> Parceiros </h1>
-                    <p> Aqui tu bota umas parceria, tipo a própria Ratio, o grupo do Cabricio, do Paulo, sla bagulho é marketing </p>
-                </div>
+                </iframe>
+
             </div>
         </div>
 

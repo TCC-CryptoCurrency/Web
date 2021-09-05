@@ -7,7 +7,7 @@ using System.Web.UI.WebControls;
 
 namespace Virtualet.PagesAspx
 {
-    public partial class tutorbasic1 : System.Web.UI.Page
+    public partial class tutorbasic : System.Web.UI.Page
     {
         protected void Page_Load(object sender, EventArgs e)
         {
