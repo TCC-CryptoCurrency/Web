@@ -9,7 +9,8 @@
 </head>
 <body style="background-color:red">
     <form id="form1" runat="server">
-        <div>
+        <div class="outer-wrapper">
+            <div class="wrapper"></div>
         </div>
     </form>
 </body>

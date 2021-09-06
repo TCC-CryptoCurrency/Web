@@ -37,7 +37,9 @@
                  <iframe class="tutors" id="tutorialiframe" src="" style="border:0" allowfullscreen="" loading="lazy">
 
                 </iframe>
-
+                <asp:Button ID="btnVolta" runat="server" Text="Voltar" CssClass="btnTutor" />
+                <asp:Button ID="btnProx" runat="server" Text="Próximo" CssClass="btnTutor" />
+                <asp:Button ID="btnGloss" runat="server" Text="Glossário" CssClass="btnGloss" />
             </div>
         </div>
 

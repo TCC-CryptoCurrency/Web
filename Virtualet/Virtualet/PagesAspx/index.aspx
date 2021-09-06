@@ -51,7 +51,7 @@
                 <div class="card">
                     <img src="Images/icone5.png"/>
                     <h1>Seguro para o seu dinheiro</h1>
-                    <p>verificação de duas etapas com o seu dispositivo móvel</p>
+                    <p>Verificação de duas etapas com o seu dispositivo móvel</p>
                 </div>
             </div>
             <hr/>
@@ -109,7 +109,7 @@
             <hr/>
             <div class="cardholder">
                 <h1>
-                    Não estou entendendo nada, como começar?
+                    Não estou entendendo nada, como começar? <!-- mudar esse trecho aqui -->
                 </h1>
             </div>
             <div class="cardholder">
