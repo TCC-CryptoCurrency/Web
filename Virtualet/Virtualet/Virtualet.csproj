@@ -138,6 +138,8 @@
     <Content Include="PagesAspx\Images\pattern.png" />
     <Content Include="PagesAspx\index.aspx" />
     <Content Include="PagesAspx\geral.css" />
+    <Content Include="PagesAspx\indexTutorChange.js" />
+    <Content Include="PagesAspx\tutorGet.js" />
     <Content Include="PagesAspx\login.aspx" />
     <Content Include="PagesAspx\login.css" />
     <Content Include="PagesAspx\sobrenos.aspx" />

@@ -5,7 +5,7 @@
 <html xmlns="http://www.w3.org/1999/xhtml">
 
 <head runat="server">
-<script src="ScriptCoinVar.js">
+<script src="indexTutorChange.js">
 </script>
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
     <title>Virtua'let</title>
@@ -25,7 +25,7 @@
         <div class="content_outline2"></div>
         <div class="content">
             <div class="cardholder">
-                <h1>Crie uma conta para aproveitar de todos os nossos recursos</h1>
+                <h1 id="teste">Crie uma conta para aproveitar de todos os nossos recursos</h1>
             </div>
             <div class="cardholder">
                 <div class="card">
@@ -114,28 +114,28 @@
             </div>
             <div class="cardholder">
                 <a href="tutors.aspx">
-                    <div class="tutorCard card">
+                    <div class="tutorCard card" onclick="setTutor(1)">
                         <img src="Images/logolaranja.png" class="tutor"/>
                         <h1>Tutorial Básico </h1>
                         <p>Entenda o básico sobre o mercado de criptoo</p>
                     </div>
                 </a>
-                <a href="tutorinter.aspx">
-                    <div class="tutorCard card">
+                <a href="tutors.aspx">
+                    <div class="tutorCard card" onclick="setTutor(2)">
                         <img src="Images/logolaranja.png" class="tutor"/>
                         <h1>Tutorial Intermediário </h1>
                         <p>Entenda o básico sobre o mercado de criptooEntenda o básico sobre o mercado de criptooEntenda o básico sobre o mercado de criptooEntenda o básico sobre o mercado de criptooEntenda o básico sobre o mercado de criptoo</p>
                     </div>
                 </a>
-                <a href="tutoradv.aspx">
-                    <div class="tutorCard card">
+                <a href="tutors.aspx">
+                    <div class="tutorCard card" onclick="setTutor(3)">
                         <img src="Images/logolaranja.png" class="tutor"/>
                         <h1>Tutorial Avançado </h1>
                         <p>Entenda o básico sobre o mercado de criptoo</p>
                     </div>
                 </a>
-                <a href="gloss.aspx">
-                    <div class="tutorCard card">
+                <a href="tutors.aspx">
+                    <div class="tutorCard card" onclick="setTutor(4)">
                         <img src="Images/logolaranja.png" class="tutor"/>
                         <h1> Glossário </h1>
                         <p>Entenda o básico sobre o mercado de criptoo</p>

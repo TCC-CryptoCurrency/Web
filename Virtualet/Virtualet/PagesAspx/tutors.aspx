@@ -7,9 +7,15 @@
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
     <link rel="stylesheet" type="text/css" href="tutor.css"/>
     <title> Tutorial Básico - Virtua'let</title>
+    <script src="tutorGet.js">
+    </script>
 </head>
-<body>
+<body onload="getIndexTutor()">
     <form id="form1" runat="server">
+        <div class="loading" id="loadingscreen">
+            <div class="loader">
+            </div>
+        </div>
         <div class="header">
             <a href="index.aspx">
             <div class="logo">
@@ -25,15 +31,23 @@
 
         <div class="content">
             <div>
-                <h1 style="text-align:center;"> Tutorial Básico </h1>
+                <h1 style="text-align:center;" id="testechave"> Tutorial Básico </h1>
             </div>
             <div class="teste">
-                 <iframe class="tutors" src="index.aspx" style="border:0" allowfullscreen="" loading="lazy">
+                 <iframe class="tutors" id="tutorialiframe" src="" style="border:0" allowfullscreen="" loading="lazy">
 
                 </iframe>
 
             </div>
         </div>
+
+
+
+
+
+
+
+
 
         <div class="bottom">
            <div class="cardholder">
