@@ -11,9 +11,9 @@ namespace Virtualet.PagesAspx
     {
         protected void Page_Load(object sender, EventArgs e)
         {
+/*            btnVolta.Attributes.Add("onclick", "javascript: VoltaTutor()");
             btnProx.Attributes.Add("onclick", "javascript: ProxTutor()");
-            btnVolta.Attributes.Add("occlick", "javascript: VoltaTutor()");
-            btnGloss.Attributes.Add("occlick", "javascript: GlossTutor()");
+            btnGloss.Attributes.Add("occlick", "javascript: GlossTutor()");*/
         }
     }
 }

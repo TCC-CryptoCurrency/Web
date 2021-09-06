@@ -11,8 +11,12 @@
     <title>Virtua'let</title>
     <link rel="stylesheet" type="text/css" href="geral.css"/>
 </head>
-<body>
+<body onload="loadingEnd()">
     <form id="form1" runat="server">
+        <div class="loading" id="loadingscreen">
+            <div class="loader">
+            </div>
+        </div>
         <div class="header">
             <div class="logo">
                 <asp:Image ID="Image1" runat="server" ImageUrl="Images/logobranco.png" />

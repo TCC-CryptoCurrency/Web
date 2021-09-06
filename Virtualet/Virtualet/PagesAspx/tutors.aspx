@@ -30,25 +30,38 @@
         <div class="content_outline2"></div>
 
         <div class="content">
-            <div>
+            <div class="linha">
                 <h1 style="text-align:center;" id="testechave"> Tutorial Básico </h1>
             </div>
-            <div class="teste">
-                 <iframe class="tutors" id="tutorialiframe" src="" style="border:0" allowfullscreen="" loading="lazy">
+                <div class="teste">
+                     <iframe class="tutors" id="tutorialiframe" src="" style="border:0" allowfullscreen="" loading="lazy">
 
-                </iframe>
-                <asp:Button ID="btnVolta" runat="server" Text="Voltar" CssClass="btnTutor" />
-                <asp:Button ID="btnProx" runat="server" Text="Próximo" CssClass="btnTutor" />
-                <asp:Button ID="btnGloss" runat="server" Text="Glossário" CssClass="btnGloss" />
+                    </iframe>
+                    
+                </div>
+            <div class="linha">
+                <div class="controller">
+                    <div class="botaoTutor volta" id="ante" onclick="VoltaTutor()">
+                        <div>
+                        </div>
+                    </div>
+                    <div class="slider">
+                        <div id="sl1" onclick="changeTutor(1)">
+                        </div>
+                        <div id="sl2" onclick="changeTutor(2)">
+                        </div>
+                        <div id="sl3" onclick="changeTutor(3)">
+                        </div>
+                        <div id="sl4" onclick="changeTutor(4)">
+                        </div>
+                    </div>
+                    <div class="botaoTutor proximo" id="prox" onclick="ProxTutor()">
+                        <div>
+                        </div>
+                    </div>
+                </div>
             </div>
         </div>
-
-
-
-
-
-
-
 
 
         <div class="bottom">

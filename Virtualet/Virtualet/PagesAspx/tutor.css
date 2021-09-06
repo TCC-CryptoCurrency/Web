@@ -91,9 +91,8 @@ div.content {
         color: #EF781C;
     }
 
-    div.content div{
+    div.content div.linha{
         width:100%;
-        height:10%;
     }
 
     div.content .teste {
@@ -107,36 +106,10 @@ div.content {
     div.content div.teste iframe.tutors{
         width:100%;
         height:100%;
+        display:inline-block;
     }
 
-.btnTutor {
-    border-radius: 20vw;
-    width: 15%;
-    height: 3vw;
-    text-align: center;
-    font-family: Ebrima;
-    font-size: 1.5vw;
-    color: #e7ecef;
-    background-color: #e36414;
-    border: none;
-    margin: 1vw;
-    cursor: pointer;
-}
 
-.btnGloss {
-    border-radius: 20vw;
-    width: 15%;
-    height: 3vw;
-    text-align: center;
-    font-family: Ebrima;
-    font-size: 1.5vw;
-    color: #e7ecef;
-    background-color: #e36414;
-    border: none;
-    margin: 1vw;
-    cursor: pointer;
-    margin-left: 10vw;
-}
 
 div.cardholder {
     display: flex;
@@ -276,4 +249,74 @@ div.loading {
     100% {
         transform: rotate(360deg);
     }
+}
+
+.btnTutor {
+    border-radius: 20vw;
+    width: 15%;
+    height: 3vw;
+    text-align: center;
+    font-family: Ebrima;
+    font-size: 1.5vw;
+    color: #e7ecef;
+    background-color: #e36414;
+    border: none;
+    margin: 21vw 0.5vw;
+    cursor: pointer;
+    vertical-align:middle;
+}
+
+div.botaoTutor{
+    width:3vw;
+    height:3vw;
+    background-color:#e36414;
+    z-index:100;
+    display:inline-block;
+    margin:1vw 0.5vw;
+    border-radius:10vw;
+    cursor:pointer;
+}
+
+div.slider {
+    display: inline-flex;
+    width: 7vw;
+    justify-content: space-evenly;
+    align-content: center;
+}
+
+    div.slider div {
+        width: 1vw;
+        height: 1vw;
+        background-color: #9c9fa1;
+        display: inline-block;
+        vertical-align: central;
+        border-radius: 10vw;
+        margin-top: 30%;
+        cursor:pointer;
+    }
+
+    div.slider div.sel{
+        background-color:#e36414;
+    }
+
+div.botaoTutor div{
+    width:1vw;
+    height:1vw;
+    margin:1vw;
+    border-top:solid 0.5vw #e7ecef;
+    border-left:solid 0.5vw #e7ecef;   
+}
+
+div.volta{
+    transform:rotate(-45deg);
+}
+
+div.proximo{
+    transform:rotate(135deg);
+}
+
+div.controller{
+    margin: 0 auto;
+    display:flex;
+    width:fit-content;
 }
