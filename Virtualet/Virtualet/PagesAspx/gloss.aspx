@@ -6,10 +6,25 @@
 <head runat="server">
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
     <title></title>
+    <link rel="stylesheet" type="text/css" href="gloss.css"/>
 </head>
-<body style="background-color:yellow">
+<body>
     <form id="form1" runat="server">
-        <div>
+        <div class="outer-wrapper">
+            <div class="wrapper">
+                <div class="slide um">
+
+                </div>
+                <div class="slide dois">
+
+                </div>
+                <div class="slide tres">
+
+                </div>
+                <div class="slide quatro">
+
+                </div>
+            </div>
         </div>
     </form>
 </body>
