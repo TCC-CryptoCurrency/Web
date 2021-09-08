@@ -13,7 +13,27 @@
         <div class="outer-wrapper">
             <div class="wrapper">
                 <div class="slide um">
-
+                    <div>
+                        <p><span>Palavra:</span> definição</p>
+                        <p><span>Palavra:</span> definição</p>
+                        <p><span>Palavra:</span> definição</p>
+                        <p><span>Palavra:</span> definição</p>
+                        <p><span>Palavra:</span> definição</p>
+                        <p><span>Palavra:</span> definição</p>
+                        <p><span>Palavra:</span> definição</p>
+                        <p><span>Palavra:</span> definição</p>
+                    </div>
+                    <hr />
+                    <div>
+                        <p><span>Palavra:</span> definição</p>
+                        <p><span>Palavra:</span> definição</p>
+                        <p><span>Palavra:</span> definição</p>
+                        <p><span>Palavra:</span> definição</p>
+                        <p><span>Palavra:</span> definição</p>
+                        <p><span>Palavra:</span> definição</p>
+                        <p><span>Palavra:</span> definição</p>
+                        <p><span>Palavra:</span> definição</p>
+                    </div>
                 </div>
                 <div class="slide dois">
 

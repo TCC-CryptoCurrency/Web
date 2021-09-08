@@ -23,23 +23,23 @@
                 </div>
                 <div class="slide dois">
                     <div>
-                    <h1>
-                        coisa legal
-                    </h1>
-                    <p> 
-                        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc nulla nibh, gravida sit amet rhoncus id, congue a metus. 
-                        Fusce porttitor commodo sem, in mattis ligula eleifend a. Maecenas vestibulum eros in feugiat consequat. 
-                        In hac habitasse platea dictumst. Aliquam mi quam, hendrerit sit amet libero a, rutrum consectetur eros. 
-                        Cras vel elit sem. Sed nec consequat lectus. Proin aliquam nisi id venenatis finibus. Integer mollis purus a magna 
-                        bibendum, vel lacinia ipsum ultrices. Ut et magna eros. 
-                    </p>
-                    <hr/>
-                    <h1>
-                        Coisa legal 2
-                    </h1>
-                    <p>
-                        ConteudoConteudoConteudoConteudoConteudoConteudoConteudoConteudo
-                    </p>
+                        <h1> Coisa legal </h1>
+                        <p> 
+                            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc nulla nibh, gravida sit amet rhoncus id, congue a metus. 
+                            Fusce porttitor commodo sem, in mattis ligula eleifend a. Maecenas vestibulum eros in feugiat consequat. 
+                            In hac habitasse platea dictumst. Aliquam mi quam, hendrerit sit amet libero a, rutrum consectetur eros. 
+                            Cras vel elit sem. Sed nec consequat lectus. Proin aliquam nisi id venenatis finibus. Integer mollis purus a magna 
+                            bibendum, vel lacinia ipsum ultrices. Ut et magna eros. 
+                        </p>
+                        <hr/>
+                        <h1> Coisa legal 2 </h1>
+                        <p>
+                            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc nulla nibh, gravida sit amet rhoncus id, congue a metus. 
+                            Fusce porttitor commodo sem, in mattis ligula eleifend a. Maecenas vestibulum eros in feugiat consequat. 
+                            In hac habitasse platea dictumst. Aliquam mi quam, hendrerit sit amet libero a, rutrum consectetur eros. 
+                            Cras vel elit sem. Sed nec consequat lectus. Proin aliquam nisi id venenatis finibus. Integer mollis purus a magna 
+                            bibendum, vel lacinia ipsum ultrices. Ut et magna eros. 
+                        </p>
                     </div>
                 </div>
                 <div class="slide um">
@@ -51,7 +51,22 @@
                         <h1>Titulo doix</h1>
                     </div>
                 </div>
-                <div class="slide quatro">
+                <div class="slide dois">
+                    <div>
+                        <h1> Coisa legal </h1>
+                        <p> 
+                            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc nulla nibh, gravida sit amet rhoncus id, congue a metus. 
+                            Fusce porttitor commodo sem, in mattis ligula eleifend a. Maecenas vestibulum eros in feugiat consequat. 
+                            In hac habitasse platea dictumst. Aliquam mi quam, hendrerit sit amet libero a, rutrum consectetur eros. 
+                            Cras vel elit sem. Sed nec consequat lectus. Proin aliquam nisi id venenatis finibus. Integer mollis purus a magna 
+                            bibendum, vel lacinia ipsum ultrices. Ut et magna eros. 
+                        </p>
+                        <hr/>
+                        <h1> Coisa legal 2 </h1>
+                        <p>
+                            ConteudoConteudoConteudoConteudoConteudoConteudoConteudoConteudo
+                        </p>
+                    </div>
 
                 </div>
             </div>

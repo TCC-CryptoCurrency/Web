@@ -39,17 +39,44 @@
 }
 
 .um {
-    background-color: saddlebrown;
+    background-color: #dfe2e5;
+    display: flex;
+    flex-direction: row;
 }
 
+    .um div {
+        width:50%;
+        margin:2vw;
+    }
+
+        .um hr {
+            border-left: solid 0.2vw #ef781c;
+            width: 0;
+            height:75%;
+            margin-top:12.5vh;
+        }
+
+    .um p {
+        font-size: 2vw;
+        font-family: Ebrima;
+        color: #2d3142;
+    }
+
+        .um p span {
+            color: #ef781c;
+            font-size: 2vw;
+            font-family:Ebrima;
+            font-weight:bold;
+        }
+
 .dois {
-    background-color: purple;
+    background-color: #d2d5d9;
 }
 
 .tres {
-    background-color: orange;
+    background-color: #dfe2e5;
 }
 
 .quatro {
-    background-color: pink;
+    background-color: #d2d5d9;
 }

@@ -13,7 +13,11 @@
         <div class="outer-wrapper">
             <div class="wrapper">
                 <div class="slide um">
-
+                    <div class="decorlinha"></div>
+                    <div class="decorlinha2"></div>
+                    <div class="titulo">
+                            <h1> Titulo legal dnv </h1>
+                    </div>
                 </div>
                 <div class="slide dois">
 

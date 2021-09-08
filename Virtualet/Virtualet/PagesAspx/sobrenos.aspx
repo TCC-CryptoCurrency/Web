@@ -30,32 +30,32 @@
 
             <div class="content">
                 <div class="topic">
-                    <h1 style="font-size: 1.5vw"> Pedro? </h1>
-                    <p> Aqui tu enche linguiça dando bem vindo </p>
+                    <h1 style="font-size: 1.5vw"> Bem-Vindo! </h1>
+                    <p> Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc nulla nibh, gravida sit amet rhoncus id, congue a metus. </p>
                 </div>
                 <div class="topic" style="background-color:#d2d5d9">
                     <h1 style="font-size: 1.5vw"> O que somos? </h1>
-                    <p> Dica: uma empresa sobre criptomoeda </p>
+                    <p> Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc nulla nibh, gravida sit amet rhoncus id, congue a metus. </p>
                 </div>
                 <div class="topic">
                     <h1 style="font-size: 1.5vw"> Como surgiu? </h1>
-                    <p> Dica: de quem foi essa ideia estupenda </p>
+                    <p> Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc nulla nibh, gravida sit amet rhoncus id, congue a metus. </p>
                 </div>
                 <div class="topic" style="background-color:#d2d5d9">
-                    <h1 style="font-size: 1.5vw"> Pq ceis tao fazendo isso </h1>
-                    <p> Dica: certeza que é pra ganhar dinheiro e pra sofrer fazendo </p>
+                    <h1 style="font-size: 1.5vw"> Propósito </h1>
+                    <p> Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc nulla nibh, gravida sit amet rhoncus id, congue a metus. </p>
                 </div>
                 <div class="topic">
                     <h1 style="font-size: 1.5vw"> Objetivos? </h1>
-                    <p> Não morrer até o fim do ano talvez </p>
+                    <p> Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc nulla nibh, gravida sit amet rhoncus id, congue a metus. </p>
                 </div>
                 <div class="topic" style="background-color:#d2d5d9">
                     <h1 style="font-size: 1.5vw"> Valores/Lemas? </h1>
-                    <p> "Ta tudo no prazo" </p>
+                    <p> Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc nulla nibh, gravida sit amet rhoncus id, congue a metus. </p>
                 </div>
                 <div class="topic">
                     <h1 style="font-size: 1.5vw"> Parceiros </h1>
-                    <p> Aqui tu bota umas parceria, tipo a própria Ratio, o grupo do Cabricio, do Paulo, sla bagulho é marketing </p>
+                    <p> Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc nulla nibh, gravida sit amet rhoncus id, congue a metus. </p>
                 </div>
             </div>
         </div>
