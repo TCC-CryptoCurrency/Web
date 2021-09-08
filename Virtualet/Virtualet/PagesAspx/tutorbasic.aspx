@@ -13,10 +13,19 @@
         <div class="outer-wrapper">
             <div class="wrapper">
                 <div class="slide um">
-                    <h1> O que são criptomoedas? </h1>
+                    <div class="decorlinha">
+                    </div>
+                    <div class="decorlinha2">
+                    </div>
+                    <div class="titulo">
+                            <h1> O que são criptomoedas? </h1>
+                    </div>
                 </div>
                 <div class="slide dois">
                     <div>
+                    <h1>
+                        coisa legal
+                    </h1>
                     <p> 
                         Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc nulla nibh, gravida sit amet rhoncus id, congue a metus. 
                         Fusce porttitor commodo sem, in mattis ligula eleifend a. Maecenas vestibulum eros in feugiat consequat. 
@@ -24,10 +33,23 @@
                         Cras vel elit sem. Sed nec consequat lectus. Proin aliquam nisi id venenatis finibus. Integer mollis purus a magna 
                         bibendum, vel lacinia ipsum ultrices. Ut et magna eros. 
                     </p>
+                    <hr/>
+                    <h1>
+                        Coisa legal 2
+                    </h1>
+                    <p>
+                        ConteudoConteudoConteudoConteudoConteudoConteudoConteudoConteudo
+                    </p>
                     </div>
                 </div>
-                <div class="slide tres">
-
+                <div class="slide um">
+                    <div class="decorlinha">
+                    </div>
+                    <div class="decorlinha2">
+                    </div>
+                    <div class="titulo">
+                        <h1>Titulo doix</h1>
+                    </div>
                 </div>
                 <div class="slide quatro">
 

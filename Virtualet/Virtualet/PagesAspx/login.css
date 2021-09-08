@@ -2,6 +2,7 @@
     margin:0;
     background-image: url(Images/pattern.png);
     background-color:#ef781c;
+    background-attachment:fixed;
 }
 
 div.content{

@@ -1,4 +1,7 @@
-﻿
+﻿body{
+    background-attachment:fixed;
+}
+
 div.cadScreen{
     width:100%;
     min-height:100vh;

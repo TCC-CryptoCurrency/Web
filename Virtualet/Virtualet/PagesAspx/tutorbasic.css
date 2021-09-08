@@ -41,14 +41,49 @@
 .um {
     background-color: #fb8b24;
     text-align:center;
-    padding-top:40vh;
+    background-image:url(Images/pattern.png);
+    background-size:150%;
 }
 
     .um h1 {
         font-family: 'Century Gothic';
         font-size: 3.5vw;
         color: #e7ecef;
+        position:relative;
+        top:-48vh;
     }
+
+div.titulo{
+    height:100vh;
+    width:60vw;
+    display:inline-block;
+}
+
+.titulo div{
+    width:100%;
+    height:15vh;
+    margin-top:43vh;
+    background-color:blue;
+}
+
+div.decorlinha {
+    height: 100vh;
+    width: 2vw;
+    background-color: #dfe2e5;
+    top: 0;
+    left: 13vw;
+    display: inline-block;
+}
+
+div.decorlinha2 {
+    height: 40vh;
+    width: 1vw;
+    background-color: #dfe2e5;
+    top: 60vh;
+    left: 16vw;
+    display: inline-block;
+    margin-left:0.7vw;
+}
 
 .dois {
     background-color: #dfe2e5;
@@ -56,6 +91,17 @@
 
 .dois div{
     margin:2vw;
+}
+
+.dois div hr{
+    border-top: solid 0.2vw #ef781c;
+    width:80%;
+}
+
+.dois div h1{
+    font-size:3vw;
+    font-family:Ebrima;
+    color:#ef781c;
 }
 
     .dois p {
@@ -71,3 +117,4 @@
 .quatro {
     background-color: #dfe2e5;
 }
+
