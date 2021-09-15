@@ -18,27 +18,25 @@
                     <div class="decorlinha2">
                     </div>
                     <div class="titulo">
-                            <h1> O que são criptomoedas? </h1>
+                            <h1> Bem vindo ao mundo de criptomoedas! </h1>
                     </div>
                 </div>
                 <div class="slide dois">
                     <div>
-                        <h1> Coisa legal </h1>
+                        <h1> O que são criptomoedas? </h1>
                         <p> 
-                            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc nulla nibh, gravida sit amet rhoncus id, congue a metus. 
-                            Fusce porttitor commodo sem, in mattis ligula eleifend a. Maecenas vestibulum eros in feugiat consequat. 
-                            In hac habitasse platea dictumst. Aliquam mi quam, hendrerit sit amet libero a, rutrum consectetur eros. 
-                            Cras vel elit sem. Sed nec consequat lectus. Proin aliquam nisi id venenatis finibus. Integer mollis purus a magna 
-                            bibendum, vel lacinia ipsum ultrices. Ut et magna eros. 
+                            As criptomoedas são códigos criptografados que possuem valores monetários variáveis, ou seja, podem subir ou descer
+                            de preço. Elas também podem ser centralizadas ou não, e são validadas pela blockchain.
+                            
                         </p>
                         <hr/>
-                        <h1> Coisa legal 2 </h1>
+                        <h1> Blockchain e Transações. </h1>
                         <p>
-                            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc nulla nibh, gravida sit amet rhoncus id, congue a metus. 
-                            Fusce porttitor commodo sem, in mattis ligula eleifend a. Maecenas vestibulum eros in feugiat consequat. 
-                            In hac habitasse platea dictumst. Aliquam mi quam, hendrerit sit amet libero a, rutrum consectetur eros. 
-                            Cras vel elit sem. Sed nec consequat lectus. Proin aliquam nisi id venenatis finibus. Integer mollis purus a magna 
-                            bibendum, vel lacinia ipsum ultrices. Ut et magna eros. 
+                            A Blockchain é um sistema que permite a realização de transações de criptomoedas. São pedaços de código gerados 
+                            online que carregam informações conectadas, como uma cadeia de blocos que contém dados.
+                            Falando de forma simples, ela funciona como um livro de registros, a qual insere qualquer transferência ou troca
+                            feita. Assim, ela rastreia e verifica o caminho que uma criptomoeda percorre, o que garante a segurança do processo
+                            de compra, venda ou troca.
                         </p>
                     </div>
                 </div>
@@ -48,23 +46,27 @@
                     <div class="decorlinha2">
                     </div>
                     <div class="titulo">
-                        <h1>Titulo doix</h1>
+                        <h1> A carteira e como fazer dinheiro </h1>
                     </div>
                 </div>
                 <div class="slide dois">
                     <div>
-                        <h1> Coisa legal </h1>
+                        <h1> Ok, mas como eu ganho dinheiro com isso? </h1>
                         <p> 
-                            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc nulla nibh, gravida sit amet rhoncus id, congue a metus. 
-                            Fusce porttitor commodo sem, in mattis ligula eleifend a. Maecenas vestibulum eros in feugiat consequat. 
-                            In hac habitasse platea dictumst. Aliquam mi quam, hendrerit sit amet libero a, rutrum consectetur eros. 
-                            Cras vel elit sem. Sed nec consequat lectus. Proin aliquam nisi id venenatis finibus. Integer mollis purus a magna 
-                            bibendum, vel lacinia ipsum ultrices. Ut et magna eros. 
+                            Qualquer um pode ganhar dinheiro realizando transações de criptomoedas. Como o valor de cada moeda flutua, existe
+                            o momento certo para lucrar na compra e venda da mesma. Por isso, é preciso ficar atento com os preços variando, 
+                            para comprar as moedas com o preço menor e vender com o maior preço.
                         </p>
                         <hr/>
-                        <h1> Coisa legal 2 </h1>
+                        <h1> A Carteira </h1>
                         <p>
-                            ConteudoConteudoConteudoConteudoConteudoConteudoConteudoConteudo
+                            Você pode acessar as moedas que tem interesse pela sua carteira, onde é possível ver a quantidade de uma 
+                            moeda que você possui, o valor atual delas e a variação do preço em porcentagem nas últimas horas. Você também terá 
+                            acesso a um gráfico para observar essa variação. É recomendado que analise bem o gráfico antes de comprar ou 
+                            vender uma moeda.
+                            Fique atento nas notícias, as quais você pode declarar moedas de seu interesse, e assim, será indicado notícias que 
+                            influenciam em algo relacionado a moeda. Preste atenção, porque mesmo coisas simples podem alterar o valor de 
+                            moedas.
                         </p>
                     </div>
 

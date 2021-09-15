@@ -121,7 +121,7 @@
                     <div class="tutorCard card" onclick="setTutor(1)">
                         <img src="Images/logolaranja.png" class="tutor"/>
                         <h1>Tutorial Básico </h1>
-                        <p>Entenda o básico sobre o mercado de criptoo</p>
+                        <p>Entenda o básico para começar seus investimentos em criptomoedas: o que são, como funcionam e como usá-las.</p>
                     </div>
                 </a>
                 <a href="tutors.aspx">
