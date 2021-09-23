@@ -3,13 +3,13 @@
     var chave = window.localStorage.getItem('tutorial');
 
     if (chave == 1) {
-        document.getElementById('testechave').innerHTML = "Tutorial Básico";
+        document.getElementById('testechave').innerHTML = "Introdução a Criptomoedas";
         document.getElementById('tutorialiframe').src = "tutorbasic.aspx";
         document.getElementById('ante').style = "opacity:0; cursor:auto;";
         document.getElementById('sl1').className = "sel";
     }
     else if (chave == 2) {
-        document.getElementById('testechave').innerHTML = "Tutorial Intermediário";
+        document.getElementById('testechave').innerHTML = "Segurança e Cuidados";
         document.getElementById('tutorialiframe').src = "tutorinter.aspx";
         document.getElementById('sl2').className = "sel";
     }
@@ -20,7 +20,7 @@
         document.getElementById('prox').style = "opacity:0; cursor:auto";
     }
     else {
-        document.getElementById('testechave').innerHTML = "Tutorial Básico";
+        document.getElementById('testechave').innerHTML = "Introdução a Criptomoedas";
         document.getElementById('tutorialiframe').src = "tutorbasic.aspx";
         document.getElementById('ante').style = "opacity:0; cursor:auto;";
         document.getElementById('sl1').className = "sel";
@@ -43,10 +43,6 @@ function VoltaTutor() {
         window.localStorage.setItem('tutorial', X);
         location.reload();
     }   
-}
-
-function GlossTutor() {
-    document.getElementById('testechave').innerHTML = "se isso funcionar eu sou um otário"
 }
 
 function changeTutor(index) {

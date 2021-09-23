@@ -120,22 +120,24 @@
                 <a href="tutors.aspx">
                     <div class="tutorCard card" onclick="setTutor(1)">
                         <img src="Images/logolaranja.png" class="tutor"/>
-                        <h1>Tutorial Básico </h1>
-                        <p>Entenda o básico para começar seus investimentos em criptomoedas: o que são, como funcionam e como usá-las.</p>
+                        <h1> Introdução a Criptomoedas </h1>
+                        <p> Entenda o básico para começar seus investimentos em criptomoedas: o que são, como funcionam, como usá-las
+                            e seu mercado.
+                        </p>
                     </div>
                 </a>
                 <a href="tutors.aspx">
                     <div class="tutorCard card" onclick="setTutor(2)">
                         <img src="Images/logolaranja.png" class="tutor"/>
-                        <h1>Tutorial Intermediário </h1>
-                        <p>Entenda o básico sobre o mercado de criptooEntenda o básico sobre o mercado de criptooEntenda o básico sobre o mercado de criptooEntenda o básico sobre o mercado de criptooEntenda o básico sobre o mercado de criptoo</p>
+                        <h1> Segurança e Cuidados </h1>
+                        <p> Saiba como se manter seguro e os cuidados que deverá tomar ao investir em criptomoedas </p>
                     </div>
                 </a>
                 <a href="tutors.aspx">
                     <div class="tutorCard card" onclick="setTutor(3)">
                         <img src="Images/logolaranja.png" class="tutor"/>
                         <h1> Glossário </h1>
-                        <p>Entenda o básico sobre o mercado de criptoo</p>
+                        <p>Não sabe ou não entendeu algum termo? Aqui está um glossário para te ajudar!</p>
                     </div>
                 </a>
             </div>

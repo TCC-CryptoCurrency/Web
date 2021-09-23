@@ -88,11 +88,74 @@ div.decorlinha2 {
 .dois {
     background-color: #dfe2e5;
 }
+    .dois div {
+        margin: 2vw;
+    }
+
+        .dois div hr {
+            border-top: solid 0.2vw #ef781c;
+            width: 80%;
+        }
+
+        .dois div h1 {
+            font-size: 3vw;
+            font-family: Ebrima;
+            color: #ef781c;
+        }
+
+    .dois p {
+        font-size: 2vw;
+        font-family: Ebrima;
+        color: #2d3142;
+    }
 
 .tres {
     background-color: #d2d5d9;
 }
 
+.tres div {
+    margin: 2vw;
+}
+
+    .tres div hr {
+        border-top: solid 0.2vw #ef781c;
+        width: 80%;
+    }
+
+    .tres div h1 {
+        font-size: 3vw;
+        font-family: Ebrima;
+        color: #ef781c;
+    }
+
+.tres p {
+    font-size: 2vw;
+    font-family: Ebrima;
+    color: #2d3142;
+}
+
+
 .quatro {
     background-color: #dfe2e5;
 }
+
+.quatro div {
+    margin: 2vw;
+}
+
+    .quatro div hr {
+        border-top: solid 0.2vw #ef781c;
+        width: 80%;
+    }
+
+    .quatro div h1 {
+        font-size: 3vw;
+        font-family: Ebrima;
+        color: #ef781c;
+    }
+
+    .quatro p {
+        font-size: 2vw;
+        font-family: Ebrima;
+        color: #2d3142;
+    }

@@ -26,7 +26,8 @@
                         <h1> O que são criptomoedas? </h1>
                         <p> 
                             As criptomoedas são códigos criptografados que possuem valores monetários variáveis, ou seja, podem subir ou descer
-                            de preço. Elas também podem ser centralizadas ou não, e são validadas pela blockchain.
+                            de preço. Elas também podem ser centralizadas ou não, e são validadas pela blockchain. Alguns exemplos que podemos 
+                            citar são a Bitcoin, Ethereun, Ada, entre outras.
                             
                         </p>
                         <hr/>
