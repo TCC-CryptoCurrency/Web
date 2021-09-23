@@ -134,13 +134,6 @@
                 <a href="tutors.aspx">
                     <div class="tutorCard card" onclick="setTutor(3)">
                         <img src="Images/logolaranja.png" class="tutor"/>
-                        <h1>Tutorial Avançado </h1>
-                        <p>Entenda o básico sobre o mercado de criptoo</p>
-                    </div>
-                </a>
-                <a href="tutors.aspx">
-                    <div class="tutorCard card" onclick="setTutor(4)">
-                        <img src="Images/logolaranja.png" class="tutor"/>
                         <h1> Glossário </h1>
                         <p>Entenda o básico sobre o mercado de criptoo</p>
                     </div>

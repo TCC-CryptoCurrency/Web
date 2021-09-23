@@ -14,15 +14,10 @@
         document.getElementById('sl2').className = "sel";
     }
     else if (chave == 3) {
-        document.getElementById('testechave').innerHTML = "Tutorial Avançado";
-        document.getElementById('tutorialiframe').src = "tutoradv.aspx";
-        document.getElementById('sl3').className = "sel";
-    }
-    else if (chave == 4) {
         document.getElementById('testechave').innerHTML = "Glossário";
         document.getElementById('tutorialiframe').src = "gloss.aspx";
-        document.getElementById('prox').style = "opacity:0; cursor:auto;";
-        document.getElementById('sl4').className = "sel";
+        document.getElementById('sl3').className = "sel";
+        document.getElementById('prox').style = "opacity:0; cursor:auto";
     }
     else {
         document.getElementById('testechave').innerHTML = "Tutorial Básico";

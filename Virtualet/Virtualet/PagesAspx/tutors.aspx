@@ -52,8 +52,6 @@
                         </div>
                         <div id="sl3" onclick="changeTutor(3)">
                         </div>
-                        <div id="sl4" onclick="changeTutor(4)">
-                        </div>
                     </div>
                     <div class="botaoTutor proximo" id="prox" onclick="ProxTutor()">
                         <div>
