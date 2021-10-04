@@ -63,9 +63,9 @@
                 </div>
                 <div class="slide quatro">
                     <div>
-                        <h1> Dump </h1>
+                        <h1> Dumping </h1>
                         <p> 
-                            Um dos golpes mais complexos, o Dump funciona de uma forma parecido com o anterior. Uma empresa cria uma moeda 
+                            Um dos golpes mais complexos, o Pump&Dump funciona de uma forma parecido com o anterior. Uma empresa cria uma moeda 
                             com preço baixo, sendo essa legal e registrada. Assim, ela cria uma onda de investimentos, mas quando a moeda 
                             chega em seu ápice, os investidores vendem toda a sua parte e abandonam o projeto, fazendo com que os que 
                             investiram percam dinheiro. Ele se torna complexo por ser difícil de prever e de identificar, por isso é 

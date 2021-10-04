@@ -30,33 +30,73 @@
 
             <div class="content">
                 <div class="topic">
-                    <h1 style="font-size: 1.5vw"> Bem-Vindo! </h1>
-                    <p> Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc nulla nibh, gravida sit amet rhoncus id, congue a metus. </p>
+                    <h1 style="font-size: 1.5vw; padding-left:5vw; font-family: Ebrima; color: #ef781c; line-break: auto;"> Bem-Vindo! </h1>
+                    <p style="padding-left: 5vw; font-family: Ebrima; color: #2d3142; font-size: 1vw;"> 
+                        Nós da Virtua'let lhe desejamos boas-vindas! Nesta página, você poderá conhecer um pouco mais sobre nós e nossa 
+                        iniciativa.
+                    </p>
                 </div>
+
                 <div class="topic" style="background-color:#d2d5d9">
-                    <h1 style="font-size: 1.5vw"> O que somos? </h1>
-                    <p> Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc nulla nibh, gravida sit amet rhoncus id, congue a metus. </p>
+                    <div>
+                        <h1 style="font-size: 1.5vw"> O que somos? </h1>
+                        <p> A Virtua’let é uma empresa que oferece serviços financeiros de criptomoedas. O diferencial da Virtua’let é que, 
+                            além de disponibilizar a blockchain e a carteira virtual, oferece guias, tutoriais e notícias para usuários novos 
+                            ou constantes, sendo a primeira a reunir essas funcionalidades em um só lugar no Brasil.  </p>
+                    </div>
                 </div>
-                <div class="topic">
-                    <h1 style="font-size: 1.5vw"> Como surgiu? </h1>
-                    <p> Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc nulla nibh, gravida sit amet rhoncus id, congue a metus. </p>
+
+               <div class="topic">
+                    <div>
+                        <h1 style="font-size: 1.5vw"> Como surgiu? </h1>
+                        <p> A ideia surgiu quando um pequeno grupo de pessoas percebeu que o mercado de criptomoedas no Brasil era relativamente
+                            novo para a população. Muitas pessoas apontam problemas quando se trata de investir em criptomoedas, que vão desde 
+                            a falta de interesse, pouco tempo para investir, achar o assunto complexo ou intimidador, por falta de incentivo, 
+                            por ser um assunto pouco falado, por não possuir uma base para investir ou por conta de poucas informações sobre o 
+                            assunto. Aqueles que tinham conhecimento básico ou dominavam quando se trata de criptomoedas eram poucos. Com isso, 
+                            se teve a ideia de criar a Virtua’let. </p>
+                    </div>
                 </div>
+
                 <div class="topic" style="background-color:#d2d5d9">
-                    <h1 style="font-size: 1.5vw"> Propósito </h1>
-                    <p> Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc nulla nibh, gravida sit amet rhoncus id, congue a metus. </p>
+                    <div>
+                        <h1 style="font-size: 1.5vw"> Propósito </h1>
+                        <p> Visto esses problemas que impediam as pessoas de investir em criptomoedas, a Virtua’let surge para tirar esse medo 
+                            de entro delas, apresentando o mundo das criptomoedas a elas, ensinando como ele funciona e dando uma base para 
+                            começar seus investimentos. </p>
+                    </div>
                 </div>
+
                 <div class="topic">
-                    <h1 style="font-size: 1.5vw"> Objetivos? </h1>
-                    <p> Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc nulla nibh, gravida sit amet rhoncus id, congue a metus. </p>
+                    <div>
+                        <h1 style="font-size: 1.5vw"> Objetivos? </h1>
+                        <p> - Apresentar o mundo das criptomoedas para a população; <br />
+                            - Ensinar as pessoas sobre as criptomoedas; <br />
+                            - Oferecer uma base para iniciar os investimentos em criptomoedas; <br />
+                            - Fazer 110% do nosso melhor ao cliente; <br />
+                            - Fazer o cliente perder o medo de investir; <br />
+                            - Ajudar o cliente a traçar seu futuro.
+                        </p>
+                    </div>
                 </div>
+
                 <div class="topic" style="background-color:#d2d5d9">
-                    <h1 style="font-size: 1.5vw"> Valores/Lemas? </h1>
-                    <p> Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc nulla nibh, gravida sit amet rhoncus id, congue a metus. </p>
+                    <div>
+                        <h1 style="font-size: 1.5vw"> Valores/Lemas? </h1>
+                        <p> - Comunicação: estabelecer a melhor conexão com o cliente <br />
+                            - Coragem: incentivar e apoiar o cliente em seus investimentos <br />
+                            - Confiança: trazer segurança ao cliente e seus investimentos <br />
+                        </p>
+                    </div>
                 </div>
+
                 <div class="topic">
-                    <h1 style="font-size: 1.5vw"> Parceiros </h1>
-                    <p> Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc nulla nibh, gravida sit amet rhoncus id, congue a metus. </p>
+                    <div>
+                        <h1 style="font-size: 1.5vw"> Parceiros </h1>
+                        <p> Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc nulla nibh, gravida sit amet rhoncus id, congue a metus. </p>
+                    </div>
                 </div>
+
             </div>
         </div>
 

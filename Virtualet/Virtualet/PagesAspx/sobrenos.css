@@ -126,7 +126,14 @@ div.content {
         word-wrap: break-word;
     }
 
-        .content div.topic h1 {
+        .topic div{
+            width:60%;
+            height:100%;
+            align-content:center;
+            align-items:center;
+        }
+
+        .topic div h1 {
             padding-left:5vw;
             font-family: Ebrima;
             font-size: 1.5vw;
@@ -134,7 +141,7 @@ div.content {
             line-break: auto;
         }
 
-        .content div.topic p {
+        .topic div p {
             padding-left: 5vw;
             font-family: Ebrima;
             color: #2d3142;

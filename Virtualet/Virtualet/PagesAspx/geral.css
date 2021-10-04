@@ -5,12 +5,13 @@
     background-attachment:fixed;
 }
 
-div.header{
+div.header {
     width: 100%;
     height: 35vh;
-    display:flex;
+    display: flex;
+    flex-direction: column;
     align-items: center;
-    justify-content:center;
+    justify-content: center;
 }
 
     div.header a {
@@ -20,23 +21,32 @@ div.header{
     }
 
 div.logo{
-    width:10%;
+    width:50%;
     height:auto;
     display:flex;
+    flex-direction:row;
     align-items:center;
     justify-content:center;
-
+    margin-top:2vh;
 }
 
-div.logo img{
-    width:100%;
+div.logo div{
+    width:50%;
+    
+}
+
+div.logo div img{
+    width:50%;
     height:auto;
+    float:right;
+    margin-right:1vw;
 }
 
-div.logo h1 {
+div.logo div h1 {
     font-family: Ebrima;
     color: #e7ecef;
     font-size:4vw;
+    margin:0;
 }
 
 div.content_outlineR {

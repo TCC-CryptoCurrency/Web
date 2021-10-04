@@ -19,9 +19,19 @@
         </div>
         <div class="header">
             <div class="logo">
-                <asp:Image ID="Image1" runat="server" ImageUrl="Images/logobranco.png" />
-            <h1>Virtua'let</h1>
+                <div>
+                    <asp:Image ID="Image1" runat="server" ImageUrl="Images/logobranco.png" />
+                    
+                </div>
+                <div>
+                    <h1>Virtua'let</h1>
+                    <p style="font-family: Ebrima; color: #e7ecef; font-size:1.5vw;; margin:0;"> “O melhor para seu investimento” </p>
+                </div>
+                
             </div>
+            <!-- <div class="slogan">
+                <p style="font-family: Ebrima; color: #e7ecef; font-size:1vw;"> “O melhor para seu investimento” </p>
+            </div> -->
         </div>
         <div class="content_outlineR"></div>
         <div class="content_outlineR2"></div>
@@ -122,7 +132,7 @@
                         <img src="Images/logolaranja.png" class="tutor"/>
                         <h1> Introdução a Criptomoedas </h1>
                         <p> Entenda o básico para começar seus investimentos em criptomoedas: o que são, como funcionam, como usá-las
-                            e seu mercado.
+                            e seu mercado
                         </p>
                     </div>
                 </a>

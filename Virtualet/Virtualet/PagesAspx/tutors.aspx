@@ -6,7 +6,7 @@
 <head runat="server">
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
     <link rel="stylesheet" type="text/css" href="tutor.css"/>
-    <title> Tutorial Básico - Virtua'let</title>
+    <title> Tutoriais - Virtua'let</title>
     <script src="tutorGet.js">
     </script>
 </head>

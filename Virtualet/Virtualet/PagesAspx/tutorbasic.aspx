@@ -56,7 +56,9 @@
                         <p> 
                             Qualquer um pode ganhar dinheiro realizando transações de criptomoedas. Como o valor de cada moeda flutua, existe
                             o momento certo para lucrar na compra e venda da mesma. Por isso, é preciso ficar atento com os preços variando, 
-                            para comprar as moedas com o preço menor e vender com o maior preço.
+                            para comprar as moedas com o preço menor e vender com o maior preço. Além disso, você pode usar algumas criptomoedas
+                            para fazer compras em certas empresas ou até mesmo países. Também há a mineração de criptomoedas, que exige alguns
+                            componentes mais potentes em quesito de hardware.
                         </p>
                         <hr/>
                         <h1> A Carteira </h1>
