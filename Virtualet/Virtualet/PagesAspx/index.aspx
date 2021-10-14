@@ -102,6 +102,9 @@
                                         Ultimas 24h
                                     </h2>
                                     <h2>
+                                        Ultima atualização
+                                    </h2>
+                                    <h2>
                                         Variação (24h)
                                     </h2>
                         </HeaderTemplate>
@@ -115,8 +118,12 @@
                                     <p class="valor">
                                         <%# DataBinder.Eval(Container.DataItem, "Valor24h", "{0:f2}") %>
                                     </p>
+                                    <p>
+                                        <%# DataBinder.Eval(Container.DataItem, "UltimaAtualizacao")%>
+                                    </p>
                                         <asp:Label ID="varia" CssClass="pos" runat="server" Text='<%# DataBinder.Eval(Container.DataItem, "VariacaoMoeda") + "%" %> '>
                                         </asp:Label>
+
                         </ItemTemplate>
                     </asp:DataList>
             </div>

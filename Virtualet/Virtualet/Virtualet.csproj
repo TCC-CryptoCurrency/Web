@@ -219,6 +219,7 @@
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
     </Compile>
+    <Compile Include="PagesAspx\ClasseConexao.cs" />
     <Compile Include="PagesAspx\gloss.aspx.cs">
       <DependentUpon>gloss.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>

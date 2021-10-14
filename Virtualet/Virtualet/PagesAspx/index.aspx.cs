@@ -12,31 +12,42 @@ namespace Virtualet.PagesAspx
 {
     public partial class WebForm1 : System.Web.UI.Page
     {
+        ClasseConexao con;
+        DataTable datat;
         
         private DataView Gerardados()
         {
             DataTable dt = new DataTable();
             DataRow dr;
             Random rnd = new Random();
+            con = new ClasseConexao();
 
             dt.Columns.Add(new DataColumn("idMoeda", typeof(Int32)));
             dt.Columns.Add(new DataColumn("NomeMoeda", typeof(String)));
             dt.Columns.Add(new DataColumn("ValorMoeda", typeof(double)));
             dt.Columns.Add(new DataColumn("Valor24h", typeof(double)));
+            dt.Columns.Add(new DataColumn("UltimaAtualizacao", typeof(String)));
             dt.Columns.Add(new DataColumn("VariacaoMoeda", typeof(double)));
+
+            datat = con.executarSQL("exec usp_selecionar_tabelaIndex");
+            DataRow[] row = datat.Select();
 
             for (int i = 0; i < 10; i++)
             {
                 dr = dt.NewRow();
 
-                dr[0] = i;
-                dr[1] = "MoedaTeste";
-                dr[2] = rnd.Next(0, 10000) + Math.Round(rnd.NextDouble(), 2);
-                dr[3] = rnd.Next(0, 10000) + Math.Round(rnd.NextDouble(), 2);
-                dr[4] = Math.Round(((Double.Parse(dr[2].ToString()) - Double.Parse(dr[3].ToString())) / Double.Parse(dr[3].ToString())) * 100 , 2);
+                dr[0] = row[i]["idMoeda"];
+                dr[1] = row[i]["NomeMoeda"];
+                dr[2] = row[i]["ValorMoeda"];
+                dr[3] = row[i]["ValorData"];
+                dr[4] = row[i]["DataRegistro"];
+                dr[5] = Math.Round(((Double.Parse(dr[2].ToString()) - Double.Parse(dr[3].ToString())) / Double.Parse(dr[3].ToString())) * 100 , 2);
 
                 dt.Rows.Add(dr);
             }
+
+
+
 
             DataView dv = new DataView(dt);
             return dv;
@@ -46,6 +57,7 @@ namespace Virtualet.PagesAspx
         {
             if (!IsPostBack)
             {
+
                 DtCripto.DataSource = Gerardados();
                 DtCripto.DataBind();
             }

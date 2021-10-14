@@ -29,7 +29,6 @@
                     <li><a href=" "><i class="fas fa-wallet"></i> Wallet </a></li>
                     <li><a href=" "><i class="fas fa-newspaper"></i> Noticias </a></li>
                     <li><a href=" "><i class="fab fa-bitcoin"></i> Criptomoedas </a></li>
-                    <li><a href=" "><i class="fas fa-exchange-alt"></i> Transações </a></li>
                 </ul>
             </nav>
         </header>

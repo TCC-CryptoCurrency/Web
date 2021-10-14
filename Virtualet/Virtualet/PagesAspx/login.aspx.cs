@@ -19,13 +19,13 @@ namespace Virtualet.PagesAspx
             string usuario = txtUsuario.Text.ToString();
             string senha = txtSenha.Text.ToString();
 
-            if(usuario == "admin" && senha == "123")
+            if (usuario == "admin" && senha == "123")
             {
-                lblMsg.Text = "deu bom";
+                    Response.Redirect("homeusuario.aspx");
             }
             else
             {
-                lblMsg.Text = "deu ruim otario";
+                lblMsg.Text = "Usuário ou senha incorretos";
             }
         }
     }
