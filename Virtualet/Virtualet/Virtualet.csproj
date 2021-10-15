@@ -127,6 +127,8 @@
     <None Include="Scripts\jquery-3.4.1.intellisense.js" />
     <Content Include="PagesAspx\gloss.aspx" />
     <Content Include="PagesAspx\gloss.css" />
+    <Content Include="PagesAspx\homenoticias.aspx" />
+    <Content Include="PagesAspx\homenoticias.css" />
     <Content Include="PagesAspx\homeusuario.aspx" />
     <Content Include="PagesAspx\homeusuario.css" />
     <Content Include="PagesAspx\Images\icone1.png" />
@@ -226,6 +228,13 @@
     </Compile>
     <Compile Include="PagesAspx\gloss.aspx.designer.cs">
       <DependentUpon>gloss.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="PagesAspx\homenoticias.aspx.cs">
+      <DependentUpon>homenoticias.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="PagesAspx\homenoticias.aspx.designer.cs">
+      <DependentUpon>homenoticias.aspx</DependentUpon>
     </Compile>
     <Compile Include="PagesAspx\homeusuario.aspx.cs">
       <DependentUpon>homeusuario.aspx</DependentUpon>

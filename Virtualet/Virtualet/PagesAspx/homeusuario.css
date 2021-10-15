@@ -55,7 +55,7 @@ nav {
 
 main{
     background-color: #e7ecef;
-    max-height:90vh;
+    min-height:90vh;
 }
 
 @media (max-width: 999px){

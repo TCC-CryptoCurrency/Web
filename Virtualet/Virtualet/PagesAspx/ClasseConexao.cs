@@ -12,7 +12,7 @@ using System.Data.SqlClient;
 
         private SqlConnection conectar(){
             try{
-                String strConexao = "Password=1234; Persist Security Info=True; User ID=sa; Initial Catalog=BancoTCC; Data Source=" + Environment.MachineName;
+                String strConexao = "Password=12345; Persist Security Info=True; User ID=sa; Initial Catalog=BancoTCC; Data Source=" + Environment.MachineName;
                 conexao.ConnectionString = strConexao;
                 conexao.Open();
                 return conexao;

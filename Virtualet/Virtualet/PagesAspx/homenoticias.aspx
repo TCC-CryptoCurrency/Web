@@ -1,19 +1,18 @@
-﻿<%@ Page Language="C#" AutoEventWireup="true" CodeBehind="homeusuario.aspx.cs" Inherits="Virtualet.PagesAspx.homeusuario" %>
+﻿<%@ Page Language="C#" AutoEventWireup="true" CodeBehind="homenoticias.aspx.cs" Inherits="Virtualet.PagesAspx.homenoticias" %>
 
 <!DOCTYPE html>
 
 <html xmlns="http://www.w3.org/1999/xhtml">
 <head runat="server">
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
-    <title>
-        Página Inicial - Virtua'let
-    </title>
-    <link rel="stylesheet" href="homeusuario.css" type="text/css"/>
+    <title> Notícias - Virtua'let </title>
+    <link rel="stylesheet" href="homenoticias.css" type="text/css"/>
     <script src="https://kit.fontawesome.com/5bf652a268.js" crossorigin="anonymous"></script>
 </head>
 <body>
     <form id="form1" runat="server">
-        <header>
+        <div>
+            <header>
             <nav>
                 <a class="logo" href="index.aspx"> 
                     <asp:Image ID="Image1" runat="server" ImageUrl="Images/logobranco.png" />
@@ -34,7 +33,16 @@
         </header>
         <main>
             <script src="menumobile.js"></script>
+
+            <div class="tags">
+                <asp:DataList ID="dlTags" runat="server"></asp:DataList>
+            </div>
+
+            <div class="feed">
+                <asp:DataList ID="dlFeed" runat="server"></asp:DataList>
+            </div>
         </main>
+        </div>
     </form>
 </body>
 </html>

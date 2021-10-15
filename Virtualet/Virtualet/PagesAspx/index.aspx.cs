@@ -19,7 +19,6 @@ namespace Virtualet.PagesAspx
         {
             DataTable dt = new DataTable();
             DataRow dr;
-            Random rnd = new Random();
             con = new ClasseConexao();
 
             dt.Columns.Add(new DataColumn("idMoeda", typeof(Int32)));
