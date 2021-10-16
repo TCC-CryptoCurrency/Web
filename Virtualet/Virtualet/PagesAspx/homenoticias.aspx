@@ -35,7 +35,11 @@
             <script src="menumobile.js"></script>
 
             <div class="tags">
-                <asp:DataList ID="dlTags" runat="server"></asp:DataList>
+                <asp:DataList ID="dlTags" runat="server">
+                    <ItemTemplate>
+                        <asp:Label ID="Label1" runat="server" Text='<%# DataBinder.Eval(Container.DataItem, "NomeTag") + "%" %>'></asp:Label>
+                    </ItemTemplate>
+                </asp:DataList>
             </div>
 
             <div class="feed">

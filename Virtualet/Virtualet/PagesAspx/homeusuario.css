@@ -53,12 +53,26 @@ nav {
     transition:0.3s
 }
 
-main{
-    background-color: #e7ecef;
-    min-height:90vh;
+main {
+    background-color: #d2d5d9;
+    min-height: 85vh;
+    padding-top:5vh;
 }
 
-@media (max-width: 999px){
+.box {
+    background-color: #e7ecef;
+    width: 50%;
+    padding:0.5vw 0;
+    margin: 0 auto;
+    text-align: center;
+}
+.box .lblBemVindo{
+    font-family:Ebrima;
+    font-size:2vw;
+    color:#fb8b24;
+}
+
+@media (orientation:portrait){
     body{
         overflow-x: hidden;
 
@@ -118,4 +132,71 @@ main{
 
 .mobile-menu.active .line3 {
     transform:rotate(45deg) translate(-5px, -7px); 
+}
+
+
+/* Tabela de criptos */
+.criptotable {
+    width: 90vw;
+    border: solid 1px #9c9fa1;
+    border-radius: 2vw;
+}
+
+    .criptotable td {
+        padding: 0;
+        padding-left: 2vw;
+        display: flex;
+        justify-content: space-around;
+    }
+
+        .criptotable td h2 {
+            font-family: Ebrima;
+            width: 50%;
+            margin: 0.5vw;
+            border-right: 1px solid #9c9fa1;
+            color: #e36414;
+            font-size: 1.4vw;
+        }
+
+            .criptotable td h2:last-child {
+                border: 0;
+            }
+
+        .criptotable td h3 {
+            font-family: Ebrima;
+            width: 50%;
+            margin: 0.5vw;
+            border-right: solid 1px #9c9fa1;
+            color: #fb8b24;
+            font-size: 1vw;
+        }
+
+        .criptotable td p {
+            font-family: Ebrima;
+            width: 50%;
+            margin: 0.5vw;
+            border-right: solid 1px #9c9fa1;
+            font-size: 0.8vw;
+            font-weight: bold;
+        }
+
+        .criptotable td span {
+            font-family: Ebrima;
+            width: 50%;
+            margin: 0.5vw;
+            border: 0;
+            font-size: 0.8vw;
+            font-weight: bold;
+        }
+
+        .criptotable td p.valor {
+            color: #2d3142;
+        }
+
+.pos {
+    color: #08A045;
+}
+
+.neg {
+    color: #c23E34;
 }

@@ -34,6 +34,69 @@
         </header>
         <main>
             <script src="menumobile.js"></script>
+            <div class="box">
+                <asp:Label ID="lblBemVindo" runat="server" Text="Bem Vindo!" CssClass="lblBemVindo"></asp:Label>
+            </div>
+
+            <div class="box">
+                <asp:DataList ID="DtCripto"
+                        RepeatDirection="Vertical"
+                        RepeatLayout="Table"
+                        RepeatColumns="1"
+                        RepeatRows="10"
+                        runat="server"
+                        class="criptotable" OnSelectedIndexChanged="DtCripto_SelectedIndexChanged">
+                        <HeaderStyle BackColor="#e7ecef">
+                        </HeaderStyle>
+                        
+                        <AlternatingItemStyle BackColor="#d2d5d9">
+                        </AlternatingItemStyle>
+
+                        <HeaderTemplate>
+                                    <h2>
+                                        Nome
+                                    </h2>
+                                    <h2>
+                                        Saldo
+                                    </h2>
+                                    <h2>
+                                        Valor Atual
+                                    </h2>
+                                    <h2>
+                                        Ultimas 24h
+                                    </h2>
+                                    <h2>
+                                        Ultima atualização
+                                    </h2>
+                                    <h2>
+                                        Variação (24h)
+                                    </h2>
+                        </HeaderTemplate>
+                        <ItemTemplate>
+                                    <i class="fas fa-star"></i>
+                                    <h3>
+                                       a
+                                    </h3>
+                                    <p class="valor">
+                                        a
+                                    </p>
+                                    <p class="valor">
+                                        a
+                                    <p class="valor">
+                                        a
+                                    </p>
+                                    <p class="valor">
+                                        a
+                                    </p>
+                                        <asp:Label ID="varia" CssClass="pos" runat="server" Text="a">
+                                        </asp:Label>
+                                    
+
+                        </ItemTemplate>
+                </asp:DataList>
+
+            </div>
+
         </main>
     </form>
 </body>

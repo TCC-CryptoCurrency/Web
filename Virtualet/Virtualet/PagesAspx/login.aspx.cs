@@ -4,11 +4,14 @@ using System.Linq;
 using System.Web;
 using System.Web.UI;
 using System.Web.UI.WebControls;
+using System.Data;
 
 namespace Virtualet.PagesAspx
 {
     public partial class WebForm2 : System.Web.UI.Page
     {
+        ClasseConexao con;
+        DataTable dt;
         protected void Page_Load(object sender, EventArgs e)
         {
 
@@ -19,9 +22,16 @@ namespace Virtualet.PagesAspx
             string usuario = txtUsuario.Text.ToString();
             string senha = txtSenha.Text.ToString();
 
-            if (usuario == "admin" && senha == "123")
+            con = new ClasseConexao();
+            dt = new DataTable();
+
+            dt = con.executarSQL("select * from Usuario where Nome = '" + usuario + "' and Senha = '" + senha + "'");
+
+            if (dt.Rows.Count > 0)
             {
-                    Response.Redirect("homeusuario.aspx");
+                Session["login"] = 1;
+                Session["IdUsuario"] = dt.Rows[0]["idCarteira"].ToString();
+                Response.Redirect("homeusuario.aspx");
             }
             else
             {
