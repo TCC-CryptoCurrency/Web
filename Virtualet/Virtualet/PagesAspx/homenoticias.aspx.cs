@@ -5,6 +5,8 @@ using System.Linq;
 using System.Web;
 using System.Web.UI;
 using System.Web.UI.WebControls;
+using System.Data.SqlClient;
+using System.Configuration;
 
 namespace Virtualet.PagesAspx
 {
@@ -12,11 +14,26 @@ namespace Virtualet.PagesAspx
     {
         ClasseConexao con;
         DataTable dt;
+        DataSet ds;
 
         protected void Page_Load(object sender, EventArgs e)
         {
-            dt = con.executarSQL("");
+            if (!IsPostBack)
+            {
+                dlFeed.DataSource = BindData();
+                dlFeed.DataBind();
+            }
 
+        }
+        protected DataView BindData()
+        {
+            con = new ClasseConexao();
+            dt = new DataTable();
+
+            dt = con.executarSQL("Select * FROM Noticia");
+
+            DataView dv = new DataView(dt);
+            return dv;
         }
     }
 }
