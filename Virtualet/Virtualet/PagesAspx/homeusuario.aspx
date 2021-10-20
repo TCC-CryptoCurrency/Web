@@ -39,13 +39,17 @@
             </div>
 
             <div class="box">
+                <h1 class="titulo">
+                    Moedas de seu interesse:
+                </h1>
                 <asp:DataList ID="DtCripto"
                         RepeatDirection="Vertical"
                         RepeatLayout="Table"
                         RepeatColumns="1"
-                        RepeatRows="10"
                         runat="server"
-                        class="criptotable" OnSelectedIndexChanged="DtCripto_SelectedIndexChanged">
+                        class="criptotable"
+                        OnItemDataBound="Item_Bound"
+                        >
                         <HeaderStyle BackColor="#e7ecef">
                         </HeaderStyle>
                         
@@ -73,23 +77,26 @@
                                     </h2>
                         </HeaderTemplate>
                         <ItemTemplate>
+                                    <p class="estrela">
                                     <i class="fas fa-star"></i>
+                                    </p>
                                     <h3>
-                                       a
+                                       <%# DataBinder.Eval(Container.DataItem, "NomeMoeda") %>
                                     </h3>
                                     <p class="valor">
-                                        a
+                                       <%# DataBinder.Eval(Container.DataItem, "SaldoMoeda") %>
                                     </p>
                                     <p class="valor">
-                                        a
-                                    <p class="valor">
-                                        a
+                                       <%# DataBinder.Eval(Container.DataItem, "ValorMoeda", "{0:f2}") %>
                                     </p>
                                     <p class="valor">
-                                        a
+                                       <%# DataBinder.Eval(Container.DataItem, "Valor24h", "{0:f2}") %>
                                     </p>
-                                        <asp:Label ID="varia" CssClass="pos" runat="server" Text="a">
-                                        </asp:Label>
+                                    <p class="valor">
+                                       <%# DataBinder.Eval(Container.DataItem, "UltimaAtualizacao") %>
+                                    </p>
+                                    <asp:Label ID="varia" CssClass="pos" runat="server" Text='<%# DataBinder.Eval(Container.DataItem, "VariacaoMoeda") + "%" %>'>
+                                    </asp:Label>
                                     
 
                         </ItemTemplate>

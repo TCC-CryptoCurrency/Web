@@ -130,7 +130,7 @@
             <hr/>
             <div class="cardholder">
                 <h1>
-                    Não estou entendendo nada, como começar? <!-- mudar esse trecho aqui -->
+                    Por onde começar? <!-- mudar esse trecho aqui -->
                 </h1>
             </div>
             <div class="cardholder">

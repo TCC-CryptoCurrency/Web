@@ -12,7 +12,7 @@ using System.Data.SqlClient;
 
         private SqlConnection conectar(){
             try{
-                String strConexao = "Password=12345; Persist Security Info=True; User ID=sa; Initial Catalog=BancoTCC; Data Source=" + Environment.MachineName;
+                String strConexao = "Password=1234; Persist Security Info=True; User ID=sa; Initial Catalog=BancoTCC; Data Source=" + Environment.MachineName;
                 conexao.ConnectionString = strConexao;
                 conexao.Open();
                 return conexao;
@@ -40,29 +40,7 @@ using System.Data.SqlClient;
                 adaptador.Fill(ds);
                 return ds.Tables[0];
             }catch (Exception){
-            DataTable dt = new DataTable();
-            DataRow dr;
-
-            dt.Columns.Add(new DataColumn("idMoeda", typeof(Int32)));
-            dt.Columns.Add(new DataColumn("NomeMoeda", typeof(String)));
-            dt.Columns.Add(new DataColumn("ValorMoeda", typeof(double)));
-            dt.Columns.Add(new DataColumn("ValorData", typeof(double)));
-            dt.Columns.Add(new DataColumn("DataRegistro", typeof(double)));
-
-            for(int i = 0; i<10; i++)
-            {
-                dr = dt.NewRow();
-
-                dr[0] = 0;
-                dr[1] = 0;
-                dr[2] = 0;
-                dr[3] = 0;
-                dr[4] = 0;
-
-                dt.Rows.Add(dr);
-            }
-
-            return dt;
+                return null;
             }finally{
                 desconectar();
             }
