@@ -13,7 +13,7 @@ namespace Virtualet.PagesAspx
         ClasseConexao con;
         DataTable dt;
 
-        public DataView GerarDados()
+        protected DataView GerarDados()
         {
             dt = new DataTable();
             con = new ClasseConexao();
@@ -66,6 +66,18 @@ namespace Virtualet.PagesAspx
             }
         }
 
+        protected DataView GerarNoticia()
+        {
+            con = new ClasseConexao();
+            dt = new DataTable();
+            
+                dt = con.executarSQL("exec usp_selecionar_noticiaUsuario " + Session["IdUsuario"]);
+
+            DataView dv = new DataView(dt);
+            return dv;
+        }
+
+
         protected void Page_Load(object sender, EventArgs e)
         {
 
@@ -85,6 +97,9 @@ namespace Virtualet.PagesAspx
 
             DtCripto.DataSource = GerarDados();
             DtCripto.DataBind();
+
+            dlFeed.DataSource = GerarNoticia();
+            dlFeed.DataBind();
 
         }
 

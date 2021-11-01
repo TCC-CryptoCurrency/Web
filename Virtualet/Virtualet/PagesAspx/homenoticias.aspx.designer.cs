@@ -7,11 +7,13 @@
 // </gerado automaticamente>
 //------------------------------------------------------------------------------
 
-namespace Virtualet.PagesAspx {
-    
-    
-    public partial class homenoticias {
-        
+namespace Virtualet.PagesAspx
+{
+
+
+    public partial class homenoticias
+    {
+
         /// <summary>
         /// Controle form1.
         /// </summary>
@@ -20,7 +22,7 @@ namespace Virtualet.PagesAspx {
         /// Modificar a declaração do campo de movimento do arquivo de designer para o arquivo code-behind.
         /// </remarks>
         protected global::System.Web.UI.HtmlControls.HtmlForm form1;
-        
+
         /// <summary>
         /// Controle Image1.
         /// </summary>
@@ -29,16 +31,7 @@ namespace Virtualet.PagesAspx {
         /// Modificar a declaração do campo de movimento do arquivo de designer para o arquivo code-behind.
         /// </remarks>
         protected global::System.Web.UI.WebControls.Image Image1;
-        
-        /// <summary>
-        /// Controle dlTags.
-        /// </summary>
-        /// <remarks>
-        /// Campo gerado automaticamente.
-        /// Modificar a declaração do campo de movimento do arquivo de designer para o arquivo code-behind.
-        /// </remarks>
-        protected global::System.Web.UI.WebControls.DataList dlTags;
-        
+
         /// <summary>
         /// Controle dlFeed.
         /// </summary>
@@ -47,5 +40,14 @@ namespace Virtualet.PagesAspx {
         /// Modificar a declaração do campo de movimento do arquivo de designer para o arquivo code-behind.
         /// </remarks>
         protected global::System.Web.UI.WebControls.DataList dlFeed;
+
+        /// <summary>
+        /// Controle rpTags.
+        /// </summary>
+        /// <remarks>
+        /// Campo gerado automaticamente.
+        /// Modificar a declaração do campo de movimento do arquivo de designer para o arquivo code-behind.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.Repeater rpTags;
     }
 }

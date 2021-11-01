@@ -34,40 +34,57 @@
         <main>
             <script src="menumobile.js"></script>
 
-            <div class="tags">
-                <asp:DataList ID="dlTags" runat="server">
-                    <ItemTemplate>
-                        <asp:Label ID="lblTag" runat="server" Text='<%# DataBinder.Eval(Container.DataItem, "NomeTag") + "%" %>'></asp:Label>
-                    </ItemTemplate>
-                </asp:DataList>
-            </div>
+            <div class="all">
 
-            <div class="feed">
-                <asp:DataList ID="dlFeed" runat="server" RepeatLayout="Flow" RepeatColumns="1" RepeatDirection="Vertical" 
-                    Font-Names="Ebrima" Font-Size="Small">
-                    <ItemTemplate>
-                        <div id="pricePlans">
-                            <ul id="plans">
-                                <li class="plan">
-                                    <ul class="planContainer">
-                                        <li class="title">
-                                            <h2><a class="titnoticia" href="#"><asp:Label ID="lblTituloN" runat="server" Text='<%#Bind("Titulo") %>'></asp:Label></a></h2>
-                                        </li>
-                                        <li class="title">
-                                            <asp:Image ID="img1" runat="server" />
-                                        </li>
-                                        <li>
-                                            <ul class="options">
-                                                <li><span><asp:Label ID="lblDescNot" runat="server" Text='<%#Bind("DescNot") %>'></asp:Label></span></li>
-                                                <li><span><asp:Label ID="lblDataNot" runat="server" Text='<%#Bind("DataNot") %>'></asp:Label></span></li>
-                                            </ul>
-                                        </li>
+
+                <div class="feed">
+                    <asp:DataList ID="dlFeed" runat="server" RepeatLayout="Flow" RepeatColumns="1" RepeatDirection="Vertical" 
+                        Font-Names="Ebrima" Font-Size="Small">
+                        <ItemTemplate>
+                            <div id="pricePlans">
+                                <ul id="plans">
+                                    <li class="plan">
+                                        <ul class="planContainer">
+                                            <li class="title">
+                                                <h2><a class="titnoticia" href="#"><asp:Label ID="lblTituloN" runat="server" Text='<%#Bind("Titulo") %>'></asp:Label></a></h2>
+                                            </li>
+                                            <li class="title">
+                                                <asp:Image ID="img1" runat="server" />
+                                            </li>
+                                            <li>
+                                                <ul class="options">
+                                                    <li><span><asp:Label ID="lblDescNot" runat="server" Text='<%#Bind("DescNot") %>'></asp:Label></span></li>
+                                                    <li><span><asp:Label ID="lblDataNot" runat="server" Text='<%#Bind("DataNot") %>'></asp:Label></span></li>
+                                                </ul>
+                                            </li>
+                                        </ul>
+                                    </li>
+                                </ul>
+                            </div>
+                        </ItemTemplate>
+                    </asp:DataList>
+                </div>
+                <div class="tags">
+                    <h1 class="titulo">
+                        Tags
+                    </h1>
+                    <asp:Repeater ID="rpTags" runat="server" OnItemCommand="rpTags_ItemCommand">
+                            <HeaderTemplate>
+                                <ol>
+                                    <ul>
+                                        <asp:Button ID="btnAllTags" runat="server" Text="Todas" OnClick="btnAllTags_Click"/>
                                     </ul>
-                                </li>
-                            </ul>
-                        </div>
-                    </ItemTemplate>
-                </asp:DataList>
+                            </HeaderTemplate>
+                            <ItemTemplate>
+                                <ul>
+                                    <asp:Button runat="server" Text='<%# DataBinder.Eval(Container.DataItem, "Tag") %>' />
+                                </ul>
+                            </ItemTemplate>
+                            <FooterTemplate>
+                                </ol>
+                            </FooterTemplate>
+                        </asp:Repeater>
+                </div>
             </div>
         </main>
         </div>
