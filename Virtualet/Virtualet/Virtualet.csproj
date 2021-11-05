@@ -50,6 +50,7 @@
     <Reference Include="System.Data" />
     <Reference Include="System.Core" />
     <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="System.Web.DataVisualization" />
     <Reference Include="System.Web.Extensions" />
     <Reference Include="System.Xml.Linq" />
     <Reference Include="System.Drawing" />
@@ -145,6 +146,8 @@
     <Content Include="PagesAspx\geral.css" />
     <Content Include="PagesAspx\indexTutorChange.js" />
     <Content Include="PagesAspx\menumobile.js" />
+    <Content Include="PagesAspx\pagcripto.aspx" />
+    <Content Include="PagesAspx\pagcripto.css" />
     <Content Include="PagesAspx\tutorbasic.css" />
     <Content Include="PagesAspx\tutorGet.js" />
     <Content Include="PagesAspx\login.aspx" />
@@ -256,6 +259,13 @@
     </Compile>
     <Compile Include="PagesAspx\login.aspx.designer.cs">
       <DependentUpon>login.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="PagesAspx\pagcripto.aspx.cs">
+      <DependentUpon>pagcripto.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="PagesAspx\pagcripto.aspx.designer.cs">
+      <DependentUpon>pagcripto.aspx</DependentUpon>
     </Compile>
     <Compile Include="PagesAspx\sobrenos.aspx.cs">
       <DependentUpon>sobrenos.aspx</DependentUpon>

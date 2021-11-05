@@ -50,12 +50,12 @@
                     <asp:TextBox ID="txtEmail" runat="server" CssClass="txt"></asp:TextBox>
                     <br/>
                     <h2>
-                        Data de Nascimento
+                        Data de Nascimento (dd/mm/yyyy)
                     </h2>
                     <asp:TextBox ID="txtNascimento" runat="server" CssClass="txt"></asp:TextBox>
                     <br/>
                     <h2>
-                        CPF
+                        CPF (Somente números)
                     </h2>
                     <asp:TextBox ID="txtCPF" runat="server" CssClass="txt"></asp:TextBox>
                     <br/>

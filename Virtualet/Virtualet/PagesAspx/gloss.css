@@ -28,7 +28,7 @@
 .wrapper {
     display: flex;
     flex-direction: row;
-    width: 400vw;
+    width: 200vw; /* diminui a quantidade de slides de 100 em 100 */
     transform: rotate(90deg) translateY(-100vh);
     transform-origin: top left;
 }

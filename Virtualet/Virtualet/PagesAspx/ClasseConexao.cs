@@ -12,7 +12,7 @@ using System.Data.SqlClient;
 
         private SqlConnection conectar(){
             try{
-                String strConexao = "Password=1234; Persist Security Info=True; User ID=sa; Initial Catalog=BancoTCC; Data Source=" + Environment.MachineName;
+                String strConexao = "Password=12345; Persist Security Info=True; User ID=sa; Initial Catalog=BancoTCC; Data Source=" + Environment.MachineName;
                 conexao.ConnectionString = strConexao;
                 conexao.Open();
                 return conexao;
@@ -86,5 +86,19 @@ using System.Data.SqlClient;
                 desconectar();
             }
         }//fim do método manutençãoDB
+        public int manutencaoDB_Parametros(SqlCommand comando)
+        {
+            int retorno = 0;
+            try
+            {
+                comando.Connection = conectar();
+                retorno = comando.ExecuteNonQuery();
+            }
+            catch (Exception) { }
+            desconectar();
+            return retorno;
+        }
     }
+
+
 

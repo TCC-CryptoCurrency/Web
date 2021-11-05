@@ -48,12 +48,9 @@
                         <p><span>Pump:</span> crescimento brusco do preço de uma moeda. </p>
                         <p><span>Dump:</span> queda súbita e repentina do preço de uma moeda.</p>
                         <p><span>FOMO:</span> Fear of Missing Out; medo de ficar de fora de um investimento.</p>
-                        <p><span>Palavra:</span> definição </p>
-                        <p><span>Palavra:</span> definição </p>
-                        <p><span>Palavra:</span> definição </p>
                     </div>
                 </div>
-                <div class="slide um">
+                <!-- <div class="slide um">
                       <div>
                         <p><span>Palavra:</span> definição </p>
                         <p><span>Palavra:</span> definição </p>
@@ -88,7 +85,7 @@
                         <p><span>Palavra:</span> definição </p>
                     </div>
 
-                </div>
+                </div> -->
             </div>
         </div>
     </form>
