@@ -1,14 +1,15 @@
-﻿<%@ Page Language="C#" AutoEventWireup="true" CodeBehind="homeusuario.aspx.cs" Inherits="Virtualet.PagesAspx.homeusuario" %>
+﻿<%@ Page Language="C#" AutoEventWireup="true" CodeBehind="wallet.aspx.cs" Inherits="Virtualet.PagesAspx.WebForm5" %>
 
 <!DOCTYPE html>
 
 <html xmlns="http://www.w3.org/1999/xhtml">
 <head runat="server">
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
     <title>
-        Página Inicial - Virtua'let
+        Carteira - Virtua'let
     </title>
-    <link rel="stylesheet" href="homeusuario.css" type="text/css"/>
+    <link rel="stylesheet" href="wallet.css" type="text/css"/>
     <script src="https://kit.fontawesome.com/5bf652a268.js" crossorigin="anonymous"></script>
 </head>
 <body>
@@ -35,14 +36,7 @@
         <main>
             <script src="menumobile.js"></script>
             <div class="box">
-                <asp:Label ID="lblBemVindo" runat="server" Text="Bem Vindo!" CssClass="lblBemVindo"></asp:Label>
-            </div>
-
-            <div class="box">
-                <h1 class="titulo">
-                    Moedas de seu interesse:
-                </h1>
-                <asp:DataList ID="DtCripto"
+               <asp:DataList ID="DtCripto"
                         RepeatDirection="Vertical"
                         RepeatLayout="Table"
                         RepeatColumns="1"
@@ -58,13 +52,13 @@
 
                         <HeaderTemplate>
                                     <h2>
-                                        Nome
+                                        <asp:LinkButton ID="LinkButton1" runat="server">Nome</asp:LinkButton>
                                     </h2>
                                     <h2>
-                                        Saldo
+                                        <asp:LinkButton ID="LinkButton2" runat="server">Saldo</asp:LinkButton>
                                     </h2>
                                     <h2>
-                                        Valor Atual
+                                        <asp:LinkButton ID="LinkButton3" runat="server">Valor atual</asp:LinkButton>
                                     </h2>
                                     <h2>
                                         Ultimas 24h
@@ -73,13 +67,10 @@
                                         Ultima atualização
                                     </h2>
                                     <h2>
-                                        Variação (24h)
+                                        <asp:LinkButton ID="LinkButton5" runat="server">Variação(24h)</asp:LinkButton>
                                     </h2>
                         </HeaderTemplate>
                         <ItemTemplate>
-                                    <p class="estrela">
-                                    <i class="fas fa-star"></i>
-                                    </p>
                                     <h3>
                                        <%# DataBinder.Eval(Container.DataItem, "NomeMoeda") %>
                                     </h3>
@@ -101,37 +92,7 @@
 
                         </ItemTemplate>
                 </asp:DataList>
-
-            </div>
-            <div class="feed">
-                <h1 class="titulo">Últimas Notícias</h1>
-                    <asp:DataList ID="dlFeed" runat="server" RepeatLayout="Flow" RepeatColumns="1" RepeatDirection="Vertical" 
-                        Font-Names="Ebrima" Font-Size="Small">
-                        <ItemTemplate>
-                            <div id="pricePlans">
-                                <ul id="plans">
-                                    <li class="plan">
-                                        <ul class="planContainer">
-                                            <li class="title">
-                                                <h2><a class="titnoticia" href="#"><asp:Label ID="lblTituloN" runat="server" Text='<%#Bind("Titulo") %>'></asp:Label></a></h2>
-                                            </li>
-                                            <li class="title">
-                                                <asp:Image ID="img1" runat="server" />
-                                            </li>
-                                            <li>
-                                                <ul class="options">
-                                                    <li><span><asp:Label ID="lblDescNot" runat="server" Text='<%#Bind("DescNot") %>'></asp:Label></span></li>
-                                                    <li><span><asp:Label ID="lblDataNot" runat="server" Text='<%#Bind("DataNot") %>'></asp:Label></span></li>
-                                                </ul>
-                                            </li>
-                                        </ul>
-                                    </li>
-                                </ul>
-                            </div>
-                        </ItemTemplate>
-                    </asp:DataList>
                 </div>
-
         </main>
     </form>
 </body>

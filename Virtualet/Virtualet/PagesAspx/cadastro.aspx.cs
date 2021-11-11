@@ -32,28 +32,37 @@ namespace Virtualet.PagesAspx
 
                 if (ckbTermos.Checked && txtConfirma.Text == txtSenha.Text)
                 {
-                    SqlCommand cmd = new SqlCommand("INSERT INTO Usuario VALUES (@nome, @email, @nasc, @cpf, @senha)");
-                    cmd.Parameters.Add("@nome", SqlDbType.NVarChar, 30).Value = Nome;
-                    cmd.Parameters.Add("@email", SqlDbType.NVarChar, 30).Value = Email;
-                    cmd.Parameters.Add("@nasc", SqlDbType.Date, 3).Value = Nasc;
-                    cmd.Parameters.Add("@cpf", SqlDbType.NVarChar, 11).Value = CPF;
-                    cmd.Parameters.Add("@senha", SqlDbType.NVarChar, 24).Value = Senha;
-                    int x = con.manutencaoDB_Parametros(cmd);
-                    if (x > 0)
-                    {
-                        lblErro.Text = "Cadastrado com sucesso!";
+                    if (txtCPF.Text.Length >= 11) {
+                        SqlCommand cmd = new SqlCommand("INSERT INTO Usuario VALUES (@nome, @email, @nasc, @cpf, @senha)");
+                        cmd.Parameters.Add("@nome", SqlDbType.NVarChar, 30).Value = Nome;
+                        cmd.Parameters.Add("@email", SqlDbType.NVarChar, 30).Value = Email;
+                        cmd.Parameters.Add("@nasc", SqlDbType.Date, 3).Value = Nasc;
+                        cmd.Parameters.Add("@cpf", SqlDbType.NVarChar, 11).Value = CPF;
+                        cmd.Parameters.Add("@senha", SqlDbType.NVarChar, 24).Value = Senha;
+                        int x = con.manutencaoDB_Parametros(cmd);
+                        if (x > 0)
+                        {
+                            Response.Write("<script>alert('Cadastro feito com sucesso')</script>");
+                            Server.Transfer("login.aspx");
+                        }
+                        else
+                        {
+                            lblErro.Text = "Falha no cadastro, por favor verifique novamente seus dados";
+                        }
                     }
                     else
                     {
-                        lblErro.Text = "Erro ao cadastrar";
+                        lblErro.Text = "falha no cadastro, por favor verifique novamente seus dados";
                     }
                 }
                 else
                 {
-                    lblErro.Text = "Falha no cadastro. Verifique seus dados novamente";
+                    lblErro.Text = "Por favor, aceite os termos de uso";
                 }
             }
-            catch (Exception) { }
+            catch (Exception) {
+                lblErro.Text = "Falha no cadastro, por favor verifique novamente seus dados";
+            }
         }
     }
 }

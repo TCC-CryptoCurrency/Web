@@ -163,6 +163,8 @@
     <Content Include="PagesAspx\tutorinter.css" />
     <Content Include="PagesAspx\tutors.aspx" />
     <Content Include="PagesAspx\tutorinter.aspx" />
+    <Content Include="PagesAspx\wallet.aspx" />
+    <Content Include="PagesAspx\wallet.css" />
     <Content Include="Scripts\bootstrap.js" />
     <Content Include="Scripts\bootstrap.min.js" />
     <Content Include="Scripts\jquery-3.4.1.js" />
@@ -308,6 +310,13 @@
     </Compile>
     <Compile Include="PagesAspx\tutorinter.aspx.designer.cs">
       <DependentUpon>tutorinter.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="PagesAspx\wallet.aspx.cs">
+      <DependentUpon>wallet.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="PagesAspx\wallet.aspx.designer.cs">
+      <DependentUpon>wallet.aspx</DependentUpon>
     </Compile>
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Site.Master.cs">
