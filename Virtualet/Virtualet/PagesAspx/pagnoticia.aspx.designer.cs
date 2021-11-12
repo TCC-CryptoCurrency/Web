@@ -11,7 +11,7 @@ namespace Virtualet.PagesAspx
 {
 
 
-    public partial class pagcripto
+    public partial class pagnoticia
     {
 
         /// <summary>

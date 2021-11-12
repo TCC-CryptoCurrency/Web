@@ -148,6 +148,8 @@
     <Content Include="PagesAspx\menumobile.js" />
     <Content Include="PagesAspx\pagcripto.aspx" />
     <Content Include="PagesAspx\pagcripto.css" />
+    <Content Include="PagesAspx\pagnoticia.aspx" />
+    <Content Include="PagesAspx\pagnoticia.css" />
     <Content Include="PagesAspx\tutorbasic.css" />
     <Content Include="PagesAspx\tutorGet.js" />
     <Content Include="PagesAspx\login.aspx" />
@@ -268,6 +270,13 @@
     </Compile>
     <Compile Include="PagesAspx\pagcripto.aspx.designer.cs">
       <DependentUpon>pagcripto.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="PagesAspx\pagnoticia.aspx.cs">
+      <DependentUpon>pagnoticia.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="PagesAspx\pagnoticia.aspx.designer.cs">
+      <DependentUpon>pagnoticia.aspx</DependentUpon>
     </Compile>
     <Compile Include="PagesAspx\sobrenos.aspx.cs">
       <DependentUpon>sobrenos.aspx</DependentUpon>

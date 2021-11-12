@@ -7,8 +7,9 @@
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
     <script src="https://code.highcharts.com/highcharts.src.js"></script>
     <link rel="stylesheet" href="pagcripto.css" type="text/css" />
+    <script src="https://kit.fontawesome.com/5bf652a268.js" crossorigin="anonymous"></script>
 
-    <title></title>
+    <title> Moeda - Virtua'let </title>
 </head>
 <body>
     <form id="form1" runat="server">
@@ -26,7 +27,7 @@
                 <ul class="nav-list">
                     <li><a href="homeusuario.aspx"><i class="fas fa-home"></i> Home </a></li>
                     <li><a href=" "><i class="fas fa-user-circle"></i> Perfil </a></li>
-                    <li><a href=" "><i class="fas fa-wallet"></i> Wallet </a></li>
+                    <li><a href="wallet.aspx"><i class="fas fa-wallet"></i> Wallet </a></li>
                     <li><a href="homenoticias.aspx"><i class="fas fa-newspaper"></i> Noticias </a></li>
                     <li><a href=" "><i class="fab fa-bitcoin"></i> Criptomoedas </a></li>
                 </ul>
@@ -49,7 +50,7 @@ Highcharts.chart('chart-line', {
     },
 
     xAxis: {
-        //categories
+        categories: <%=DataRegi%>
     },
 
     legend: {
@@ -66,9 +67,11 @@ Highcharts.chart('chart-line', {
         }
     },
 
+    colors: ['#EF781C'],
+
     series: [{
-        name: 'Installation',
-        data: [43934, 52503, 57177, 69658, 97031, 119931, 137133, 154175]
+        name: 'Variação do Preço',
+        data: <%=lineData%> // [43934, 52503, 57177, 69658, 97031, 119931, 137133, 154175]
     }],
 
     responsive: {
