@@ -52,7 +52,7 @@ namespace Virtualet.PagesAspx
         {
             if(Session["login"] == null || (int)Session["login"] != 1)
             {
-                //Response.Redirect("login.aspx");
+                Response.Redirect("login.aspx");
             }
 
             DtCripto.DataSource = GerarDados();
@@ -106,7 +106,7 @@ namespace Virtualet.PagesAspx
 
             if (((LinkButton)e.CommandSource).CommandName == "redirect")
             {
-                Session["idMoeda"] = ((LinkButton)e.CommandSource).CommandArgument;
+                Session["idMoeda"] = ((LinkButton)e.CommandSource).Text;
                 Response.Redirect("pagcripto.aspx");
             }
         }

@@ -68,7 +68,7 @@
                         </HeaderTemplate>
                         <ItemTemplate>
                                     <h3>
-                                        <asp:LinkButton ID="LinkButton1" CommandName="redirect" CommandArgument='<%# DataBinder.Eval(Container.DataItem, "idMoeda") %>' runat="server" Text='<%# DataBinder.Eval(Container.DataItem, "NomeMoeda") %>'></asp:LinkButton>
+                                        <asp:LinkButton ID="LinkButton1" CommandName="redirect" runat="server" Text='<%# DataBinder.Eval(Container.DataItem, "NomeMoeda") %>'></asp:LinkButton>
                                     </h3>
                                     <p class="valor">
                                         <%# DataBinder.Eval(Container.DataItem, "ValorMoeda", "{0:f2}") %>

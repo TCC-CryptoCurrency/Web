@@ -26,7 +26,7 @@ namespace Virtualet.PagesAspx
             dt = new DataTable();
             con = new ClasseConexao();
 
-            dt = con.executarSQL("select * from Moeda where idMoeda = " + (int)Session["idMoeda"]);
+            dt = con.executarSQL("select * from Moeda where NomeMoeda = '" + (string)Session["idMoeda"] + "'");
             DataRow[] dr = dt.Select();
             idMoeda = int.Parse(dr[0][idMoeda].ToString());
 

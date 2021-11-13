@@ -106,7 +106,7 @@ namespace Virtualet.PagesAspx
 
             if (((LinkButton)e.CommandSource).CommandName == "redirect")
             {
-                Session["idMoeda"] = ((LinkButton)e.CommandSource).CommandArgument;
+                Session["idMoeda"] = ((LinkButton)e.CommandSource).Text;
                 Response.Redirect("pagcripto.aspx");
             }
         }
