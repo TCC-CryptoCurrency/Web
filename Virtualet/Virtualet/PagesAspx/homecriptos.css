@@ -27,9 +27,6 @@ nav {
     background-color: #fb8b24;
     height: 8vh;
     padding: 0.5vh 1vw;
-    position: fixed;
-    top: 0;
-    z-index: 999;
 }
 
 .nav-list {
@@ -59,7 +56,6 @@ main {
     background-color: #d2d5d9;
     min-height: 86vh;
     padding-top: 5vh;
-    margin-top: 8vh;
 }
 
 .box {
@@ -82,20 +78,18 @@ main {
     }
 
     .nav-list {
-        position: fixed;
+        position: absolute;
         top: 8vh;
         right: 0;
         width: 50vw;
-        height: 92%;
+        height: 100%;
         background-color: #fb8b24;
         flex-direction: column;
         align-items: center;
         justify-content: space-around;
         transform: translateX(100%);
         transition: transform 0.3s ease-in;
-        z-index: 999;
     }
-
 
         .nav-list li {
             margin-left: 0;
@@ -134,21 +128,9 @@ main {
 .mobile-menu.active .line3 {
     transform: rotate(45deg) translate(-5px, -7px);
 }
-h1.titulo {
-    text-align: left;
-    font-family: Ebrima;
-    color: #e36414;
-    font-size: 2vw;
-    margin-left: 5vw;
-    margin-bottom: 0.5vw;
-}
-/*Tabela de cripto*/
-/* Tabela de criptos */
-p.estrela {
-    width: 2vw;
-    margin: 0.5vw;
-    margin-left: -1.2vw;
-}
+
+
+/*tabela de criptos*/
 
 .criptotable {
     width: 90%;
@@ -172,11 +154,11 @@ p.estrela {
             font-size: 1.4vw;
         }
 
-        .criptotable td h2 a{
-            color: #e36414;
-            text-decoration:underline dotted;
-            text-underline-offset:1px;
-        }
+            .criptotable td h2 a {
+                color: #e36414;
+                text-decoration: underline dotted;
+                text-underline-offset: 1px;
+            }
 
             .criptotable td h2:last-child {
                 border: 0;
@@ -194,7 +176,7 @@ p.estrela {
             .criptotable td h3 a {
                 color: #fb8b24;
                 text-decoration: underline dotted;
-                text-underline-offset:1px;
+                text-underline-offset: 1px;
             }
 
         .criptotable td p {
@@ -226,8 +208,3 @@ p.estrela {
 .neg {
     color: #c23E34;
 }
-
-i.fa-star {
-    color: #f0b432;
-}
-

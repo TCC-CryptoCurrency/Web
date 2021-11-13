@@ -128,6 +128,7 @@
     <None Include="Scripts\jquery-3.4.1.intellisense.js" />
     <Content Include="PagesAspx\gloss.aspx" />
     <Content Include="PagesAspx\gloss.css" />
+    <Content Include="PagesAspx\homecriptos.aspx" />
     <Content Include="PagesAspx\homenoticias.aspx" />
     <Content Include="PagesAspx\homenoticias.css" />
     <Content Include="PagesAspx\homeusuario.aspx" />
@@ -150,6 +151,7 @@
     <Content Include="PagesAspx\pagcripto.css" />
     <Content Include="PagesAspx\pagnoticia.aspx" />
     <Content Include="PagesAspx\pagnoticia.css" />
+    <Content Include="PagesAspx\homecriptos.css" />
     <Content Include="PagesAspx\tutorbasic.css" />
     <Content Include="PagesAspx\tutorGet.js" />
     <Content Include="PagesAspx\login.aspx" />
@@ -235,6 +237,13 @@
     </Compile>
     <Compile Include="PagesAspx\gloss.aspx.designer.cs">
       <DependentUpon>gloss.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="PagesAspx\homecriptos.aspx.cs">
+      <DependentUpon>homecriptos.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="PagesAspx\homecriptos.aspx.designer.cs">
+      <DependentUpon>homecriptos.aspx</DependentUpon>
     </Compile>
     <Compile Include="PagesAspx\homenoticias.aspx.cs">
       <DependentUpon>homenoticias.aspx</DependentUpon>

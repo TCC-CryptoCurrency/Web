@@ -8,11 +8,10 @@ using System.Web.UI.WebControls;
 
 namespace Virtualet.PagesAspx
 {
-    public partial class WebForm5 : System.Web.UI.Page
+    public partial class homecriptos : System.Web.UI.Page
     {
         ClasseConexao con;
         DataTable dt;
-
 
         protected DataView GerarDados()
         {
@@ -27,10 +26,9 @@ namespace Virtualet.PagesAspx
             datat.Columns.Add(new DataColumn("Valor24h", typeof(double)));
             datat.Columns.Add(new DataColumn("UltimaAtualizacao", typeof(String)));
             datat.Columns.Add(new DataColumn("VariacaoMoeda", typeof(double)));
-            datat.Columns.Add(new DataColumn("SaldoMoeda", typeof(double)));
 
-            dt = con.executarSQL("exec usp_selecionar_moedaUsuario " + Session["IdUsuario"]);
-            DataRow[] dr = dt.Select("Saldo > 0");
+            dt = con.executarSQL("exec usp_selecionar_tabelaIndex");
+            DataRow[] dr = dt.Select();
 
             for (int i = 0; i < dr.Length; i++)
             {
@@ -40,9 +38,8 @@ namespace Virtualet.PagesAspx
                 row[1] = dr[i]["NomeMoeda"];
                 row[2] = dr[i]["ValorMoeda"];
                 row[3] = dr[i]["ValorData"];
-                row[4] = dr[i]["DataRegistro"].ToString().Substring(0,10);
+                row[4] = dr[i]["DataRegistro"].ToString().Substring(0, 10);
                 row[5] = Math.Round(((Double.Parse(row[2].ToString()) - Double.Parse(row[3].ToString())) / Double.Parse(row[3].ToString())) * 100, 2);
-                row[6] = dr[i]["Saldo"];
 
                 datat.Rows.Add(row);
             }
@@ -51,7 +48,18 @@ namespace Virtualet.PagesAspx
             return dv;
         }
 
-        protected void Item_Bound(Object sender, DataListItemEventArgs e)
+        protected void Page_Load(object sender, EventArgs e)
+        {
+            if(Session["login"] == null || (int)Session["login"] != 1)
+            {
+                //Response.Redirect("login.aspx");
+            }
+
+            DtCripto.DataSource = GerarDados();
+            DtCripto.DataBind();
+        }
+
+        protected void DtCripto_ItemDataBound(object sender, DataListItemEventArgs e)
         {
             if (e.Item.ItemType == ListItemType.Item || e.Item.ItemType == ListItemType.AlternatingItem)
             {
@@ -67,35 +75,27 @@ namespace Virtualet.PagesAspx
             }
         }
 
-        protected void Page_Load(object sender, EventArgs e)
-        {
-            if(Session["login"] == null || (int)Session["login"] != 1)
-            {
-                Response.Redirect("login.aspx");
-            }
-
-            DtCripto.DataSource = GerarDados();
-            DtCripto.DataBind();
-        }
-
         protected void DtCripto_ItemCommand(object source, DataListCommandEventArgs e)
         {
-            if(((LinkButton)e.CommandSource).CommandName == "sort")
+            if (((LinkButton)e.CommandSource).CommandName == "sort")
             {
                 string cmdArg = "";
                 DataView view = new DataView();
                 view = GerarDados();
-                if (Session[((LinkButton)e.CommandSource).Text] != null) {
+                if (Session[((LinkButton)e.CommandSource).Text] != null)
+                {
                     ((LinkButton)e.CommandSource).CommandArgument = (string)Session[((LinkButton)e.CommandSource).Text];
                 }
                 view.Sort = ((LinkButton)e.CommandSource).CommandArgument;
-                
-                if (((LinkButton)e.CommandSource).CommandArgument.Contains("ASC")) {
-                    cmdArg = ((LinkButton)e.CommandSource).CommandArgument.Replace("ASC","DESC") ;
+
+                if (((LinkButton)e.CommandSource).CommandArgument.Contains("ASC"))
+                {
+                    cmdArg = ((LinkButton)e.CommandSource).CommandArgument.Replace("ASC", "DESC");
                     ((LinkButton)e.CommandSource).CommandArgument = cmdArg;
                 }
-                else if (((LinkButton)e.CommandSource).CommandArgument.Contains("DESC")) { 
-                    cmdArg = ((LinkButton)e.CommandSource).CommandArgument.Replace("DESC","ASC");
+                else if (((LinkButton)e.CommandSource).CommandArgument.Contains("DESC"))
+                {
+                    cmdArg = ((LinkButton)e.CommandSource).CommandArgument.Replace("DESC", "ASC");
                     ((LinkButton)e.CommandSource).CommandArgument = cmdArg;
                 }
                 DtCripto.DataSource = view;

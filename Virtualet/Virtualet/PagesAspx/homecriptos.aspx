@@ -1,20 +1,18 @@
-﻿<%@ Page Language="C#" AutoEventWireup="true" CodeBehind="wallet.aspx.cs" Inherits="Virtualet.PagesAspx.WebForm5" %>
+﻿<%@ Page Language="C#" AutoEventWireup="true" CodeBehind="homecriptos.aspx.cs" Inherits="Virtualet.PagesAspx.homecriptos" %>
 
 <!DOCTYPE html>
 
 <html xmlns="http://www.w3.org/1999/xhtml">
 <head runat="server">
-<meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
-<meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
-    <title>
-        Carteira - Virtua'let
-    </title>
-    <link rel="stylesheet" href="wallet.css" type="text/css"/>
+    <link rel="stylesheet" href="homecriptos.css" type="text/css" />
     <script src="https://kit.fontawesome.com/5bf652a268.js" crossorigin="anonymous"></script>
+
+    <title> Criptomoedas - Virtua'let </title>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
 </head>
 <body>
     <form id="form1" runat="server">
-        <header>
+         <header>
             <nav>
                 <a class="logo" href="index.aspx"> 
                     <asp:Image ID="Image1" runat="server" ImageUrl="Images/logobranco.png" />
@@ -29,22 +27,21 @@
                     <li><a href=" "><i class="fas fa-user-circle"></i> Perfil </a></li>
                     <li><a href="wallet.aspx"><i class="fas fa-wallet"></i> Wallet </a></li>
                     <li><a href="homenoticias.aspx"><i class="fas fa-newspaper"></i> Noticias </a></li>
-                    <li><a href="homecriptos.aspx"><i class="fab fa-bitcoin"></i> Criptomoedas </a></li>
+                    <li><a href=" "><i class="fab fa-bitcoin"></i> Criptomoedas </a></li>
                 </ul>
             </nav>
         </header>
         <main>
             <script src="menumobile.js"></script>
             <div class="box">
-               <asp:DataList ID="DtCripto"
+            <asp:DataList ID="DtCripto" 
+                        onitemdatabound="DtCripto_ItemDataBound"
                         RepeatDirection="Vertical"
                         RepeatLayout="Table"
                         RepeatColumns="1"
                         runat="server"
                         class="criptotable"
-                        OnItemDataBound="Item_Bound"
-                        OnItemCommand="DtCripto_ItemCommand"
-                        >
+                        onItemCommand="DtCripto_ItemCommand">
                         <HeaderStyle BackColor="#e7ecef">
                         </HeaderStyle>
                         
@@ -53,47 +50,43 @@
 
                         <HeaderTemplate>
                                     <h2>
-                                        <asp:LinkButton ID="LinkButton1" CommandName="sort" CommandArgument="NomeMoeda ASC" runat="server" Text="Nome"></asp:LinkButton>
+                                        <asp:LinkButton ID="LinkButton2" CommandName="sort" CommandArgument="NomeMoeda ASC" runat="server" Text="Nome"></asp:LinkButton>
                                     </h2>
+
                                     <h2>
-                                        <asp:LinkButton ID="LinkButton2" CommandName="sort" CommandArgument="SaldoMoeda ASC" runat="server" Text="Saldo"></asp:LinkButton>
-                                    </h2>
-                                    <h2>
-                                        <asp:LinkButton ID="LinkButton3" CommandName="sort" CommandArgument="ValorMoeda ASC" runat="server" Text="Valor atual"></asp:LinkButton>
+                                        <asp:LinkButton ID="LinkButton3" CommandName="sort"  CommandArgument="ValorMoeda ASC" runat="server" Text="Valor Atual"></asp:LinkButton>
                                     </h2>
                                     <h2>
                                         Ultimas 24h
                                     </h2>
                                     <h2>
-                                        Última atualização
+                                        Ultima atualização
                                     </h2>
                                     <h2>
-                                        <asp:LinkButton ID="LinkButton5" CommandName="sort" CommandArgument="VariacaoMoeda ASC" runat="server" Text="Variação(24h)"></asp:LinkButton>
+                                        <asp:LinkButton ID="LinkButton4" CommandName="sort"  CommandArgument="VariacaoMoeda ASC" runat="server" Text="Variação (24h)"></asp:LinkButton>
                                     </h2>
                         </HeaderTemplate>
                         <ItemTemplate>
                                     <h3>
-                                        <asp:LinkButton ID="LinkButton4" runat="server" CommandArgument='<%# DataBinder.Eval(Container.DataItem, "idMoeda") %>' CommandName="redirect" Text='<%# DataBinder.Eval(Container.DataItem, "NomeMoeda") %>'></asp:LinkButton>
+                                        <asp:LinkButton ID="LinkButton1" CommandName="redirect" CommandArgument='<%# DataBinder.Eval(Container.DataItem, "idMoeda") %>' runat="server" Text='<%# DataBinder.Eval(Container.DataItem, "NomeMoeda") %>'></asp:LinkButton>
                                     </h3>
                                     <p class="valor">
-                                       <%# DataBinder.Eval(Container.DataItem, "SaldoMoeda") %>
+                                        <%# DataBinder.Eval(Container.DataItem, "ValorMoeda", "{0:f2}") %>
                                     </p>
                                     <p class="valor">
-                                       <%# DataBinder.Eval(Container.DataItem, "ValorMoeda", "{0:f2}") %>
+                                        <%# DataBinder.Eval(Container.DataItem, "Valor24h", "{0:f2}") %>
                                     </p>
                                     <p class="valor">
-                                       <%# DataBinder.Eval(Container.DataItem, "Valor24h", "{0:f2}") %>
+                                        <%# DataBinder.Eval(Container.DataItem, "UltimaAtualizacao")%>
                                     </p>
-                                    <p class="valor">
-                                       <%# DataBinder.Eval(Container.DataItem, "UltimaAtualizacao") %>
-                                    </p>
-                                    <asp:Label ID="varia" CssClass="pos" runat="server" Text='<%# DataBinder.Eval(Container.DataItem, "VariacaoMoeda") + "%" %>'>
-                                    </asp:Label>
-                                    
+                                        <asp:Label ID="varia" CssClass="pos" runat="server" Text='<%# DataBinder.Eval(Container.DataItem, "VariacaoMoeda") + "%" %> '>
+                                        </asp:Label>
 
                         </ItemTemplate>
-                </asp:DataList>
+                    </asp:DataList>
                 </div>
+
+
         </main>
     </form>
 </body>

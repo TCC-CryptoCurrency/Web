@@ -28,7 +28,7 @@
                     <li><a href=" "><i class="fas fa-user-circle"></i> Perfil </a></li>
                     <li><a href="wallet.aspx"><i class="fas fa-wallet"></i> Wallet </a></li>
                     <li><a href="homenoticias.aspx"><i class="fas fa-newspaper"></i> Noticias </a></li>
-                    <li><a href=" "><i class="fab fa-bitcoin"></i> Criptomoedas </a></li>
+                    <li><a href="homecriptos.aspx"><i class="fab fa-bitcoin"></i> Criptomoedas </a></li>
                 </ul>
             </nav>
         </header>
