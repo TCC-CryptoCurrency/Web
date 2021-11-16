@@ -39,26 +39,27 @@
             <div class="box">
                 <div class="dados">
                     <div class="labels">
-                        <asp:Label ID="lblNome" runat="server" Text="Nome:" CssClass="lbl"></asp:Label>  <br /> 
-                        <asp:Label ID="lblEmail" runat="server" Text="Email:" CssClass="lbl"></asp:Label> <br /> 
-                        <asp:Label ID="lblData" runat="server" Text="Data de Nascimento:" CssClass="lbl"></asp:Label> <br /> 
-                        <asp:Label ID="lblCPF" runat="server" Text="CPF:" CssClass="lbl"></asp:Label> <br /> 
-                        <asp:Label ID="lblSenha" runat="server" Text="Senha:" CssClass="lbl"></asp:Label> <br />  <br /> <br />
-                        <button id="show-or-hide" onclick="togglediv()"> Alterar Dados</button>
+                        <asp:Label ID="lblNome" runat="server" Text="Nome:" CssClass="lbl col"></asp:Label>  <br /> 
+                        <asp:Label ID="lblEmail" runat="server" Text="Email:" CssClass="lbl col"></asp:Label> <br /> 
+                        <asp:Label ID="lblData" runat="server" Text="Data de Nascimento:" CssClass="lbl col"></asp:Label> <br /> 
+                        <asp:Label ID="lblCPF" runat="server" Text="CPF:" CssClass="lbl col"></asp:Label> <br /> 
+                        <asp:Label ID="lblSenha" runat="server" Text="Senha:" CssClass="lbl col"></asp:Label> <br />  <br /> <br />
+                        <asp:Button ID="btnAlterar" CssClass="botao" runat="server" OnClick="btnAlterar_Click" Text="Alterar dados" />
+                        <asp:Button ID="btnCancelar" runat="server" Text="Cancelar" OnClick="btnCancelar_Click" CssClass="botao hide" />
 
                     </div>
                     <div class="datacase">
-                        <asp:Label ID="lblNomeEdit" runat="server" Text="Nome:" CssClass="lbl"></asp:Label>  <br /> 
-                        <asp:Label ID="lblEmailEdit" runat="server" Text="Email:" CssClass="lbl"></asp:Label> <br /> 
-                        <asp:Label ID="lblDataEdit" runat="server" Text="Data de Nascimento:" CssClass="lbl"></asp:Label> <br /> 
-                        <asp:Label ID="lblCPFEdit" runat="server" Text="CPF:" CssClass="lbl"></asp:Label> <br /> 
-                        <asp:Label ID="lblSenhaEdit" runat="server" Text="Senha:" CssClass="lbl"></asp:Label> <br />  <br /> <br />
-                        <asp:Button ID="btnAlterar" runat="server" Text="Salvar" /><br />
+                        <asp:Label ID="lblNomeEdit" runat="server" Text="Nome" CssClass="lbl"></asp:Label> <asp:TextBox ID="txtNomeEdit" CssClass="textbox hide" runat="server"></asp:TextBox> <br /> 
+                        <asp:Label ID="lblEmailEdit" runat="server" Text="Email:" CssClass="lbl"></asp:Label> <asp:TextBox ID="txtEmailEdit" CssClass="textbox hide" runat="server"></asp:TextBox> <br /> 
+                        <asp:Label ID="lblDataEdit" runat="server" Text="Data de Nascimento:" CssClass="lbl"></asp:Label> <asp:TextBox ID="txtDataEdit" CssClass="textbox hide" runat="server"></asp:TextBox> <br /> 
+                        <asp:Label ID="lblCPFEdit" runat="server" Text="CPF:" CssClass="lbl"></asp:Label> <asp:TextBox ID="txtCPFEdit" CssClass="textbox hide" runat="server"></asp:TextBox> <br /> 
+                        <asp:Label ID="lblSenhaEdit" runat="server" Text="Senha:" CssClass="lbl"></asp:Label> <asp:TextBox ID="txtSenhaEdit" CssClass="textbox hide" runat="server"></asp:TextBox> <br />  <br /> <br />
+                        <asp:Button ID="btnSalvar" CssClass="botao hide" OnClick="btnSalvar_Click" runat="server" Text="Salvar" /><br />
                     </div>   
                 </div>
                 <div class="preferida">
-                    <img src=" "/> <br /> <br />
-                    <asp:Label ID="lblMoeda" runat="server" Text="Moeda Preferida"></asp:Label>
+                    <img src="Images/iconeperfil.png" class="imagemicone"/> <br /> <br />
+                    <asp:Label ID="lblMoeda" runat="server" Text=""></asp:Label>
                 </div>
             </div>
         </main>

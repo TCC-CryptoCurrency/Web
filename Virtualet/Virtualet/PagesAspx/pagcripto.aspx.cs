@@ -69,6 +69,11 @@ namespace Virtualet.PagesAspx
             String nome = dr[0]["NomeMoeda"].ToString();
             lblMoeda.Text = nome;
 
+            double valor = double.Parse(dr[0]["ValorMoeda"].ToString());
+            lblValor.Text = "R$" + valor;
+
+            string data = dr[0]["DataAtualizacao"].ToString().Substring(0,10);
+            lblDataAtt.Text = data;
            
 
             /*agora só tem que fazer mostrar o resto, tenta usar isso pra fazer a página de perfil

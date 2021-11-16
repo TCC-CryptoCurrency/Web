@@ -135,6 +135,7 @@
     <Content Include="PagesAspx\homeperfil.css" />
     <Content Include="PagesAspx\homeusuario.aspx" />
     <Content Include="PagesAspx\homeusuario.css" />
+    <Content Include="PagesAspx\Images\iconeperfil.png" />
     <Content Include="PagesAspx\Images\icone1.png" />
     <Content Include="PagesAspx\Images\icone2.png" />
     <Content Include="PagesAspx\Images\icone3.png" />

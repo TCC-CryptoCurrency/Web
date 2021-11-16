@@ -122,7 +122,13 @@ nav {
     flex-direction: row;
     width: 90%;
     min-height: 50vh;
-    margin-top:15vh;
+}
+
+main {
+    background-color: #d2d5d9;
+    min-height: 86vh;
+    padding-top: 5vh;
+    margin-top:9vh;
 }
 
 .content{
@@ -146,21 +152,36 @@ nav {
 .btnStar {
     background:transparent;
     border: none;
-    height: 5vw;
+    height: auto;
     width: 5vw;
-    font-size:4vw;
-    color:black;
+    font-size:2.5vw;
+    color:#9c9fa1;
+    background-color:#fb8b24;
+    border-radius:100vw;
+    padding-top:-1vh;
+    transition:0.2s;
+    cursor:pointer;
 }
 
     .btnStar:hover {
-        color: #Fb8b24;
+        color: #f0b432;
+        background-color:#ef781c
     }
 
 .labels{
     font-family:Ebrima;
-    font-size:2.5vw;
+    font-size:3vw;
     margin-left:5.5vw;
+    color:#2d3142;
+    font-weight:bolder;
 }
+
+.date{
+    font-weight:normal;
+    color:#9c9fa1;
+    font-size:2vw;
+}
+
 
 .content div{
     height:100%;
@@ -177,5 +198,6 @@ nav {
 .titulo{
     font-family:Ebrima;
     font-size:3vw;
-
+    color:#ef781c;
+    margin-left:1vw;
 }

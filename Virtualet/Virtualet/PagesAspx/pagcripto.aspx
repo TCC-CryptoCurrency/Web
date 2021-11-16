@@ -43,7 +43,7 @@
                     </div>
                     <div>
                         <asp:Label ID="lblValor" runat="server" Text="ValorAtual" CssClass="labels"></asp:Label> <br /><br />
-                        <asp:Label ID="lblDataAtt" runat="server" Text="DatadeAtualização" CssClass="labels"></asp:Label> <br /><br />
+                        <asp:Label ID="lblDataAtt" runat="server" Text="DatadeAtualização" CssClass="labels date"></asp:Label> <br /><br />
                     </div>
                 </div>
                 <div id="chart-line"></div>
