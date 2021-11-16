@@ -208,3 +208,11 @@ main {
 .neg {
     color: #c23E34;
 }
+
+.btnStar {
+    width: 4vw;
+    height: 4vh;
+    background: transparent;
+    border: none;
+
+}

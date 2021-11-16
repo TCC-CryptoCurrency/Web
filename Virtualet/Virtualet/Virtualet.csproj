@@ -131,6 +131,8 @@
     <Content Include="PagesAspx\homecriptos.aspx" />
     <Content Include="PagesAspx\homenoticias.aspx" />
     <Content Include="PagesAspx\homenoticias.css" />
+    <Content Include="PagesAspx\homeperfil.aspx" />
+    <Content Include="PagesAspx\homeperfil.css" />
     <Content Include="PagesAspx\homeusuario.aspx" />
     <Content Include="PagesAspx\homeusuario.css" />
     <Content Include="PagesAspx\Images\icone1.png" />
@@ -143,6 +145,7 @@
     <Content Include="PagesAspx\Images\logobranco.png" />
     <Content Include="PagesAspx\Images\olho.png" />
     <Content Include="PagesAspx\Images\pattern.png" />
+    <Content Include="PagesAspx\Images\star.png" />
     <Content Include="PagesAspx\index.aspx" />
     <Content Include="PagesAspx\geral.css" />
     <Content Include="PagesAspx\indexTutorChange.js" />
@@ -251,6 +254,13 @@
     </Compile>
     <Compile Include="PagesAspx\homenoticias.aspx.designer.cs">
       <DependentUpon>homenoticias.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="PagesAspx\homeperfil.aspx.cs">
+      <DependentUpon>homeperfil.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="PagesAspx\homeperfil.aspx.designer.cs">
+      <DependentUpon>homeperfil.aspx</DependentUpon>
     </Compile>
     <Compile Include="PagesAspx\homeusuario.aspx.cs">
       <DependentUpon>homeusuario.aspx</DependentUpon>

@@ -13,6 +13,7 @@ namespace Virtualet.PagesAspx
         ClasseConexao con;
         DataTable dt;
 
+
         protected DataView GerarDados()
         {
             dt = new DataTable();
@@ -110,5 +111,39 @@ namespace Virtualet.PagesAspx
                 Response.Redirect("pagcripto.aspx");
             }
         }
+
+        /*
+        protected void btnInteresse_Click(object sender, EventArgs e)
+        {
+
+            con = new ClasseConexao();
+            dt = new DataTable();
+            
+            //Essa parte checa se o usuario já tem interesse ou n
+            dt = con.executarSQL("select * from DetalheCarteira where idCarteira = " + Session["idUsuario"] + "and idMoeda = " + idMoeda);
+            //O idMoeda deve funcionar normalmente desse jeito, não tenho certeza (se você colocar esse codigo dentro do pagCripto)
+            if (dt.Rows.Count > 0)
+            {
+                //se ele achou pelo menos 1 coluna, quer dizer que a pessoa já marcou interesse (ent precisa desmarcar/impedir)
+                DataRow[] dr = dt.Select();
+                if (int.Parse(dr[0][Saldo].toString()) != 0)
+                {
+                    Response.Write("<script>alert('Você não pode desmarcar interesse quando possuir saldo na moeda')</script>");
+                }
+                else
+                {
+                    con = new ClasseConexao();
+                    int x = con.manutencaoDB_Parametros("delete from DetalheCarteira where idCarteira = " + Session["idUsuario"] + " and idMoeda = " + idMoeda);
+                    Response.Write("<script>alert('Interesse desmarcado com sucesso')</script>");
+                }
+            }
+            else
+            {
+                con = new ClasseConexao();
+                int x = con.manutencaoDB_Parametros("insert into DetalheCarteira(Saldo, idCarteira, idMoeda) Values (0," + Session["idUsuario"] + "," + idMoeda + ")");
+                //ou qualquer coisa que faça insert no bd, mas eu acho que é assim que funciona
+            }
+        } 
+        */
     }
 }

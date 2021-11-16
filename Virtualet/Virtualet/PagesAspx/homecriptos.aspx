@@ -24,10 +24,10 @@
                 </div>
                 <ul class="nav-list">
                     <li><a href="homeusuario.aspx"><i class="fas fa-home"></i> Home </a></li>
-                    <li><a href=" "><i class="fas fa-user-circle"></i> Perfil </a></li>
+                    <li><a href="homeperfil.aspx"><i class="fas fa-user-circle"></i> Perfil </a></li>
                     <li><a href="wallet.aspx"><i class="fas fa-wallet"></i> Wallet </a></li>
                     <li><a href="homenoticias.aspx"><i class="fas fa-newspaper"></i> Noticias </a></li>
-                    <li><a href=" "><i class="fab fa-bitcoin"></i> Criptomoedas </a></li>
+                    <li><a href="homecriptos.aspx"><i class="fab fa-bitcoin"></i> Criptomoedas </a></li>
                 </ul>
             </nav>
         </header>
@@ -67,6 +67,7 @@
                                     </h2>
                         </HeaderTemplate>
                         <ItemTemplate>
+                                    <!-- <asp:ImageButton ID="imbtnStar" runat="server" CssClass="btnStar" ImageUrl="Images/star.png"/> -->
                                     <h3>
                                         <asp:LinkButton ID="LinkButton1" CommandName="redirect" runat="server" Text='<%# DataBinder.Eval(Container.DataItem, "NomeMoeda") %>'></asp:LinkButton>
                                     </h3>

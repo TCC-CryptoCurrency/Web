@@ -26,7 +26,7 @@
                 </div>
                 <ul class="nav-list">
                     <li><a href="homeusuario.aspx"><i class="fas fa-home"></i> Home </a></li>
-                    <li><a href=" "><i class="fas fa-user-circle"></i> Perfil </a></li>
+                    <li><a href="homeperfil.aspx"><i class="fas fa-user-circle"></i> Perfil </a></li>
                     <li><a href="wallet.aspx"><i class="fas fa-wallet"></i> Wallet </a></li>
                     <li><a href="homenoticias.aspx"><i class="fas fa-newspaper"></i> Noticias </a></li>
                     <li><a href="homecriptos.aspx"><i class="fab fa-bitcoin"></i> Criptomoedas </a></li>
@@ -35,7 +35,19 @@
             </header>
             <main>
                 <script src="menumobile.js"></script>
+                <div class="all">
+                <div class="content">
+                    <div>
+                        <asp:Button ID="btnStar" runat="server" Text="&#9733;" CssClass="btnStar" />
+                        <asp:Label ID="lblMoeda" runat="server" Text="NomeMoeda" CssClass="titulo"></asp:Label> <br /><br />
+                    </div>
+                    <div>
+                        <asp:Label ID="lblValor" runat="server" Text="ValorAtual" CssClass="labels"></asp:Label> <br /><br />
+                        <asp:Label ID="lblDataAtt" runat="server" Text="DatadeAtualização" CssClass="labels"></asp:Label> <br /><br />
+                    </div>
+                </div>
                 <div id="chart-line"></div>
+                </div>
                 <script type="text/javascript">
 Highcharts.chart('chart-line', {
 
