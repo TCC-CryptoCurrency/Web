@@ -34,6 +34,7 @@
         <main>
             <script src="menumobile.js"></script>
             <div class="box">
+                <h1 style="font-family: Ebrima; color: #fb8b24;"> Criptomoedas </h1> <br />
             <asp:DataList ID="DtCripto" 
                         onitemdatabound="DtCripto_ItemDataBound"
                         RepeatDirection="Vertical"

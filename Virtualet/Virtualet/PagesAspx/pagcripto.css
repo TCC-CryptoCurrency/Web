@@ -201,3 +201,9 @@ main {
     color:#ef781c;
     margin-left:1vw;
 }
+
+.gv{
+    background-color:red;
+    width: 90%;
+    height:30vh;
+}

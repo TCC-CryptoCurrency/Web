@@ -39,14 +39,15 @@
 
                 <div class="feed">
                     <asp:DataList ID="dlFeed" runat="server" RepeatLayout="Flow" RepeatColumns="1" RepeatDirection="Vertical" 
-                        Font-Names="Ebrima" Font-Size="Small">
+                        Font-Names="Ebrima" Font-Size="Small" OnItemCommand="dlFeed_ItemCommand">
                         <ItemTemplate>
+                            <a href='<%# DataBinder.Eval(Container.DataItem, "LinkNot") %>'>
                             <div id="pricePlans">
                                 <ul id="plans">
                                     <li class="plan">
                                         <ul class="planContainer">
                                             <li class="title">
-                                                <h2><a class="titnoticia" href="#"><asp:Label ID="lblTituloN" runat="server" Text='<%#Bind("Titulo") %>'></asp:Label></a></h2>
+                                                <h2> <%# DataBinder.Eval(Container.DataItem, "Titulo") %> </h2>
                                             </li>
                                             <li class="title">
                                                 <asp:Image ID="img1" runat="server" />
@@ -61,6 +62,7 @@
                                     </li>
                                 </ul>
                             </div>
+                            </a>
                         </ItemTemplate>
                     </asp:DataList>
                 </div>

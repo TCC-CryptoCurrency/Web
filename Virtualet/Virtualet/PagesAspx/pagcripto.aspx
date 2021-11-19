@@ -48,6 +48,14 @@
                 </div>
                 <div id="chart-line"></div>
                 </div>
+                <div class="gv">
+                    <asp:GridView ID="gvCripto" runat="server">
+                        <Columns>
+                            <asp:BoundField DataField="DataRegistro" HeaderText="Data" />
+                            <asp:BoundField DataField="ValorData" HeaderText="Preço" />
+                        </Columns>
+                    </asp:GridView>
+                </div>
                 <script type="text/javascript">
 Highcharts.chart('chart-line', {
 

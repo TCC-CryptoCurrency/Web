@@ -36,6 +36,7 @@
         <main>
             <script src="menumobile.js"></script>
             <div class="box">
+                <h1 style="font-family: Ebrima; color: #fb8b24;"> Carteira </h1> <br />
                <asp:DataList ID="DtCripto"
                         RepeatDirection="Vertical"
                         RepeatLayout="Table"
