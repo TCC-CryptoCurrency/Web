@@ -4,6 +4,10 @@
 
 <html xmlns="http://www.w3.org/1999/xhtml">
 <head runat="server">
+    <script src="https://kit.fontawesome.com/5bf652a268.js" crossorigin="anonymous"></script>
+      <script type = "text/javascript" src = "https://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js">
+      </script>
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery.maskedinput/1.4.1/jquery.maskedinput.js"></script>
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
     <link rel="stylesheet" type="text/css" href="login.css"/>
     <link rel="stylesheet" type="text/css" href="cadastro.css"/>
@@ -58,11 +62,21 @@
                         Data de Nascimento (dd/mm/yyyy)
                     </h2>
                     <asp:TextBox ID="txtNascimento" runat="server" CssClass="txt"></asp:TextBox>
+                        <script type="text/javascript">
+                            $(document).ready(function ($) {
+                                $('#txtNascimento').mask('99/99/9999')
+                            });
+                        </script>
                     <br/>
                     <h2>
-                        CPF (Somente números)
+                        CPF
                     </h2>
                     <asp:TextBox ID="txtCPF" runat="server" ClientIDMode="static" CssClass="txt"></asp:TextBox>
+                        <script type="text/javascript">
+                            $(document).ready(function ($) {
+                                $('#txtCPF').mask('999.999.999-99')
+                            });
+                        </script>
                     <br/>
                         <h2>
                             Senha

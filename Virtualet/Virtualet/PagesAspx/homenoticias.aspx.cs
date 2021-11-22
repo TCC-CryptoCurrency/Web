@@ -68,6 +68,24 @@ namespace Virtualet.PagesAspx
             return Al;
         }
 
+        protected ArrayList GerarTagsInteresse()
+        {
+            con = new ClasseConexao();
+            dt = new DataTable();
+
+            dt = con.executarSQL("Select idTags, NomeTag from tags where NomeTag like '%" + txtTagSearch.Text + "%' and idTags not in (select idTags from Interesse where idUsuario = " + Session["IdUsuario"] + ")");
+
+            ArrayList Al = new ArrayList();
+            DataRow[] dataRows = dt.Select();
+
+            for(int i = 0; i < dt.Rows.Count; i++)
+            {
+                Al.Add(new Tags(dataRows[i]["NomeTag"].ToString(), i));
+            }
+
+            return Al;
+        }
+
         public class Tags
         {
             private string tag;
@@ -110,5 +128,40 @@ namespace Virtualet.PagesAspx
 
         }
 
+        protected void RepeaterInteresse_ItemCommand(object source, RepeaterCommandEventArgs e)
+        {
+            con = new ClasseConexao();
+            dt = new DataTable();
+
+            dt = con.executarSQL("select * from Tags where NomeTag = '" + ((Button)e.CommandSource).Text + "'");
+            DataRow[] dataRow = dt.Select();
+
+            con = new ClasseConexao();
+
+            SqlCommand cmd = new SqlCommand("INSERT INTO Interesse VALUES(" + Session["IdUsuario"] + "," + dataRow[0]["idTags"] + ")");
+            int x = con.manutencaoDB_Parametros(cmd);
+            if (x > 0)
+            {
+                rpTags.DataSource = GerarTags();
+                rpTags.DataBind();
+
+                RepeaterInteresse.DataSource = GerarTagsInteresse();
+                RepeaterInteresse.DataBind();
+
+                dlFeed.DataSource = BindData(((Button)e.CommandSource).Text);
+                dlFeed.DataBind();
+            }
+            else
+            {
+                Response.Write("ERRO");
+            }
+
+        }
+
+        protected void btnSearch_Click(object sender, EventArgs e)
+        {
+            RepeaterInteresse.DataSource = GerarTagsInteresse();
+            RepeaterInteresse.DataBind();
+        }
     }
 }

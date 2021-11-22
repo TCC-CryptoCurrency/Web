@@ -64,7 +64,7 @@ namespace Virtualet.PagesAspx
             txtNomeEdit.Text = lblNomeEdit.Text;
             txtEmailEdit.Text = lblEmailEdit.Text;
             txtDataEdit.Text = lblDataEdit.Text;
-            txtCPFEdit.Text = lblCPFEdit.Text.Replace("-","");
+            txtCPFEdit.Text = lblCPFEdit.Text;
             txtSenhaEdit.Text = "";
         }
 
@@ -98,7 +98,7 @@ namespace Virtualet.PagesAspx
                 DateTime Nasc = DateTime.ParseExact(txtDataEdit.Text, "dd/mm/yyyy", System.Globalization.CultureInfo.InvariantCulture);
                 string CPF = txtCPFEdit.Text;
                 string Senha = txtSenhaEdit.Text;
-                if (CPF.All(char.IsDigit) && CPF.Length == 11 && Nome.Length > 0 && Email.Length > 0 && Senha.Length > 0) {
+                if (Nome.Length > 0 && Email.Length > 0 && Senha.Length > 0) {
                     SqlCommand cmd = new SqlCommand("UPDATE Usuario set Nome = @nome, Email = @email, DataNasc = @nasc, CPF = @cpf, Senha = @senha where idCarteira = " + Session["idUsuario"]);
                     cmd.Parameters.Add("@nome", SqlDbType.NVarChar, 30).Value = Nome;
                     cmd.Parameters.Add("@email", SqlDbType.NVarChar, 30).Value = Email;

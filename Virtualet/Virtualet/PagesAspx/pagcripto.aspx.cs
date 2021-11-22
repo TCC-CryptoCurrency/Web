@@ -36,6 +36,15 @@ namespace Virtualet.PagesAspx
 
             LoadDataLineChart();
             DadosMoeda();
+
+            dt = new DataTable();
+            con = new ClasseConexao();
+
+            dt = con.executarSQL("select * from DetalheCarteira where idCarteira = " + Session["IdUsuario"] + " and idMoeda = " + idMoeda);
+            if(dt.Rows.Count > 0)
+            {
+                btnStar.CssClass += " staractive";
+            }
         }
 
         public void LoadDataLineChart()
@@ -81,6 +90,51 @@ namespace Virtualet.PagesAspx
             lblValor.Text = valor.ToString();
             */
 
+        }
+
+        protected void btnStar_Click(object sender, EventArgs e)
+        {
+            con = new ClasseConexao();
+            dt = new DataTable();
+            //Essa parte checa se o usuario já tem interesse ou n
+            dt = con.executarSQL("select * from DetalheCarteira where idCarteira = " + Session["idUsuario"] + "and idMoeda = " + idMoeda);
+            //O idMoeda deve funcionar normalmente desse jeito, não tenho certeza (se você colocar esse codigo dentro do pagCripto)
+            if (dt.Rows.Count > 0)
+            {
+                //se ele achou pelo menos 1 coluna, quer dizer que a pessoa já marcou interesse (ent precisa desmarcar/impedir)
+                DataRow[] dr = dt.Select();
+                if (double.Parse(dr[0]["Saldo"].ToString()) != 0)
+                {
+                    Response.Write("<script>alert('Você não pode desmarcar interesse quando possuir saldo na moeda')</script>");
+                }
+                else
+                {
+                    con = new ClasseConexao();
+                    SqlCommand command = new SqlCommand("delete from DetalheCarteira where idCarteira = " + Session["idUsuario"] + " and idMoeda = " + idMoeda);
+                    int x = con.manutencaoDB_Parametros(command);
+                    if (x > 0)
+                    {
+                        btnStar.CssClass = btnStar.CssClass.Replace("staractive", "").Trim();
+                    }
+                    else
+                    {
+                    }
+                }
+            }
+            else
+            {
+                con = new ClasseConexao();
+                SqlCommand command = new SqlCommand("insert into DetalheCarteira(Saldo, idCarteira, idMoeda) Values (0," + Session["idUsuario"] + "," + idMoeda + ")");
+                int x = con.manutencaoDB_Parametros(command);
+                if(x > 0)
+                {
+                    btnStar.CssClass += " staractive";
+                }
+                else
+                {
+                }
+                //ou qualquer coisa que faça insert no bd, mas eu acho que é assim que funciona
+            }
         }
 
         /* Não tá funfando

@@ -130,6 +130,7 @@ main {
     background-color:white;
     margin:0 auto;
     padding:2vw;
+    border-radius:1vw;
 }
 
 .title{
@@ -161,7 +162,7 @@ main {
     .content div h1 {
         font-family: Ebrima;
         font-size: 2vw;
-        color: #2d3142;
+        color: #ef781c;
     }
 
 #chart-line{
@@ -183,6 +184,10 @@ main {
     padding-top:-1vh;
     transition:0.2s;
     cursor:pointer;
+}
+
+.staractive{
+    color: #f0b432;
 }
 
     .btnStar:hover {

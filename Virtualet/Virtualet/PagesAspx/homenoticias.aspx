@@ -69,7 +69,7 @@
                 <div class="tagcontent">
                     <div class="tags">
                         <h1 class="titulo">
-                            Tags
+                            Tags de seu interesse
                         </h1>
                         <asp:Repeater ID="rpTags" runat="server" OnItemCommand="rpTags_ItemCommand">
                             <HeaderTemplate>
@@ -89,18 +89,16 @@
                         </asp:Repeater>
                     </div>
                     <div class="interessetag">
-                        <h1> Pesquisar Tag </h1>
+                        <h1> Pesquisar Tags <br/> (clique para marcar interesse) </h1>
                         <asp:TextBox ID="txtTagSearch" CssClass="txtTagSearch" runat="server"></asp:TextBox>
-                        <asp:Repeater ID="Repeater1" runat="server" OnItemCommand="rpTags_ItemCommand">
+                            <asp:Button ID="btnSearch" CssClass="btnsearch" runat="server" Text="Buscar" OnClick="btnSearch_Click" />
+                        <asp:Repeater ID="RepeaterInteresse" runat="server" OnItemCommand="RepeaterInteresse_ItemCommand">
                             <HeaderTemplate>
                                 <ol>
-                                    <ul>
-                                        <asp:Button ID="btnAllTags" runat="server" Text="Todas" OnClick="btnAllTags_Click"/>
-                                    </ul>
                             </HeaderTemplate>
                             <ItemTemplate>
                                 <ul>
-                                    <asp:Button runat="server" Text='<%# DataBinder.Eval(Container.DataItem, "Tag") %>' />
+                                    <asp:Button runat="server" CssClass="tag" Text='<%# DataBinder.Eval(Container.DataItem, "Tag") %>' />
                                 </ul>
                             </ItemTemplate>
                             <FooterTemplate>

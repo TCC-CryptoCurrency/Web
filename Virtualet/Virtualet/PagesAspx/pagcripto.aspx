@@ -37,7 +37,7 @@
                 <script src="menumobile.js"></script>
                 <div class="all">
                     <div class="title">
-                        <asp:Button ID="btnStar" runat="server" Text="&#9733;" CssClass="btnStar" />
+                        <asp:Button ID="btnStar" runat="server" OnClick="btnStar_Click" Text="&#9733;" CssClass="btnStar" />
                         <asp:Label ID="lblMoeda" runat="server" Text="NomeMoeda" CssClass="titulo"></asp:Label> <br /><br />
                     </div>
                     <div class="content">

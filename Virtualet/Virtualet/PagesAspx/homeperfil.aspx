@@ -8,6 +8,9 @@
     <title> Perfil - Virtua'let </title>
     <link rel="stylesheet" href="homeperfil.css" type="text/css"/>
     <script src="https://kit.fontawesome.com/5bf652a268.js" crossorigin="anonymous"></script>
+      <script type = "text/javascript" src = "https://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js">
+      </script>
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery.maskedinput/1.4.1/jquery.maskedinput.js"></script>
 </head>
 <body>
     <form id="form1" runat="server">
@@ -52,10 +55,15 @@
                         <asp:Label ID="lblNomeEdit" runat="server" Text="Nome" CssClass="lbl"></asp:Label> <asp:TextBox ID="txtNomeEdit" CssClass="textbox hide" runat="server"></asp:TextBox> <br /> 
                         <asp:Label ID="lblEmailEdit" runat="server" Text="Email:" CssClass="lbl"></asp:Label> <asp:TextBox ID="txtEmailEdit" CssClass="textbox hide" runat="server"></asp:TextBox> <br /> 
                         <asp:Label ID="lblDataEdit" runat="server" Text="Data de Nascimento:" CssClass="lbl"></asp:Label> <asp:TextBox ID="txtDataEdit" CssClass="textbox hide" runat="server"></asp:TextBox> <br /> 
-                        <asp:Label ID="lblCPFEdit" runat="server" Text="CPF:" CssClass="lbl"></asp:Label> <asp:TextBox ID="txtCPFEdit" CssClass="textbox hide" ClientIDMode="static" runat="server"></asp:TextBox> <br /> 
+                        <asp:Label ID="lblCPFEdit" runat="server" Text="CPF:" CssClass="lbl"></asp:Label> <asp:TextBox ID="txtCPFEdit" CssClass="textbox hide" ClientIDMode="static" runat="server"></asp:TextBox><br /> 
                         <asp:Label ID="lblSenhaEdit" runat="server" Text="Senha:" CssClass="lbl"></asp:Label> <asp:TextBox ID="txtSenhaEdit" CssClass="textbox hide" runat="server"></asp:TextBox> <br />  <br /> <br />
                         <asp:Button ID="btnSalvar" CssClass="botao hide" OnClick="btnSalvar_Click" runat="server" Text="Salvar" /><br />
                     </div>   
+                        <script type="text/javascript">
+                            $(document).ready(function ($) {
+                                $('#txtCPFEdit').mask('999.999.999-99')
+                            });
+                        </script>
                 </div>
                 <div class="preferida">
                     <img src="Images/iconeperfil.png" class="imagemicone"/> <br /> <br />

@@ -150,6 +150,7 @@
     <Content Include="PagesAspx\index.aspx" />
     <Content Include="PagesAspx\geral.css" />
     <Content Include="PagesAspx\indexTutorChange.js" />
+    <Content Include="PagesAspx\maskJquery.js" />
     <Content Include="PagesAspx\menumobile.js" />
     <Content Include="PagesAspx\pagcripto.aspx" />
     <Content Include="PagesAspx\pagcripto.css" />
