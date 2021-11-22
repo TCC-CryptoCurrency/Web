@@ -39,7 +39,7 @@
 
                 <div class="feed">
                     <asp:DataList ID="dlFeed" runat="server" RepeatLayout="Flow" RepeatColumns="1" RepeatDirection="Vertical" 
-                        Font-Names="Ebrima" Font-Size="Small" OnItemCommand="dlFeed_ItemCommand">
+                        Font-Names="Ebrima" Font-Size="Small">
                         <ItemTemplate>
                             <a href='<%# DataBinder.Eval(Container.DataItem, "LinkNot") %>'>
                             <div id="pricePlans">
@@ -66,11 +66,12 @@
                         </ItemTemplate>
                     </asp:DataList>
                 </div>
-                <div class="tags">
-                    <h1 class="titulo">
-                        Tags
-                    </h1>
-                    <asp:Repeater ID="rpTags" runat="server" OnItemCommand="rpTags_ItemCommand">
+                <div class="tagcontent">
+                    <div class="tags">
+                        <h1 class="titulo">
+                            Tags
+                        </h1>
+                        <asp:Repeater ID="rpTags" runat="server" OnItemCommand="rpTags_ItemCommand">
                             <HeaderTemplate>
                                 <ol>
                                     <ul>
@@ -86,6 +87,27 @@
                                 </ol>
                             </FooterTemplate>
                         </asp:Repeater>
+                    </div>
+                    <div class="interessetag">
+                        <h1> Pesquisar Tag </h1>
+                        <asp:TextBox ID="txtTagSearch" CssClass="txtTagSearch" runat="server"></asp:TextBox>
+                        <asp:Repeater ID="Repeater1" runat="server" OnItemCommand="rpTags_ItemCommand">
+                            <HeaderTemplate>
+                                <ol>
+                                    <ul>
+                                        <asp:Button ID="btnAllTags" runat="server" Text="Todas" OnClick="btnAllTags_Click"/>
+                                    </ul>
+                            </HeaderTemplate>
+                            <ItemTemplate>
+                                <ul>
+                                    <asp:Button runat="server" Text='<%# DataBinder.Eval(Container.DataItem, "Tag") %>' />
+                                </ul>
+                            </ItemTemplate>
+                            <FooterTemplate>
+                                </ol>
+                            </FooterTemplate>
+                        </asp:Repeater>
+                    </div>
                 </div>
             </div>
         </main>

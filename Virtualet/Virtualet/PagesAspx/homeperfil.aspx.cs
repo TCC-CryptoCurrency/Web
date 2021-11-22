@@ -32,7 +32,7 @@ namespace Virtualet.PagesAspx
             lblNomeEdit.Text = dr[0]["Nome"].ToString();
             lblEmailEdit.Text = dr[0]["Email"].ToString();
             lblDataEdit.Text = dr[0]["DataNasc"].ToString().Substring(0, 10);
-            lblCPFEdit.Text = dr[0]["CPF"].ToString().Insert(9,"-");
+            lblCPFEdit.Text = dr[0]["CPF"].ToString();
 
             string senha = "";
             for (int i = 0; i < dr[0]["Senha"].ToString().Length; i++)
@@ -103,7 +103,7 @@ namespace Virtualet.PagesAspx
                     cmd.Parameters.Add("@nome", SqlDbType.NVarChar, 30).Value = Nome;
                     cmd.Parameters.Add("@email", SqlDbType.NVarChar, 30).Value = Email;
                     cmd.Parameters.Add("@nasc", SqlDbType.Date, 3).Value = Nasc;
-                    cmd.Parameters.Add("@cpf", SqlDbType.NVarChar, 11).Value = CPF;
+                    cmd.Parameters.Add("@cpf", SqlDbType.NVarChar, 15).Value = CPF;
                     cmd.Parameters.Add("@senha", SqlDbType.NVarChar, 24).Value = Senha;
                     int x = con.manutencaoDB_Parametros(cmd);
                     if (x > 0)

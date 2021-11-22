@@ -52,7 +52,7 @@
                         <asp:Label ID="lblNomeEdit" runat="server" Text="Nome" CssClass="lbl"></asp:Label> <asp:TextBox ID="txtNomeEdit" CssClass="textbox hide" runat="server"></asp:TextBox> <br /> 
                         <asp:Label ID="lblEmailEdit" runat="server" Text="Email:" CssClass="lbl"></asp:Label> <asp:TextBox ID="txtEmailEdit" CssClass="textbox hide" runat="server"></asp:TextBox> <br /> 
                         <asp:Label ID="lblDataEdit" runat="server" Text="Data de Nascimento:" CssClass="lbl"></asp:Label> <asp:TextBox ID="txtDataEdit" CssClass="textbox hide" runat="server"></asp:TextBox> <br /> 
-                        <asp:Label ID="lblCPFEdit" runat="server" Text="CPF:" CssClass="lbl"></asp:Label> <asp:TextBox ID="txtCPFEdit" CssClass="textbox hide" runat="server"></asp:TextBox> <br /> 
+                        <asp:Label ID="lblCPFEdit" runat="server" Text="CPF:" CssClass="lbl"></asp:Label> <asp:TextBox ID="txtCPFEdit" CssClass="textbox hide" ClientIDMode="static" runat="server"></asp:TextBox> <br /> 
                         <asp:Label ID="lblSenhaEdit" runat="server" Text="Senha:" CssClass="lbl"></asp:Label> <asp:TextBox ID="txtSenhaEdit" CssClass="textbox hide" runat="server"></asp:TextBox> <br />  <br /> <br />
                         <asp:Button ID="btnSalvar" CssClass="botao hide" OnClick="btnSalvar_Click" runat="server" Text="Salvar" /><br />
                     </div>   

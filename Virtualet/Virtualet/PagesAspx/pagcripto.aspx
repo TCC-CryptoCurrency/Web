@@ -36,26 +36,23 @@
             <main>
                 <script src="menumobile.js"></script>
                 <div class="all">
-                <div class="content">
-                    <div>
+                    <div class="title">
                         <asp:Button ID="btnStar" runat="server" Text="&#9733;" CssClass="btnStar" />
                         <asp:Label ID="lblMoeda" runat="server" Text="NomeMoeda" CssClass="titulo"></asp:Label> <br /><br />
                     </div>
-                    <div>
-                        <asp:Label ID="lblValor" runat="server" Text="ValorAtual" CssClass="labels"></asp:Label> <br /><br />
-                        <asp:Label ID="lblDataAtt" runat="server" Text="DatadeAtualização" CssClass="labels date"></asp:Label> <br /><br />
+                    <div class="content">
+                        <div>
+                            <h1> Valor </h1>
+                            <asp:Label ID="lblValor" runat="server" Text="ValorAtual" CssClass="labels"></asp:Label> <br /><br />
+                        </div>
+                        <div>
+                            <h1> Última Atualização </h1>
+                            <asp:Label ID="lblDataAtt" runat="server" Text="DatadeAtualização" CssClass="labels date"></asp:Label> <br /><br />
+                        </div>
                     </div>
+                    <div id="chart-line"></div>
                 </div>
-                <div id="chart-line"></div>
-                </div>
-                <div class="gv">
-                    <asp:GridView ID="gvCripto" runat="server">
-                        <Columns>
-                            <asp:BoundField DataField="DataRegistro" HeaderText="Data" />
-                            <asp:BoundField DataField="ValorData" HeaderText="Preço" />
-                        </Columns>
-                    </asp:GridView>
-                </div>
+
                 <script type="text/javascript">
 Highcharts.chart('chart-line', {
 

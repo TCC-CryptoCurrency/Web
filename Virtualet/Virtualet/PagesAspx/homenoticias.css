@@ -141,18 +141,22 @@ div.all{
     margin:0 auto;
 }
 
-.tags {
+.tagcontent {
+    position: sticky;
+    width: 20%;
+    margin-top: 2vh;
     background-color: #e7ecef;
-    margin: 0 auto;
     text-align: center;
     padding-top: 1vh;
     border-radius: 0.5vw;
-    width:20%;
-    margin-top:2vw;
-    flex:0.3;
-    position:sticky;
-    top:8vw;
-    height:25vh;
+    flex: 0.3;
+    top: 8vw;
+    min-height: 25vh;
+}
+
+.tags {
+    width:100%;
+    height:50%;
 }
 
 .tags ul{
@@ -186,6 +190,29 @@ div.all{
         font-family: Ebrima;
         color: #e7ecef;
     }
+
+.interessetag{
+    width:100%;
+    height:50%;
+}
+
+    .interessetag h1 {
+        font-family: Ebrima;
+        font-size: 1.5vw;
+        color: #fb8b24;
+    }
+
+.txtTagSearch {
+    border: 0;
+    font-family: Ebrima;
+    font-size: 2vw;
+    background-color: #d2d5d9;
+    border-radius: 100vw;
+    text-align: center;
+    margin: 0 2vw 0 2vw;
+    margin-top: 0.8vh;
+    width:70%;
+}
 
 .feed {
     margin: 0 auto;

@@ -31,6 +31,11 @@
             }
         }
     </script>
+    <script type="text/javascript">
+        $(function () {
+            $("#txtCPF").mask("999.999.999-99");
+        });
+    </script>
 </head>
 <body>
     <form id="form1" runat="server">
@@ -57,7 +62,7 @@
                     <h2>
                         CPF (Somente números)
                     </h2>
-                    <asp:TextBox ID="txtCPF" runat="server" CssClass="txt"></asp:TextBox>
+                    <asp:TextBox ID="txtCPF" runat="server" ClientIDMode="static" CssClass="txt"></asp:TextBox>
                     <br/>
                         <h2>
                             Senha

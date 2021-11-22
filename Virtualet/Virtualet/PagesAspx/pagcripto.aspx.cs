@@ -34,12 +34,6 @@ namespace Virtualet.PagesAspx
             //Se vc quiser colocar qualquer dado da moeda é só colocar dr[0][nomedocampo], não esquece que isso é um objeto ent é possível que você precise de 
             //alguns .toString() ou de uns int.Parse(), igual o que tem na linha 31
 
-            dtbl = new DataTable();
-            dtbl = con.executarSQL("select DataRegistro, ValorData from HistoricoMoeda where NomeMoeda = '" + (string)Session["idMoeda"] + "'");
-
-            gvCripto.DataSource = dtbl;
-            gvCripto.DataBind();
-
             LoadDataLineChart();
             DadosMoeda();
         }

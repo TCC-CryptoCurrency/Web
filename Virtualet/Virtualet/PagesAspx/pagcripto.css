@@ -117,36 +117,58 @@ nav {
 }
 
 /* Principal */
-.all {
-    display: flex;
-    flex-direction: row;
-    width: 90%;
-    min-height: 50vh;
-}
-
 main {
     background-color: #d2d5d9;
-    min-height: 86vh;
+    min-height: 88vh;
     padding-top: 5vh;
-    margin-top:9vh;
+    margin-top:8.75vh;
+}
+
+.all{
+    width:90%;
+    height:100%;
+    background-color:white;
+    margin:0 auto;
+    padding:2vw;
+}
+
+.title{
+    width:90%;
+}
+
+.titulo {
+    font-family: Ebrima;
+    font-size: 3vw;
+    color: #ef781c;
+    margin-left: 1vw;
 }
 
 .content{
     width:50%;
     height:100%;
     margin:0 auto;
-    
     margin-bottom: 5vh;
     display:flex;
-    flex-direction:column;
+    flex-direction:row;
 
 }
+
+.content div{
+    width:50%;
+    text-align:center;
+}
+
+    .content div h1 {
+        font-family: Ebrima;
+        font-size: 2vw;
+        color: #2d3142;
+    }
 
 #chart-line{
     margin-bottom:2vh;
     width:50%;
     height:100%;
-
+    margin: 0 auto;
 }
 
 .btnStar {
@@ -170,8 +192,7 @@ main {
 
 .labels{
     font-family:Ebrima;
-    font-size:3vw;
-    margin-left:5.5vw;
+    font-size:2vw;
     color:#2d3142;
     font-weight:bolder;
 }
@@ -179,31 +200,5 @@ main {
 .date{
     font-weight:normal;
     color:#9c9fa1;
-    font-size:2vw;
-}
-
-
-.content div{
-    height:100%;
-    width:50%;
-    margin-left:5vw;
-}
-
-.content div h1{
-    font-family:Ebrima;
-    font-size:3vw;
-    padding-top:5vh;
-}
-
-.titulo{
-    font-family:Ebrima;
-    font-size:3vw;
-    color:#ef781c;
-    margin-left:1vw;
-}
-
-.gv{
-    background-color:red;
-    width: 90%;
-    height:30vh;
+    font-size:1.5vw;
 }
