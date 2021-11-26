@@ -89,14 +89,6 @@
                         </p>
                     </div>
                 </div>
-
-                <div class="topic">
-                    <div>
-                        <h1 style="font-size: 1.5vw"> Parceiros </h1>
-                        <p> Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc nulla nibh, gravida sit amet rhoncus id, congue a metus. </p>
-                    </div>
-                </div>
-
             </div>
         </div>
 

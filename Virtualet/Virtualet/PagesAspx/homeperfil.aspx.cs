@@ -127,5 +127,11 @@ namespace Virtualet.PagesAspx
                 Response.Write("<script>alert('Algo deu errado tente novamente mais tarde')</script>");
             }
         }
+
+        protected void btnLogout_Click(object sender, EventArgs e)
+        {
+            Session["login"] = null;
+            Response.Redirect("index.aspx");
+        }
     }
 }

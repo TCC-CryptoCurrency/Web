@@ -68,6 +68,7 @@
                 <div class="preferida">
                     <img src="Images/iconeperfil.png" class="imagemicone"/> <br /> <br />
                     <asp:Label ID="lblMoeda" runat="server" Text=""></asp:Label>
+                    <asp:Button ID="btnLogout" runat="server" CssClass="botao" Text="Sair" OnClick="btnLogout_Click" />
                 </div>
             </div>
         </main>
